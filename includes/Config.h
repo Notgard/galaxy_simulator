@@ -1,0 +1,47 @@
+#pragma once
+
+//SDL
+#define WINDOW_WIDTH 1020
+#define WINDOW_HEIGHT 1000
+
+#define NORTH_EAST 0
+#define SOUTH_EAST 1
+#define SOUTH_WEST 2
+#define NORTH_WEST 3
+
+#define TOP_LEFT 0
+#define TOP_RIGHT 1
+#define BOTTOM_RIGHT 2
+#define BOTTOM_LEFT 3
+
+#define QUADTREE_MAX_VALUES 4
+#define QUADTREE_THRESHOLD 16
+#define QUADTREE_MAX_DEPTH 50
+
+#define BOX_WIDTH 2000.0f
+#define BOX_HEIGHT 1000.0f
+#define BOX_LEFT 10.0f
+#define BOX_TOP 10.0f
+
+//simulation constants
+#define dt 0.5f
+#define G 6.67430e-11
+#define t_end (dt * 365 * 10)
+#define ETA 0.01 //softening factor
+#define DISTANCE_MULTIPLE 1e9 //meter
+#define GFACTOR 2
+
+#define PARTICLE_RADIUS 2.0f
+#define PARTICLE_MASS 1.0f
+#define PARTICLE_POSITION_HISTORY_SIZE 10
+
+#define SUN_RADIUS 10.0f
+#define SUN_MASS 1.989e30
+
+#define PLANET_RADIUS 5.0f
+
+#define THETA 0.5
+
+#define SMALL_GALAXY_THRESHOLD 2
+
+#define CELESTIAL_BODY_COUNT 9
