@@ -10,6 +10,11 @@
 #include <vector>
 #include <iostream>
 
+struct ParticleData {
+    int id;
+    double x, y, vx, vy, mass;
+};
+
 struct Particle
 {
     int id;
@@ -24,15 +29,32 @@ struct Particle
     float radius = PARTICLE_RADIUS;
     bool is_sun = false;
 
+    ParticleData serialize() {
+        ParticleData data;
+        data.id = id;
+        data.x = position.x;
+        data.y = position.y;
+        data.vx = velocity.x;
+        data.vy = velocity.y;
+        data.mass = mass;
+        return data;
+    }
+
+    void deserialize(ParticleData data) {
+        id = data.id;
+        position = {data.x, data.y};
+        velocity = {data.vx, data.vy};
+        mass = data.mass;
+    }
+
     void update_position(quadtree::Box<float> worldBounds, double dtime)
     {
-        position_history.push_back(position);
+/*         position_history.push_back(position);
         if (position_history.size() > PARTICLE_POSITION_HISTORY_SIZE) {
             position_history.erase(position_history.begin());
-        }
+        } */
 
         position += velocity * dtime;
-        acceleration = {0.0f, 0.0f};
 
         //position before wrapping around
         //std::cout << "Particle " << id << ", Position before wrapping around: " << position.x << ", " << position.y << std::endl;
@@ -65,6 +87,7 @@ struct Particle
     void update_velocity(double dtime)
     {
         velocity += acceleration * dtime;
+        acceleration = {0.0, 0.0};
     }
 
     void update_acceleration(glm::vec2 acceleration)

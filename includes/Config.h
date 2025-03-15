@@ -18,21 +18,21 @@
 #define QUADTREE_THRESHOLD 16
 #define QUADTREE_MAX_DEPTH 50
 
-#define BOX_WIDTH 2000.0f
+#define BOX_WIDTH 1000.0f
 #define BOX_HEIGHT 1000.0f
 #define BOX_LEFT 10.0f
 #define BOX_TOP 10.0f
 
 //simulation constants
-#define dt 0.5f
+#define delta_time 0.1
 #define G 6.67430e-11
-#define t_end (dt * 365 * 10)
+#define t_end (delta_time * 365 * 10)
 #define ETA 0.01 //softening factor
 #define DISTANCE_MULTIPLE 1e9 //meter
 #define GFACTOR 2
 
-#define PARTICLE_RADIUS 2.0f
-#define PARTICLE_MASS 1.0f
+#define PARTICLE_RADIUS 1.0f
+#define PARTICLE_MASS 1.0
 #define PARTICLE_POSITION_HISTORY_SIZE 10
 
 #define SUN_RADIUS 10.0f
@@ -40,8 +40,10 @@
 
 #define PLANET_RADIUS 5.0f
 
-#define THETA 0.5
+#define THETA 0.8
 
 #define SMALL_GALAXY_THRESHOLD 2
 
-#define CELESTIAL_BODY_COUNT 9
+#define CELESTIAL_BODY_COUNT 1
+
+#define DEBUG 0

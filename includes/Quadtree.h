@@ -24,6 +24,8 @@
 
 #include "Particle.h"
 
+#include <omp.h>
+
 // Quadtree implementation :
 //  stores the values in a tree structure, where each node has a maximum of 4 children
 //  each node has a maximum of QUADTREE_MAX_VALUES values
@@ -39,6 +41,17 @@ namespace quadtree
                       "GetBox must be a callable of signature Box<float>(const T&)");
 
     public:
+        struct Node
+        {
+            // Node(const Box<float> box) : box(box) {}
+
+            // Box<float> box;
+            std::array<std::unique_ptr<Node>, QUADTREE_MAX_VALUES> children;
+            std::vector<T> values = std::vector<T>();
+            glm::vec<2, double> centerOfMass = {0.0, 0.0};
+            double totalMass = 0.0;
+        };
+
         Quadtree() = default;
 
         Quadtree(const Box<float> &box, const GetBox &getBox = GetBox()) : mBox(box), mRoot(std::make_unique<Node>()), mGetBox(getBox) {}
@@ -60,24 +73,49 @@ namespace quadtree
 
         void update_barnes_hut_forces(double dtime)
         {
-            for (auto &value : mValues)
+#pragma omp parallel for
+            for (int i = 0; i < mValues.size(); i++)
             {
+                T value = mValues[i];
+                Particle *particle = static_cast<Particle *>(value);
+                if (particle->is_sun)
+                    continue;
                 compute_forces(mRoot.get(), mBox, value, dtime);
             }
         }
 
-        Box<float> getBox() const { return mBox; }
-
-        struct Node
+        void update_barnes_hut_subtree_forces(Node *node, const Box<float> &box, T value, double dtime)
         {
-            // Node(const Box<float> box) : box(box) {}
+            Particle *particle = static_cast<Particle *>(value);
+            if (particle->is_sun)
+                return;
+            compute_forces(node, box, value, dtime);
+        }
 
-            // Box<float> box;
-            std::array<std::unique_ptr<Node>, QUADTREE_MAX_VALUES> children;
-            std::vector<T> values = std::vector<T>();
-            glm::vec<2, double> centerOfMass = {0.0, 0.0};
-            double totalMass = 0.0;
-        };
+        void update_individual_barnes_hut_forces(T value, double dtime)
+        {
+            Particle *particle = static_cast<Particle *>(value);
+            if (particle->is_sun)
+                return;
+            compute_forces(mRoot.get(), mBox, value, dtime);
+        }
+
+        std::array<Node *, QUADTREE_MAX_VALUES> getChildren(Node *node)
+        {
+            std::array<Node *, QUADTREE_MAX_VALUES> children;
+            for (int i = 0; i < QUADTREE_MAX_VALUES; ++i)
+            {
+                children[i] = node->children[i].get();
+            }
+            return children;
+        }
+
+        void update_tree_masses()
+        {
+            update_masses(mRoot.get(), mBox);
+        }
+
+        Box<float> getBox() const { return mBox; }
 
         bool isLeaf(const Node *node) const { return !node->children[0]; }
 
@@ -181,7 +219,7 @@ namespace quadtree
                 node->values.push_back(value); // This should only happen if the node is truly empty
             }
 
-            update_masses(node, box);
+            // update_masses(node, box);
         }
 
         void split(Node *node, const Box<float> &box)
@@ -283,11 +321,12 @@ namespace quadtree
 
         void update_masses(Node *node, const Box<float> &box)
         {
-            if (!node) return; // Avoid null checks later
-        
+            if (!node)
+                return; // Avoid null checks later
+
             double sum_mass = 0.0;
             glm::dvec2 weighted_center(0.0, 0.0);
-        
+
             // Add mass from stored particles
             for (const auto &value : node->values)
             {
@@ -295,20 +334,20 @@ namespace quadtree
                 sum_mass += particle->mass;
                 weighted_center += particle->position * particle->mass;
             }
-        
+
             // Sum up the mass from child nodes
             for (int i = 0; i < QUADTREE_MAX_VALUES; ++i)
             {
                 Node *child = node->children[i].get();
-                if (child)  // Check if child exists before calling update_masses
+                if (child) // Check if child exists before calling update_masses
                 {
                     update_masses(child, computeBox(box, i)); // Potentially optimize computeBox
-        
+
                     sum_mass += child->totalMass;
                     weighted_center += child->centerOfMass * child->totalMass;
                 }
             }
-        
+
             node->totalMass = sum_mass;
             if (sum_mass > 0.0)
             {
@@ -356,7 +395,7 @@ namespace quadtree
                 if (s / d < THETA)
                 {
                     // std::cout << "Node " << node << " is far enough" << std::endl;
-                    //  compute force on body from node as single body
+                    //   compute force on body from node as single body
                     compute_force(value, node, dtime);
                 }
                 else
@@ -376,37 +415,49 @@ namespace quadtree
         void compute_force(T value, Node *node, double dtime)
         {
             Particle *particle = static_cast<Particle *>(value);
+            if (particle->is_sun)
+                return;
 
-            // Compute vector from particle to node's center of mass
-            auto dir = particle->position - node->centerOfMass;
-            double dist = glm::length(dir);
+            /*             // Compute vector from particle to node's center of mass
+                        auto dir = particle->position - node->centerOfMass;
+                        double dist = glm::length(dir);
 
-            // Softening factor to avoid numerical instability when dist is too small
-            double r = sqrt(dist * dist + ETA * ETA);
-            // std::cout << "Distance squared: " << distanceSquared << std::endl;
+                        // Softening factor to avoid numerical instability when dist is too small
+                        double r = sqrt(dist * dist + ETA * ETA);
+                        // std::cout << "Distance squared: " << distanceSquared << std::endl;
 
-            // Compute force magnitude using Newton's Law
-            // std::cout << "Gravity: " << G << " Mass: " << particle->mass << " Node mass: " << node->totalMass << std::endl;
-            double force = (G * particle->mass * node->totalMass) / pow(r, GFACTOR);
-            // std::cout << "Force magnitude: " << force << std::endl;
+                        // Compute force magnitude using Newton's Law
+                        // std::cout << "Gravity: " << G << " Mass: " << particle->mass << " Node mass: " << node->totalMass << std::endl;
+                        double force = (G * particle->mass * node->totalMass) / pow(r, GFACTOR);
+                        // std::cout << "Force magnitude: " << force << std::endl;
 
-            // Normalize dir and scale by force magnitude
-            glm::vec<2, double> forceVector = {0.0, 0.0};
-            if (r > 0) // Avoid division by zero
+                        // Normalize dir and scale by force magnitude
+                        glm::vec<2, double> forceVector = {0.0, 0.0};
+                        if (r > 0) // Avoid division by zero
+                        {
+                            forceVector = dir * (force / r);
+                        }
+                        else
+                        {
+                            forceVector = {0.0, 0.0};
+                        } */
+
+            glm::dvec2 a_g(0.0);
+            glm::dvec2 r = particle->position - node->centerOfMass;
+            double r_mag = glm::length(r);
+
+            if (r_mag > 0)
             {
-                forceVector = dir * (force / r);
+                double acceleration = -G * node->totalMass / (r_mag * r_mag);
+                glm::dvec2 r_unit_vector = r / r_mag;
+                a_g += acceleration * r_unit_vector;
             }
 
             // Update particle acceleration
-            particle->update_acceleration(forceVector / particle->mass);
-/*             particle->update_velocity(dtime);
-            particle->update_position(mBox, dtime); */
-
-            // particle->update_position(mBox, dtime);
-
-            /*             std::cout << "Particle " << particle->id << " at " << particle->position.x << ", " << particle->position.y << std::endl;
-                        std::cout << " with velocity " << particle->velocity.x << ", " << particle->velocity.y << std::endl;
-                        std::cout << " with acceleration " << particle->acceleration.x << ", " << particle->acceleration.y << std::endl; */
+            particle->update_acceleration(a_g); /*
+            //particle->update_acceleration(forceVector / particle->mass); /*
+             particle->update_velocity(dtime);
+             particle->update_position(mBox, dtime); */
         }
 
         void compute_force(T v1, T v2, double dtime)
@@ -418,51 +469,49 @@ namespace quadtree
             {
                 return;
             }
-
-            auto dx = p2->position.x - p1->position.x;
-            auto dy = p2->position.y - p1->position.y;
-
-            double dist = glm::distance(p2->position, p1->position);
-
-            auto r = sqrt(dist * dist + ETA * ETA);
-
-            auto force = (G * p1->mass * p2->mass) / pow(r, GFACTOR);
-
-            // Apply force to both particles (Newton's Third Law: equal and opposite forces)
-            glm::vec<2, double> forceVector = {0.0f, 0.0f};
-            if (dist > 0.0)
+            else if (p1->is_sun && p2->is_sun)
             {
-                forceVector = {force * dx / r, force * dy / r};
+                return;
             }
 
-            // Apply acceleration using Newton's Third Law
-            if (!p1->is_sun)
-                p1->update_acceleration(forceVector / p1->mass);
-            if (!p2->is_sun)
-                p2->update_acceleration(-forceVector / p2->mass);
+            /*             auto dx = p2->position.x - p1->position.x;
+                        auto dy = p2->position.y - p1->position.y;
 
-            /*             glm::vec<2, double> r = p1->position - p2->position;
-                        double r_mag = sqrt(r.x * r.x + r.y * r.y);
-                        double acceleration = -1.0 * G * (p2->mass) / (r_mag * r_mag);
-                        glm::vec<2, double> r_unit_vector = {r.x / r_mag, r.y / r_mag};
-             */
+                        double dist = glm::distance(p2->position, p1->position);
 
-            /*             p1->update_velocity(dtime);
-                        p1->update_position(mBox, dtime); */
+                        auto r = sqrt(dist * dist + ETA * ETA);
 
-            /*             p2->update_velocity(dtime);
-                        p2->update_position(mBox, dtime); */
+                        auto force = (G * p1->mass * p2->mass) / pow(r, GFACTOR);
 
-            // p1->update_position(mBox, dtime);
-            // p2->update_position(mBox, dtime);
+                        // Apply force to both particles (Newton's Third Law: equal and opposite forces)
+                        glm::vec<2, double> forceVector = {0.0f, 0.0f};
+                        if (dist > 0.0)
+                        {
+                            forceVector = {force * dx / r, force * dy / r};
+                        }
+            */
 
-            /*             std::cout << "Particle " << p1->id << " at " << p1->position.x << ", " << p1->position.y << std::endl;
-                        std::cout << " with velocity " << p1->velocity.x << ", " << p1->velocity.y << std::endl;
-                        std::cout << " with acceleration " << p1->acceleration.x << ", " << p1->acceleration.y << std::endl;
+            glm::dvec2 a_g(0.0);
+            glm::dvec2 r = p1->position - p2->position;
+            double r_mag = glm::length(r);
 
-                        std::cout << "Particle " << p2->id << " at " << p2->position.x << ", " << p2->position.y << std::endl;
-                        std::cout << " with velocity " << p2->velocity.x << ", " << p2->velocity.y << std::endl;
-                        std::cout << " with acceleration " << p2->acceleration.x << ", " << p2->acceleration.y << std::endl; */
+            if (r_mag > 0)
+            {
+                double acceleration = -G * p2->mass / (r_mag * r_mag);
+                glm::dvec2 r_unit_vector = r / r_mag;
+                a_g += acceleration * r_unit_vector;
+            }
+
+            p1->update_acceleration(a_g);
+            // p1->update_acceleration(forceVector / p1->mass);
+            /*
+            p1->update_velocity(dtime);
+            p1->update_position(mBox, dtime); */
+
+            // p2->update_acceleration(-forceVector / p2->mass);
+            /*
+            p2->update_velocity(dtime);
+            p2->update_position(mBox, dtime); */
         }
     };
 }

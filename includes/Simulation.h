@@ -4,11 +4,23 @@
 #include "Quadtree.h"
 
 #ifdef USE_SDL
-#include <SDL2/SDL.h>
+#include <SDL.h>
+#include <SDL_ttf.h>
+#include <SDL_image.h>
+#endif
+
+#ifdef USE_OPENMP
+#include <omp.h>
+#endif
+
+#ifdef USE_MPI
+#include <mpi.h>
 #endif
 
 #include <chrono>
 #include <iostream>
+#include <thread>
+#include <atomic>
 
 #define BOX_GETTER_TYPE std::function<quadtree::Box<float>(Particle *)>
 
@@ -22,7 +34,7 @@ namespace simulation
 
     // x, y, vx, vy, mass, r, g, b
     static const std::vector<std::array<double, 8>> solar_system = {
-        {0.0, 0.0, 0.0, 0.0, 3000000 /* 1.989e30 */, 1.0, 1.0, 0.0},                       // Sun (Yellow)
+        {0.0, 0.0, 0.0, 0.0, 30000000 /* 1.989e30 */, 1.0, 1.0, 0.0},                      // Sun (Yellow)
         {57.909e9, 0.0, 0.0, 47.36e-5 * VEL_SCALE, 100 /* 0.33011e24 */, 0.6, 0.6, 0.6},   // Mercury (Gray)
         {108.209e9, 0.0, 0.0, 35.02e-5 * VEL_SCALE, 600 /* 4.8675e24 */, 0.9, 0.7, 0.3},   // Venus (Pale Yellow)
         {149.596e9, 0.0, 0.0, 29.78e-5 * VEL_SCALE, 650 /* 5.9724e24 */, 0.0, 0.5, 1.0},   // Earth (Blue-Green)
@@ -122,14 +134,6 @@ namespace simulation
 
             std::cout << "Setting up simulation..." << std::endl;
 
-            /*             particles[0] = std::make_unique<Particle>();
-                        particles[0]->id = 0;
-                        particles[0]->position = {(BOX_LEFT + BOX_WIDTH / 2), (BOX_TOP + BOX_HEIGHT / 2)}; // center of the simulation world bounds
-                        particles[0]->mass = SUN_MASS;
-                        particles[0]->color = {1.0f, 1.0f, 0.0f, 1.0f};
-                        particles[0]->radius = SUN_RADIUS;
-                        particles[0]->is_sun = true; */
-
             std::vector<std::array<double, 8>> scaled_solar_system = scale_solar_system(solar_system);
 
             // Assign planets based on scaled positions
@@ -144,6 +148,7 @@ namespace simulation
                 particles[i]->radius = PLANET_RADIUS;
                 if (i == 0)
                 {
+		    std::cout << "Particle 0 is the SUN" << std::endl;
                     particles[i]->radius = SUN_RADIUS;
                     particles[i]->is_sun = true;
                 }
@@ -157,16 +162,23 @@ namespace simulation
         ~Simulation();
 
         void recreate_tree();
+        //overlead recerate_tree to take quadtree and box as arguments to allocate
+        void recreate_tree(std::unique_ptr<TREE_TYPE>& qt, quadtree::Box<float> worldBounds);
 
         void setup();
         void start();
+        void mpi_start(int rank, int size);
         void step(double dtime);
+        void mpi_step(double dtime, int rank, int size);
         void stop() { is_running = false; }
         void init_sdl();
 
         void start_timer() { start_time = std::chrono::steady_clock::now(); }
         void end_timer() { end_time = std::chrono::steady_clock::now(); }
         void print_time() { std::cout << "Time: " << std::chrono::duration_cast<std::chrono::seconds>(end_time - start_time).count() << "s" << std::endl; }
+
+        //MPI specific functions
+        void init_mpi();
 
     private:
         BOX_GETTER_TYPE getBoxFunc;
@@ -184,54 +196,55 @@ namespace simulation
 
         void draw_particle_path(Particle *particle);
 
+        void draw_galaxy();
+
+        void draw_text(const std::string &text, int x, int y);
+
         void draw_quadtree(const TREE_TYPE::Node *node, const quadtree::Box<float> &box, int depth);
         void render_tree();
 
         void leapfrog(double dtime);
         void brute_force(double dtime);
 
-        int num_runs = -1; // Number of runs (-1 for infite number of runs till manually stopped)
-        int run_count = 0;
-        int num_particles = 0;
-        bool is_running = false;
-        bool graphical = false;
-        int particle_count = 0;
-        double t_0 = 0.0f;
-        double t = t_0;
-        int counter = 0;
+        void process_inputs();
+        void render();
+        void clean_sdl();
 
-        std::unique_ptr<Particle> sun;
+        //MPI implementation specific functions
+        void distribute_subtrees();
+        void gather_subtrees();
+
+        int num_runs = -1; // Number of runs (-1 for infite number of runs till manually stopped)
+        int num_particles = 0;
+        int counter = 0;
+        int particle_count = 0;
+        
+        bool is_running = false;
+        bool render_tree_flag = false;
+        bool render_center_of_mass_flag = false;
+        bool render_pause_flag = false;
+        bool graphical = false;
+        
+        double t_0 = 0.0;
+        double t = t_0;
+        
+        Uint32 total_frame_ticks = 0;
+        
+        Uint32 run_count = 0;
+        Uint32 ticks = 0;
+        Uint64 perf_ticks = 0;
+
+        //MPI specific variables
+        MPI_Datatype mpi_particle_data_type;
 
 #ifdef USE_SDL
         SDL_Window *window = nullptr;
         SDL_Renderer *renderer = nullptr;
+        TTF_Font *font;
 #endif
 
         // keep the start and and time of the simulation from std::chrono
         std::chrono::time_point<std::chrono::steady_clock> start_time;
         std::chrono::time_point<std::chrono::steady_clock> end_time;
-
-        static void traverse(const quadtree::Quadtree<Particle *, std::function<quadtree::Box<float>(Particle *)>>::Node *root, std::function<void(const quadtree::Quadtree<Particle *, std::function<quadtree::Box<float>(Particle *)>>::Node *)> func)
-        {
-            if (!root)
-                return;
-
-            std::stack<const quadtree::Quadtree<Particle *, std::function<quadtree::Box<float>(Particle *)>>::Node *> stack;
-            stack.push(root);
-
-            while (!stack.empty())
-            {
-                const quadtree::Quadtree<Particle *, std::function<quadtree::Box<float>(Particle *)>>::Node *node = stack.top();
-                stack.pop();
-
-                func(node);
-
-                for (const auto &child : node->children)
-                {
-                    if (child)
-                        stack.push(child.get());
-                }
-            }
-        }
     };
 }
