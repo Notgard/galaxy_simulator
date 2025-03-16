@@ -4,6 +4,7 @@
 
 #include "Config.h"
 #include "Simulation.h"
+#include "SimulationMPI.h"
 
 #ifdef USE_MPI
 #include <mpi.h>
@@ -46,7 +47,7 @@ int main(int argc, char **argv)
 #ifdef USE_MPI
     if (rank == 0)
     {
-        //number of mpi prcesses
+        // number of mpi prcesses
         printf("Number of MPI processes: %d\n", size);
         printf("From rank %d: Starting simulation with the following config...\n", rank);
 
@@ -91,23 +92,24 @@ int main(int argc, char **argv)
     }
     printf("==============================================================\n");
 #endif
-    Simulation sim(number_of_atoms, number_of_runs, use_sdl);
 
 #ifdef USE_MPI
+    SimulationMPI sim_mpi(number_of_atoms, number_of_runs, use_sdl);
     if (rank == 0)
     {
-        sim.setup();
-        sim.start_timer();
+        sim_mpi.setup();
+        sim_mpi.start_timer();
     }
 #else
+    Simulation sim(number_of_atoms, number_of_runs, use_sdl);
     sim.setup();
     sim.start_timer();
 #endif
 
 #ifdef USE_MPI
-    sim.init_mpi();
+    sim_mpi.init_mpi();
     printf("From rank %d: Starting MPI simulation...\n", rank);
-    sim.mpi_start(rank, size);
+    sim_mpi.mpi_start(rank, size);
 #else
     sim.start();
 #endif
@@ -115,8 +117,8 @@ int main(int argc, char **argv)
 #ifdef USE_MPI
     if (rank == 0)
     {
-        sim.end_timer();
-        sim.print_time();
+        sim_mpi.end_timer();
+        sim_mpi.print_time();
     }
     // clean up MPI
     MPI_Finalize();

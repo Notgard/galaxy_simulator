@@ -24,7 +24,7 @@
 #define BOX_TOP 10.0f
 
 //simulation constants
-#define delta_time 0.1
+#define delta_time 2.1
 #define G 6.67430e-11
 #define t_end (delta_time * 365 * 10)
 #define ETA 0.01 //softening factor
@@ -36,7 +36,7 @@
 #define PARTICLE_POSITION_HISTORY_SIZE 10
 
 #define SUN_RADIUS 10.0f
-#define SUN_MASS 1.989e30
+#define SUN_MASS 30000000/* 1.989e30 */
 
 #define PLANET_RADIUS 5.0f
 
@@ -44,6 +44,6 @@
 
 #define SMALL_GALAXY_THRESHOLD 2
 
-#define CELESTIAL_BODY_COUNT 1
+#define CELESTIAL_BODY_COUNT 9
 
 #define DEBUG 0

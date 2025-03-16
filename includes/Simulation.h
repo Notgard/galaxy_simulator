@@ -34,7 +34,7 @@ namespace simulation
 
     // x, y, vx, vy, mass, r, g, b
     static const std::vector<std::array<double, 8>> solar_system = {
-        {0.0, 0.0, 0.0, 0.0, 30000000 /* 1.989e30 */, 1.0, 1.0, 0.0},                      // Sun (Yellow)
+        {0.0, 0.0, 0.0, 0.0, SUN_MASS /* 1.989e30 */, 1.0, 1.0, 0.0},                      // Sun (Yellow)
         {57.909e9, 0.0, 0.0, 47.36e-5 * VEL_SCALE, 100 /* 0.33011e24 */, 0.6, 0.6, 0.6},   // Mercury (Gray)
         {108.209e9, 0.0, 0.0, 35.02e-5 * VEL_SCALE, 600 /* 4.8675e24 */, 0.9, 0.7, 0.3},   // Venus (Pale Yellow)
         {149.596e9, 0.0, 0.0, 29.78e-5 * VEL_SCALE, 650 /* 5.9724e24 */, 0.0, 0.5, 1.0},   // Earth (Blue-Green)
@@ -148,7 +148,7 @@ namespace simulation
                 particles[i]->radius = PLANET_RADIUS;
                 if (i == 0)
                 {
-		    std::cout << "Particle 0 is the SUN" << std::endl;
+                    std::cout << "Particle 0 is the SUN" << std::endl;
                     particles[i]->radius = SUN_RADIUS;
                     particles[i]->is_sun = true;
                 }
@@ -162,80 +162,70 @@ namespace simulation
         ~Simulation();
 
         void recreate_tree();
-        //overlead recerate_tree to take quadtree and box as arguments to allocate
-        void recreate_tree(std::unique_ptr<TREE_TYPE>& qt, quadtree::Box<float> worldBounds);
 
         void setup();
         void start();
-        void mpi_start(int rank, int size);
         void step(double dtime);
-        void mpi_step(double dtime, int rank, int size);
         void stop() { is_running = false; }
-        void init_sdl();
 
         void start_timer() { start_time = std::chrono::steady_clock::now(); }
         void end_timer() { end_time = std::chrono::steady_clock::now(); }
-        void print_time() { std::cout << "Time: " << std::chrono::duration_cast<std::chrono::seconds>(end_time - start_time).count() << "s" << std::endl; }
+        void print_time()
+        {
+            std::cout << "Time: " << std::chrono::duration_cast<std::chrono::seconds>(end_time - start_time).count() << "s" << std::endl;
+            std::cout << "Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count() << "ms" << std::endl;
+            std::cout << "Time: " << std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time).count() << "us" << std::endl;
+        }
 
-        //MPI specific functions
-        void init_mpi();
-
-    private:
+    protected:
         BOX_GETTER_TYPE getBoxFunc;
 
         quadtree::Box<float> worldBounds;
         std::unique_ptr<TREE_TYPE> qt;
 
         std::vector<std::unique_ptr<Particle>> particles;
-
+#ifdef USE_SDL
         void draw_circle(int centerX, int centerY, SDL_Color color, float radius);
         void draw_box(const quadtree::Box<float> &box, SDL_Color color);
         void draw_cross(int x, int y, int size);
-
         void draw_particle(Particle *particle);
-
         void draw_particle_path(Particle *particle);
-
         void draw_galaxy();
-
         void draw_text(const std::string &text, int x, int y);
-
         void draw_quadtree(const TREE_TYPE::Node *node, const quadtree::Box<float> &box, int depth);
         void render_tree();
 
-        void leapfrog(double dtime);
-        void brute_force(double dtime);
+        void init_sdl();
+        void clean_sdl();
 
         void process_inputs();
         void render();
-        void clean_sdl();
+#endif
 
-        //MPI implementation specific functions
-        void distribute_subtrees();
-        void gather_subtrees();
+        void leapfrog(double dtime);
+        void brute_force(double dtime);
 
         int num_runs = -1; // Number of runs (-1 for infite number of runs till manually stopped)
         int num_particles = 0;
         int counter = 0;
         int particle_count = 0;
-        
+
         bool is_running = false;
         bool render_tree_flag = false;
         bool render_center_of_mass_flag = false;
         bool render_pause_flag = false;
         bool graphical = false;
-        
+
         double t_0 = 0.0;
         double t = t_0;
-        
+        unsigned long int run_count = 0;
+#ifdef USE_SDL
         Uint32 total_frame_ticks = 0;
+
         
-        Uint32 run_count = 0;
         Uint32 ticks = 0;
         Uint64 perf_ticks = 0;
-
-        //MPI specific variables
-        MPI_Datatype mpi_particle_data_type;
+#endif
 
 #ifdef USE_SDL
         SDL_Window *window = nullptr;

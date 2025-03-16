@@ -23,6 +23,7 @@ string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${CUSTOM_COMPILE_FLAGS})
 set(SOURCES
     src/main.cpp
     src/Simulation.cpp
+    src/SimulationMPI.cpp
 )
 
 set(HEADERS
@@ -30,6 +31,7 @@ set(HEADERS
     includes/Config.h
     includes/Quadtree.h
     includes/Simulation.h
+    includes/SimulationMPI.h
     includes/Vector2d.h
     includes/Particle.h
 )
@@ -57,6 +59,7 @@ if(USE_SDL)
     # Find SDL_ttf
     find_package(SDL2_ttf REQUIRED)
     message("SDL_ttf found")
+    target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::Main SDL2::TTF)
 endif()
 
 # Find GLM
@@ -66,7 +69,8 @@ find_package(glm REQUIRED)
 #if(TARGET SDL2::SDL2main)
 #    target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::SDL2main SDL2::TTF)
 #endif()
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::Main SDL2::TTF glm::glm)
+
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE glm::glm)
 
 # MPI Support
 if(USE_MPI)
