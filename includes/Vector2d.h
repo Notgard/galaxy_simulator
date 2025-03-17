@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cmath> // For std::sqrt
+
 namespace quadtree
 {
 
@@ -34,6 +36,18 @@ public:
         x *= t;
         y *= t;
         return *this;
+    }
+
+    T length() const noexcept
+    {
+        return std::sqrt(x * x + y * y);
+    }
+
+    Vector2<T> direction() const noexcept
+    {
+        T len = length();
+        if (len == 0) return Vector2<T>(0, 0); // Avoid division by zero
+        return Vector2<T>(x / len, y / len);
     }
 };
 

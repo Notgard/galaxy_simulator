@@ -36,6 +36,16 @@ The binary for the simulation will be located in the `build` directory. You can 
 ./build/particleSimulation <number_of_particles> <number_of_iterations> [sdl]
 ```
 
+### Running the MPI+OpenMPhybrid version
+
+The binaries created from the cmake compilation with the needed compilation flags need to be executed like the following:
+
+```sh
+mpiexec -n <number_of_process> -x OMP_NUM_THREADS=<number_of_threads> ./build/particleSimulation <number_of_particles> <number_of_iterations>
+```
+
+You can also use the provided `start_mpi.sh` script that simplifies this command.
+
 ### Example
 
 To run the simulation with 100 particles (in addition to the 9 default celestial bodies), 100000 iterations, and SDL graphical output:

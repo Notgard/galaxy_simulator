@@ -24,7 +24,7 @@
 #define BOX_TOP 10.0f
 
 //simulation constants
-#define delta_time 2.1
+#define delta_time 0.1
 #define G 6.67430e-11
 #define t_end (delta_time * 365 * 10)
 #define ETA 0.01 //softening factor
@@ -44,6 +44,6 @@
 
 #define SMALL_GALAXY_THRESHOLD 2
 
-#define CELESTIAL_BODY_COUNT 9
+#define CELESTIAL_BODY_COUNT 1
 
 #define DEBUG 0

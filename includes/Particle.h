@@ -18,16 +18,16 @@ struct ParticleData {
 struct Particle
 {
     int id;
-    glm::vec<2, double> position;
+    glm::dvec2 position;
     glm::vec4 color;
 
-    glm::vec<2, double> acceleration = {0.0, 0.0};
-    glm::vec<2, double> velocity = {0.0, 0.0};
+    glm::dvec2 acceleration = {0.0, 0.0};
+    glm::dvec2 velocity = {0.0, 0.0};
     double mass = PARTICLE_MASS;
     float radius = PARTICLE_RADIUS;
     bool is_sun = false;
     
-    std::vector<glm::vec<2, double>> position_history = std::vector<glm::vec<2, double>>(PARTICLE_POSITION_HISTORY_SIZE);
+    std::vector<glm::dvec2> position_history = std::vector<glm::dvec2>(PARTICLE_POSITION_HISTORY_SIZE);
     
     ParticleData serialize() {
         ParticleData data;
@@ -36,6 +36,8 @@ struct Particle
         data.y = position.y;
         data.ax = acceleration.x;
         data.ay = acceleration.y;
+        data.vx = velocity.x;
+        data.vy = velocity.y;
         data.mass = mass;
         return data;
     }
@@ -43,7 +45,8 @@ struct Particle
     void deserialize(ParticleData data) {
         id = data.id;
         position = {data.x, data.y};
-        velocity = {data.ax, data.ay};
+        acceleration = {data.ax, data.ay};
+        velocity = {data.vx, data.vy};
         mass = data.mass;
     }
 

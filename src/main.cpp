@@ -25,19 +25,44 @@ int main(int argc, char **argv)
     int number_of_runs = atoi(argv[2]);
     bool use_sdl = (argc > 3 && strcmp(argv[3], "sdl") == 0);
 
-#ifdef USE_OPENMP
-    // print number of threads
-    printf("Number of threads: %d\n", omp_get_num_procs());
-    // Set the number of threads to the number of cores
-    omp_set_num_threads(omp_get_num_procs());
-#endif
-
 #ifdef USE_MPI
     // Initialize MPI variables for ranks and size
     int rank, size;
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
+#endif
+
+#ifdef USE_OPENMP
+#ifdef USE_MPI
+    if (rank == 0)
+    {
+#pragma omp parallel
+        {
+            if (omp_get_thread_num() == 0)
+            {
+                // print number of threads
+                printf("Number of threads: %d\n", omp_get_num_threads());
+                printf("Number of cores: %d\n", omp_get_num_procs());
+                // Set the number of threads to the number of cores
+                omp_set_num_threads(omp_get_num_threads());
+            }
+        }
+    }
+    MPI_Barrier(MPI_COMM_WORLD);
+#else
+#pragma omp parallel
+    {
+        if (omp_get_thread_num() == 0)
+        {
+            // print number of threads
+            printf("Number of threads: %d\n", omp_get_num_threads());
+            printf("Number of cores: %d\n", omp_get_num_procs());
+            // Set the number of threads to the number of cores
+            omp_set_num_threads(omp_get_num_threads());
+        }
+    }
+#endif
 #endif
 
 #ifdef USE_SDL
@@ -94,7 +119,7 @@ int main(int argc, char **argv)
 #endif
 
 #ifdef USE_MPI
-    SimulationMPI sim_mpi(number_of_atoms, number_of_runs, use_sdl);
+    SimulationMPI sim_mpi(number_of_atoms, number_of_runs, use_sdl, rank, size);
     if (rank == 0)
     {
         sim_mpi.setup();
@@ -109,7 +134,7 @@ int main(int argc, char **argv)
 #ifdef USE_MPI
     sim_mpi.init_mpi();
     printf("From rank %d: Starting MPI simulation...\n", rank);
-    sim_mpi.mpi_start(rank, size);
+    sim_mpi.mpi_start();
 #else
     sim.start();
 #endif
@@ -119,7 +144,9 @@ int main(int argc, char **argv)
     {
         sim_mpi.end_timer();
         sim_mpi.print_time();
+        printf("From rank %d: Simulation complete\n", rank);
     }
+    sim_mpi.clean_mpi();
     // clean up MPI
     MPI_Finalize();
 #else

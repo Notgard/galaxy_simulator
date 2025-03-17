@@ -48,7 +48,7 @@ namespace quadtree
             // Box<float> box;
             std::array<std::unique_ptr<Node>, QUADTREE_MAX_VALUES> children;
             std::vector<T> values = std::vector<T>();
-            glm::vec<2, double> centerOfMass = {0.0, 0.0};
+            glm::dvec2 centerOfMass = {0.0, 0.0};
             double totalMass = 0.0;
         };
 
@@ -381,7 +381,7 @@ namespace quadtree
                 float s = box.width;
                 Box<float> valueBox = mGetBox(value);
                 Vector2<float> boxCenter = valueBox.getCenter();
-                glm::vec<2, double> center = {boxCenter.x, boxCenter.y};
+                glm::dvec2 center = {boxCenter.x, boxCenter.y};
                 float d = glm::distance(center, node->centerOfMass);
 
                 /*                 std::cout << "----------------------------------" << std::endl;
@@ -432,7 +432,7 @@ namespace quadtree
                         // std::cout << "Force magnitude: " << force << std::endl;
 
                         // Normalize dir and scale by force magnitude
-                        glm::vec<2, double> forceVector = {0.0, 0.0};
+                        glm::dvec2 forceVector = {0.0, 0.0};
                         if (r > 0) // Avoid division by zero
                         {
                             forceVector = dir * (force / r);
@@ -484,7 +484,7 @@ namespace quadtree
                         auto force = (G * p1->mass * p2->mass) / pow(r, GFACTOR);
 
                         // Apply force to both particles (Newton's Third Law: equal and opposite forces)
-                        glm::vec<2, double> forceVector = {0.0f, 0.0f};
+                        glm::dvec2 forceVector = {0.0f, 0.0f};
                         if (dist > 0.0)
                         {
                             forceVector = {force * dx / r, force * dy / r};
