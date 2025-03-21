@@ -7,6 +7,8 @@
 #include <algorithm>
 #include <stack>
 #include <cmath>
+#include <cassert>
+#include <functional>
 
 #include <iomanip>
 #include <limits>
@@ -14,13 +16,6 @@
 
 #include "Config.h"
 #include "Box.h"
-
-#include <glm/glm.hpp>
-#include <glm/common.hpp>
-#include <glm/gtx/string_cast.hpp>
-#include <glm/ext/vector_double1_precision.hpp>
-#include <glm/ext/vector_double2_precision.hpp>
-#include <glm/ext/vector_double3_precision.hpp>
 
 #include "Particle.h"
 
@@ -48,7 +43,7 @@ namespace quadtree
             // Box<float> box;
             std::array<std::unique_ptr<Node>, QUADTREE_MAX_VALUES> children;
             std::vector<T> values = std::vector<T>();
-            glm::dvec2 centerOfMass = {0.0, 0.0};
+            Vector2<double> centerOfMass = {0.0, 0.0};
             double totalMass = 0.0;
         };
 
@@ -325,7 +320,7 @@ namespace quadtree
                 return; // Avoid null checks later
 
             double sum_mass = 0.0;
-            glm::dvec2 weighted_center(0.0, 0.0);
+            Vector2<double> weighted_center(0.0, 0.0);
 
             // Add mass from stored particles
             for (const auto &value : node->values)
@@ -378,11 +373,11 @@ namespace quadtree
             {
                 // std::cout << "Computing force on internal node" << std::endl;
                 //  compute s/d quotient
-                float s = box.width;
+                double s = box.width;
                 Box<float> valueBox = mGetBox(value);
                 Vector2<float> boxCenter = valueBox.getCenter();
-                glm::dvec2 center = {boxCenter.x, boxCenter.y};
-                float d = glm::distance(center, node->centerOfMass);
+                Vector2<double> center = {boxCenter.x, boxCenter.y};
+                double d = Vector2<double>::distance(center, node->centerOfMass);
 
                 /*                 std::cout << "----------------------------------" << std::endl;
                                 std::cout << "Box center: " << boxCenter.x << ", " << boxCenter.y << std::endl;
@@ -418,46 +413,19 @@ namespace quadtree
             if (particle->is_sun)
                 return;
 
-            /*             // Compute vector from particle to node's center of mass
-                        auto dir = particle->position - node->centerOfMass;
-                        double dist = glm::length(dir);
-
-                        // Softening factor to avoid numerical instability when dist is too small
-                        double r = sqrt(dist * dist + ETA * ETA);
-                        // std::cout << "Distance squared: " << distanceSquared << std::endl;
-
-                        // Compute force magnitude using Newton's Law
-                        // std::cout << "Gravity: " << G << " Mass: " << particle->mass << " Node mass: " << node->totalMass << std::endl;
-                        double force = (G * particle->mass * node->totalMass) / pow(r, GFACTOR);
-                        // std::cout << "Force magnitude: " << force << std::endl;
-
-                        // Normalize dir and scale by force magnitude
-                        glm::dvec2 forceVector = {0.0, 0.0};
-                        if (r > 0) // Avoid division by zero
-                        {
-                            forceVector = dir * (force / r);
-                        }
-                        else
-                        {
-                            forceVector = {0.0, 0.0};
-                        } */
-
-            glm::dvec2 a_g(0.0);
-            glm::dvec2 r = particle->position - node->centerOfMass;
-            double r_mag = glm::length(r);
+            Vector2<double> a_g(0.0);
+            Vector2<double> r = particle->position - node->centerOfMass;
+            double r_mag = Vector2<double>::length(r);
 
             if (r_mag > 0)
             {
                 double acceleration = -G * node->totalMass / (r_mag * r_mag);
-                glm::dvec2 r_unit_vector = r / r_mag;
+                Vector2<double> r_unit_vector = r / r_mag;
                 a_g += acceleration * r_unit_vector;
             }
 
             // Update particle acceleration
-            particle->update_acceleration(a_g); /*
-            //particle->update_acceleration(forceVector / particle->mass); /*
-             particle->update_velocity(dtime);
-             particle->update_position(mBox, dtime); */
+            particle->update_acceleration(a_g);
         }
 
         void compute_force(T v1, T v2, double dtime)
@@ -474,44 +442,18 @@ namespace quadtree
                 return;
             }
 
-            /*             auto dx = p2->position.x - p1->position.x;
-                        auto dy = p2->position.y - p1->position.y;
-
-                        double dist = glm::distance(p2->position, p1->position);
-
-                        auto r = sqrt(dist * dist + ETA * ETA);
-
-                        auto force = (G * p1->mass * p2->mass) / pow(r, GFACTOR);
-
-                        // Apply force to both particles (Newton's Third Law: equal and opposite forces)
-                        glm::dvec2 forceVector = {0.0f, 0.0f};
-                        if (dist > 0.0)
-                        {
-                            forceVector = {force * dx / r, force * dy / r};
-                        }
-            */
-
-            glm::dvec2 a_g(0.0);
-            glm::dvec2 r = p1->position - p2->position;
-            double r_mag = glm::length(r);
+            Vector2<double> a_g(0.0);
+            Vector2<double> r = p1->position - p2->position;
+            double r_mag = Vector2<double>::length(r);
 
             if (r_mag > 0)
             {
                 double acceleration = -G * p2->mass / (r_mag * r_mag);
-                glm::dvec2 r_unit_vector = r / r_mag;
+                Vector2<double> r_unit_vector = r / r_mag;
                 a_g += acceleration * r_unit_vector;
             }
 
             p1->update_acceleration(a_g);
-            // p1->update_acceleration(forceVector / p1->mass);
-            /*
-            p1->update_velocity(dtime);
-            p1->update_position(mBox, dtime); */
-
-            // p2->update_acceleration(-forceVector / p2->mass);
-            /*
-            p2->update_velocity(dtime);
-            p2->update_position(mBox, dtime); */
         }
     };
 }

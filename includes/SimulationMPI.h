@@ -9,8 +9,8 @@ namespace simulation
     class SimulationMPI : public Simulation
     {
     public:
-        SimulationMPI(int num_particles, int num_runs, bool graphical, int rank, int)
-            : Simulation(num_particles, num_runs, graphical), rank(rank), size(size)
+        SimulationMPI(int num_particles, int num_runs, int rank, int)
+            : Simulation(num_particles, num_runs), rank(rank), size(size)
         {
         }
 
@@ -25,9 +25,9 @@ namespace simulation
 
         void distribute_subtrees();
         void distribute_particles(std::vector<ParticleData> &local_particles, int &startpos, int &endpos, double dtime);
-        void gather_particles(std::vector<ParticleData> &local_particles);
+        void gather_particles(std::vector<Vector2<double>> &local_accelerations);
 
-        void compute_workload(std::vector<ParticleData> &local_particles, double dtime, int startpos, int endpos);
+        void compute_workload(std::vector<ParticleData> &local_particles, std::vector<Vector2<double>> &local_accelerations, double dtime, int startpos, int endpos);
 
         void clean_mpi();
 

@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include "Config.h"
-#include "Simulation.h"
+#include "SimulationSDL.h"
 
 using namespace simulation;
 
@@ -18,6 +18,7 @@ int main(int argc, char **argv)
 
     int number_of_atoms = atoi(argv[1]);
     int number_of_runs = atoi(argv[2]);
+    bool use_sdl = (argc > 3 && strcmp(argv[3], "sdl") == 0);
 
 #ifdef USE_OPENMP
 #pragma omp parallel
@@ -33,6 +34,8 @@ int main(int argc, char **argv)
     }
 #endif
 
+    printf("Using SDL\n");
+
     printf("Starting simulation with the following config...\n");
 
     printf("==============================================================\n");
@@ -44,8 +47,17 @@ int main(int argc, char **argv)
     printf("\t   Number of atoms: %d\n", number_of_atoms);
     printf("\t   Number of runs: %d\n", number_of_runs);
     printf("==============================================================\n");
+    if (use_sdl)
+    {
+        printf("\t   SDL Visualization: ENABLED\n");
+    }
+    else
+    {
+        printf("\t   SDL Visualization: DISABLED\n");
+    }
+    printf("==============================================================\n");
 
-    Simulation sim(number_of_atoms, number_of_runs);
+    SimulationSDL sim(number_of_atoms, number_of_runs, use_sdl);
     sim.setup();
     sim.start_timer();
 

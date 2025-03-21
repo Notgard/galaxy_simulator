@@ -3,14 +3,24 @@
 #include "Config.h"
 #include "Box.h"
 
+#ifdef USE_GLM
 #include <glm/glm.hpp>
 #include <glm/common.hpp>
 #include <glm/gtx/string_cast.hpp>
+#include <glm/ext/vector_double1_precision.hpp>
+#include <glm/ext/vector_double2_precision.hpp>
+#include <glm/ext/vector_double3_precision.hpp>
+#endif
+
+#include "Vector2d.h"
 
 #include <vector>
 #include <iostream>
 
-struct ParticleData {
+using namespace quadtree;
+
+struct ParticleData
+{
     int id;
     double x, y, ax, ay, vx, vy, mass;
 };
@@ -18,18 +28,17 @@ struct ParticleData {
 struct Particle
 {
     int id;
-    glm::dvec2 position;
-    glm::vec4 color;
+    std::array<float, 4> color;
+    Vector2<double> position;
+    Vector2<double> acceleration = {0.0, 0.0};
+    Vector2<double> velocity = {0.0, 0.0};
 
-    glm::dvec2 acceleration = {0.0, 0.0};
-    glm::dvec2 velocity = {0.0, 0.0};
     double mass = PARTICLE_MASS;
     float radius = PARTICLE_RADIUS;
     bool is_sun = false;
-    
-    std::vector<glm::dvec2> position_history = std::vector<glm::dvec2>(PARTICLE_POSITION_HISTORY_SIZE);
-    
-    ParticleData serialize() {
+
+    ParticleData serialize()
+    {
         ParticleData data;
         data.id = id;
         data.x = position.x;
@@ -42,7 +51,8 @@ struct Particle
         return data;
     }
 
-    void deserialize(ParticleData data) {
+    void deserialize(ParticleData data)
+    {
         id = data.id;
         position = {data.x, data.y};
         acceleration = {data.ax, data.ay};
@@ -52,39 +62,39 @@ struct Particle
 
     void update_position(quadtree::Box<float> worldBounds, double dtime)
     {
-/*         position_history.push_back(position);
-        if (position_history.size() > PARTICLE_POSITION_HISTORY_SIZE) {
-            position_history.erase(position_history.begin());
-        } */
+        /*         position_history.push_back(position);
+                if (position_history.size() > PARTICLE_POSITION_HISTORY_SIZE) {
+                    position_history.erase(position_history.begin());
+                } */
 
         position += velocity * dtime;
 
-        //position before wrapping around
-        //std::cout << "Particle " << id << ", Position before wrapping around: " << position.x << ", " << position.y << std::endl;
+        // position before wrapping around
+        // std::cout << "Particle " << id << ", Position before wrapping around: " << position.x << ", " << position.y << std::endl;
 
         // Wrap around to the other side if out of bounds
         float right = worldBounds.getRight();
         float bottom = worldBounds.getBottom();
 
-        //print world bounds
-        //std::cout << "World bounds: " << worldBounds.left << ", " << worldBounds.top << ", " << worldBounds.width << ", " << worldBounds.height << std::endl;
-    
+        // print world bounds
+        // std::cout << "World bounds: " << worldBounds.left << ", " << worldBounds.top << ", " << worldBounds.width << ", " << worldBounds.height << std::endl;
+
         float worldWidth = worldBounds.width;
         float worldHeight = worldBounds.height;
-    
+
         // Correct wrapping using modulo to handle large out-of-bounds values
         if (position.x < worldBounds.left)
             position.x = right - std::fmod(worldBounds.left - position.x, worldWidth);
         else if (position.x > right)
             position.x = worldBounds.left + std::fmod(position.x - right, worldWidth);
-    
+
         if (position.y < worldBounds.top)
             position.y = bottom - std::fmod(worldBounds.top - position.y, worldHeight);
         else if (position.y > bottom)
             position.y = worldBounds.top + std::fmod(position.y - bottom, worldHeight);
 
-        //position after wrapping around
-        //std::cout << "Particle " << id << ", Position after wrapping around: " << position.x << ", " << position.y << std::endl;
+        // position after wrapping around
+        // std::cout << "Particle " << id << ", Position after wrapping around: " << position.x << ", " << position.y << std::endl;
     }
 
     void update_velocity(double dtime)
@@ -93,7 +103,7 @@ struct Particle
         acceleration = {0.0, 0.0};
     }
 
-    void update_acceleration(glm::vec2 acceleration)
+    void update_acceleration(Vector2<double> acceleration)
     {
         this->acceleration += acceleration;
     }

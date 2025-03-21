@@ -3,12 +3,6 @@
 #include "Box.h"
 #include "Quadtree.h"
 
-#ifdef USE_SDL
-#include <SDL.h>
-#include <SDL_ttf.h>
-#include <SDL_image.h>
-#endif
-
 #ifdef USE_OPENMP
 #include <omp.h>
 #endif
@@ -23,7 +17,6 @@
 #include <atomic>
 
 #define BOX_GETTER_TYPE std::function<quadtree::Box<float>(Particle *)>
-
 #define TREE_TYPE quadtree::Quadtree<Particle *, BOX_GETTER_TYPE>
 
 namespace simulation
@@ -108,43 +101,10 @@ namespace simulation
                 particles[i]->position = {scaled_solar_system[i][0], scaled_solar_system[i][1]};
                 particles[i]->velocity = {scaled_solar_system[i][2], scaled_solar_system[i][3]};
                 particles[i]->mass = scaled_solar_system[i][4];
-                particles[i]->color = {scaled_solar_system[i][5], scaled_solar_system[i][6], scaled_solar_system[i][7], 1.0f};
-                particles[i]->radius = PLANET_RADIUS;
-                if (i == 0)
-                {
-                    particles[i]->radius = SUN_RADIUS;
-                    particles[i]->is_sun = true;
-                }
-                std::cout << "Particle " << i << " at " << particles[i]->position.x << ", " << particles[i]->position.y << std::endl;
-                std::cout << " with velocity " << particles[i]->velocity.x << ", " << particles[i]->velocity.y << std::endl;
-                std::cout << "with mass " << particles[i]->mass << std::endl;
-            }
-            std::cout << "Solar system setup complete" << std::endl;
-        }
-        Simulation(int num_particles, int num_runs = -1, bool graphical = false)
-            : num_particles(num_particles), num_runs(num_runs), graphical(graphical),
-              getBoxFunc([](Particle *p)
-                         { return quadtree::Box<float>(
-                               quadtree::Vector2<float>(p->position.x, p->position.y),
-                               quadtree::Vector2<float>(0.0f, 0.0f)); }),
-              qt(std::make_unique<TREE_TYPE>(
-                  worldBounds, getBoxFunc))
-        {
-            particles = std::vector<std::unique_ptr<Particle>>(num_particles + CELESTIAL_BODY_COUNT);
-
-            std::cout << "Setting up simulation..." << std::endl;
-
-            std::vector<std::array<double, 8>> scaled_solar_system = scale_solar_system(solar_system);
-
-            // Assign planets based on scaled positions
-            for (size_t i = 0; i < CELESTIAL_BODY_COUNT; i++)
-            {
-                particles[i] = std::make_unique<Particle>();
-                particles[i]->id = i;
-                particles[i]->position = {scaled_solar_system[i][0], scaled_solar_system[i][1]};
-                particles[i]->velocity = {scaled_solar_system[i][2], scaled_solar_system[i][3]};
-                particles[i]->mass = scaled_solar_system[i][4];
-                particles[i]->color = {scaled_solar_system[i][5], scaled_solar_system[i][6], scaled_solar_system[i][7], 1.0f};
+                float r = scaled_solar_system[i][5];
+                float g = scaled_solar_system[i][6];
+                float b = scaled_solar_system[i][7];
+                particles[i]->color = {r, g, b, 1.0f};
                 particles[i]->radius = PLANET_RADIUS;
                 if (i == 0)
                 {
@@ -164,8 +124,8 @@ namespace simulation
         void recreate_tree();
 
         void setup();
-        void start();
-        void step(double dtime);
+        virtual void start();
+        virtual void step(double dtime);
         void stop() { is_running = false; }
 
         void start_timer() { start_time = std::chrono::steady_clock::now(); }
@@ -184,23 +144,6 @@ namespace simulation
         std::unique_ptr<TREE_TYPE> qt;
 
         std::vector<std::unique_ptr<Particle>> particles;
-#ifdef USE_SDL
-        void draw_circle(int centerX, int centerY, SDL_Color color, float radius);
-        void draw_box(const quadtree::Box<float> &box, SDL_Color color);
-        void draw_cross(int x, int y, int size);
-        void draw_particle(Particle *particle);
-        void draw_particle_path(Particle *particle);
-        void draw_galaxy();
-        void draw_text(const std::string &text, int x, int y);
-        void draw_quadtree(const TREE_TYPE::Node *node, const quadtree::Box<float> &box, int depth);
-        void render_tree();
-
-        void init_sdl();
-        void clean_sdl();
-
-        void process_inputs();
-        void render();
-#endif
 
         void leapfrog(double dtime);
         void brute_force(double dtime);
@@ -211,27 +154,10 @@ namespace simulation
         int particle_count = 0;
 
         bool is_running = false;
-        bool render_tree_flag = false;
-        bool render_center_of_mass_flag = false;
-        bool render_pause_flag = false;
-        bool graphical = false;
 
         double t_0 = 0.0;
         double t = t_0;
         unsigned long int run_count = 0;
-#ifdef USE_SDL
-        Uint32 total_frame_ticks = 0;
-
-        
-        Uint32 ticks = 0;
-        Uint64 perf_ticks = 0;
-#endif
-
-#ifdef USE_SDL
-        SDL_Window *window = nullptr;
-        SDL_Renderer *renderer = nullptr;
-        TTF_Font *font;
-#endif
 
         // keep the start and and time of the simulation from std::chrono
         std::chrono::time_point<std::chrono::steady_clock> start_time;

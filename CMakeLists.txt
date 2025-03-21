@@ -13,27 +13,41 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 # Options
 option(USE_SDL "Enable SDL for visualization" ON)
-option(USE_MPI "Enable MPI for parallel execution" ON)
+option(USE_MPI "Enable MPI for parallel execution" ON)  # Still keep this option
 option(USE_OPENMP "Enable OpenMP for parallel execution" ON)
 
 set(CUSTOM_COMPILE_FLAGS "-pg -g -gdwarf-3 -O0 -march=native")
 string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${CUSTOM_COMPILE_FLAGS})
 
-# Source files
+# Source files (conditionally include MPI versions)
 set(SOURCES
-    src/main.cpp
-    src/Simulation.cpp
-    src/SimulationMPI.cpp
+    src/main.cpp      # default main file
+    src/Simulation.cpp # default Simulation file
 )
 
+# If MPI is enabled, use the MPI-specific files
+if(USE_MPI)
+    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_main.cpp)  # replace main.cpp with mpi_main.cpp
+    list(APPEND SOURCES src/SimulationMPI.cpp)
+    #list(TRANSFORM SOURCES REPLACE src/Simulation.cpp src/SimulationMPI.cpp)  # replace Simulation.cpp with SimulationMPI.cpp
+endif()
+
+# If SDL is enabled, use the SDL-specific files
+if(USE_SDL)
+    list(TRANSFORM SOURCES REPLACE src/main.cpp src/sdl_main.cpp)  # replace main.cpp with mpi_main.cpp
+    list(APPEND SOURCES src/SimulationSDL.cpp)
+endif()
+
 set(HEADERS
+    includes/SDLUtils.h
     includes/Box.h
     includes/Config.h
     includes/Quadtree.h
     includes/Simulation.h
     includes/SimulationMPI.h
+    includes/SimulationSDL.h
     includes/Vector2d.h
-    includes/Particle.h
+    includes/Particle.h 
 )
 
 include_directories(includes)
@@ -52,7 +66,6 @@ find_package(SDL2 REQUIRED)
 message("SDL version: " ${SDL2_VERSION})
 include_directories(${SDL2_INCLUDE_DIRS})
 
-
 if(USE_SDL)
     target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_SDL)
 
@@ -65,11 +78,6 @@ endif()
 # Find GLM
 find_package(glm REQUIRED)
 
-# Link SDL2
-#if(TARGET SDL2::SDL2main)
-#    target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::SDL2main SDL2::TTF)
-#endif()
-
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE glm::glm)
 
 # MPI Support
@@ -80,6 +88,8 @@ if(USE_MPI)
         target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${MPI_INCLUDE_PATH})
         target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE MPI::MPI_CXX)
         target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_MPI)
+    else()
+        message(FATAL_ERROR "MPI is required but not found.")
     endif()
 endif()
 
