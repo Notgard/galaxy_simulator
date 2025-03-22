@@ -3,15 +3,6 @@
 #include "Config.h"
 #include "Box.h"
 
-#ifdef USE_GLM
-#include <glm/glm.hpp>
-#include <glm/common.hpp>
-#include <glm/gtx/string_cast.hpp>
-#include <glm/ext/vector_double1_precision.hpp>
-#include <glm/ext/vector_double2_precision.hpp>
-#include <glm/ext/vector_double3_precision.hpp>
-#endif
-
 #include "Vector2d.h"
 
 #include <vector>

@@ -21,20 +21,20 @@ string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${CUSTOM_COMPILE_FLAGS})
 
 # Source files (conditionally include MPI or SDL versions)
 set(SOURCES
-    src/main.cpp      # default main file
+    src/main.cpp # default main file
     src/Simulation.cpp # default Simulation file
 )
 
 # If MPI is enabled, use the MPI-specific files
 if(USE_MPI)
-    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_main.cpp)  # replace main.cpp with mpi_main.cpp
+    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_main.cpp) # replace main.cpp with mpi_main.cpp
     list(APPEND SOURCES src/SimulationMPI.cpp)
     #list(TRANSFORM SOURCES REPLACE src/Simulation.cpp src/SimulationMPI.cpp)  # replace Simulation.cpp with SimulationMPI.cpp
 endif()
 
 # If SDL is enabled, use the SDL-specific files
 if(USE_SDL)
-    list(TRANSFORM SOURCES REPLACE src/main.cpp src/sdl_main.cpp)  # replace main.cpp with mpi_main.cpp
+    list(TRANSFORM SOURCES REPLACE src/main.cpp src/sdl_main.cpp) # replace main.cpp with mpi_main.cpp
     list(APPEND SOURCES src/SimulationSDL.cpp)
 endif()
 
@@ -47,7 +47,7 @@ set(HEADERS
     includes/SimulationMPI.h
     includes/SimulationSDL.h
     includes/Vector2d.h
-    includes/Particle.h 
+    includes/Particle.h
 )
 
 include_directories(includes)
@@ -61,12 +61,11 @@ target_include_directories(${CMAKE_PROJECT_NAME}
 
 target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE ${CUSTOM_COMPILE_FLAGS_LIST})
 
-# Find SDL2
-find_package(SDL2 REQUIRED)
-message("SDL version: " ${SDL2_VERSION})
-include_directories(${SDL2_INCLUDE_DIRS})
-
 if(USE_SDL)
+    find_package(SDL2 REQUIRED)
+    message("SDL version: " ${SDL2_VERSION})
+    include_directories(${SDL2_INCLUDE_DIRS})
+    
     target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_SDL)
 
     # Find SDL_ttf
