@@ -65,7 +65,7 @@ if(USE_SDL)
     find_package(SDL2 REQUIRED)
     message("SDL version: " ${SDL2_VERSION})
     include_directories(${SDL2_INCLUDE_DIRS})
-    
+
     target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_SDL)
 
     # Find SDL_ttf
@@ -73,11 +73,6 @@ if(USE_SDL)
     message("SDL_ttf found")
     target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::Main SDL2::TTF)
 endif()
-
-# Find GLM
-find_package(glm REQUIRED)
-
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE glm::glm)
 
 # MPI Support
 if(USE_MPI)
