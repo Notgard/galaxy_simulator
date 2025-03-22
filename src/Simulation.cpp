@@ -73,7 +73,7 @@ void simulation::Simulation::setup()
         Vector2<double> position = center + Vector2<double>(radius * cos(angle), radius * sin(angle));
         if (DEBUG)
             std::cout << "Particle " << i << " at " << position.x << ", " << position.y << std::endl;
-        std::array<float, 4> color = {colorDist(gen), colorDist(gen), colorDist(gen), 1.0f};
+        float color[4] = {colorDist(gen), colorDist(gen), colorDist(gen), 1.0f};
 
         particles[i] = std::make_unique<Particle>();
 
@@ -91,7 +91,10 @@ void simulation::Simulation::setup()
             particles[i]->velocity.y = v_circular * cos(angle);
         }
 
-        particles[i]->color = color;
+        particles[i]->color[0] = color[0];
+        particles[i]->color[1] = color[1];
+        particles[i]->color[2] = color[2];
+        particles[i]->color[3] = color[3];
 
         particle_count++;
     }
@@ -180,7 +183,7 @@ void simulation::Simulation::start()
 {
     is_running = true;
 
-    while (is_running && (t < t_end) && (run_count < num_runs))
+    while (is_running /* && (t < t_end) */ && (run_count < num_runs))
     {
         step(t);
         t += delta_time;

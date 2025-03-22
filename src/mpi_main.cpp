@@ -44,11 +44,9 @@ int main(int argc, char **argv)
     }
     MPI_Barrier(MPI_COMM_WORLD);
 
-
 #ifdef USE_SDL
     printf("Using SDL\n");
 #endif
-
 
     if (rank == 0)
     {
@@ -76,25 +74,31 @@ int main(int argc, char **argv)
         printf("==============================================================\n");
     }
 
-    SimulationMPI sim_mpi(number_of_atoms, number_of_runs, use_sdl, rank, size);
+    SimulationMPI sim_mpi(number_of_atoms, number_of_runs, rank, size);
     if (rank == 0)
     {
         sim_mpi.setup();
+    }
+
+    sim_mpi.init_mpi();
+
+    if (rank == 0)
+    {
+        printf("Starting N-Body simulation\n");
         sim_mpi.start_timer();
     }
 
-
-    sim_mpi.init_mpi();
     printf("From rank %d: Starting MPI simulation...\n", rank);
     sim_mpi.mpi_start();
-
 
     if (rank == 0)
     {
         sim_mpi.end_timer();
         sim_mpi.print_time();
-        printf("From rank %d: Simulation complete\n", rank);
     }
+
+    printf("From rank %d: Simulation complete\n", rank);
+
     sim_mpi.clean_mpi();
     // clean up MPI
     MPI_Finalize();

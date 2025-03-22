@@ -104,7 +104,10 @@ namespace simulation
                 float r = scaled_solar_system[i][5];
                 float g = scaled_solar_system[i][6];
                 float b = scaled_solar_system[i][7];
-                particles[i]->color = {r, g, b, 1.0f};
+                particles[i]->color[0] = r;
+                particles[i]->color[1] = g;
+                particles[i]->color[2] = b;
+                particles[i]->color[3] = 1.0f;
                 particles[i]->radius = PLANET_RADIUS;
                 if (i == 0)
                 {

@@ -13,13 +13,13 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 # Options
 option(USE_SDL "Enable SDL for visualization" ON)
-option(USE_MPI "Enable MPI for parallel execution" ON)  # Still keep this option
+option(USE_MPI "Enable MPI for parallel execution" ON)
 option(USE_OPENMP "Enable OpenMP for parallel execution" ON)
 
 set(CUSTOM_COMPILE_FLAGS "-pg -g -gdwarf-3 -O0 -march=native")
 string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${CUSTOM_COMPILE_FLAGS})
 
-# Source files (conditionally include MPI versions)
+# Source files (conditionally include MPI or SDL versions)
 set(SOURCES
     src/main.cpp      # default main file
     src/Simulation.cpp # default Simulation file

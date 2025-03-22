@@ -28,7 +28,7 @@ struct ParticleData
 struct Particle
 {
     int id;
-    std::array<float, 4> color;
+    float color[4];
     Vector2<double> position;
     Vector2<double> acceleration = {0.0, 0.0};
     Vector2<double> velocity = {0.0, 0.0};
@@ -58,6 +58,11 @@ struct Particle
         acceleration = {data.ax, data.ay};
         velocity = {data.vx, data.vy};
         mass = data.mass;
+    }
+
+    void accumulate(ParticleData data) {
+        acceleration.x += data.ax;
+        acceleration.y += data.ay;
     }
 
     void update_position(quadtree::Box<float> worldBounds, double dtime)

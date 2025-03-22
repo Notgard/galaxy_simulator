@@ -20,6 +20,7 @@ int main(int argc, char **argv)
     int number_of_runs = atoi(argv[2]);
 
 #ifdef USE_OPENMP
+    printf("OMP Version\n");
 #pragma omp parallel
     {
         if (omp_get_thread_num() == 0)
@@ -31,6 +32,8 @@ int main(int argc, char **argv)
             omp_set_num_threads(omp_get_num_threads());
         }
     }
+#else
+    printf("Sequential Version\n");
 #endif
 
     printf("Starting simulation with the following config...\n");
@@ -47,11 +50,16 @@ int main(int argc, char **argv)
 
     Simulation sim(number_of_atoms, number_of_runs);
     sim.setup();
+
+    printf("Starting N-Body simulation\n");
+
     sim.start_timer();
 
     sim.start();
 
     sim.end_timer();
+
+    printf("Finished simulation\n");
 
     sim.print_time();
 
