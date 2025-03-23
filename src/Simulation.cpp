@@ -52,7 +52,7 @@ void simulation::Simulation::setup()
 
     // Random number generator setup
     std::random_device rd;
-    std::mt19937 gen(rd());
+    std::mt19937 gen(5);
     std::uniform_real_distribution<double> radiusDist(10.0f, worldBounds.width / 4.0f); // Ensure particles are within bounds
     std::uniform_real_distribution<float> angleDist(0.0f, 2.0f * M_PI);
     // std::uniform_real_distribution<float> xDist(worldBounds.left, worldBounds.getRight());

@@ -1,0 +1,4025 @@
+Sequential Version
+Starting simulation with the following config...
+==============================================================
+	Quadtree Config:
+	   QUADTREE_MAX_DEPTH: 50
+	   QUADTREE_MAX_VALUES: 4
+	   QUADTREE_THRESHOLD: 16
+	Simualtion configuration:
+	   Number of atoms: 100
+	   Number of runs: 1000
+==============================================================
+Setting up simulation...
+Particle 0 is the SUN
+Particle 0 at 510, 510
+ with velocity 0, 0
+with mass 3e+07
+Solar system setup complete
+Setting up particle simulation...
+Center of the world: 510, 510
+Particle simulation setup complete
+Starting N-Body simulation
+Particle 1: 548.335, 725.594
+Particle 1 velocity: -0.00297719, 0.000529377
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.335, 725.594
+Particle 1 velocity: -0.00297719, 0.000529373
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.334, 725.594
+Particle 1 velocity: -0.00297719, 0.000529365
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.333, 725.594
+Particle 1 velocity: -0.00297719, 0.000529353
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.332, 725.595
+Particle 1 velocity: -0.0029772, 0.000529336
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.331, 725.595
+Particle 1 velocity: -0.0029772, 0.000529316
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.329, 725.595
+Particle 1 velocity: -0.0029772, 0.000529291
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.327, 725.596
+Particle 1 velocity: -0.00297721, 0.000529262
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.324, 725.596
+Particle 1 velocity: -0.00297721, 0.000529229
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.322, 725.596
+Particle 1 velocity: -0.00297722, 0.000529192
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.319, 725.597
+Particle 1 velocity: -0.00297723, 0.000529151
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.315, 725.598
+Particle 1 velocity: -0.00297724, 0.000529106
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.312, 725.598
+Particle 1 velocity: -0.00297725, 0.000529057
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.308, 725.599
+Particle 1 velocity: -0.00297725, 0.000529003
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.304, 725.6
+Particle 1 velocity: -0.00297726, 0.000528946
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.299, 725.6
+Particle 1 velocity: -0.00297728, 0.000528884
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.295, 725.601
+Particle 1 velocity: -0.00297729, 0.000528818
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.289, 725.602
+Particle 1 velocity: -0.0029773, 0.000528748
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.284, 725.603
+Particle 1 velocity: -0.00297731, 0.000528674
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.278, 725.604
+Particle 1 velocity: -0.00297733, 0.000528596
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.273, 725.605
+Particle 1 velocity: -0.00297734, 0.000528514
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.266, 725.606
+Particle 1 velocity: -0.00297736, 0.000528428
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.26, 725.607
+Particle 1 velocity: -0.00297737, 0.000528337
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.253, 725.609
+Particle 1 velocity: -0.00297739, 0.000528243
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.246, 725.61
+Particle 1 velocity: -0.00297741, 0.000528144
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.238, 725.611
+Particle 1 velocity: -0.00297743, 0.000528041
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.231, 725.613
+Particle 1 velocity: -0.00297744, 0.000527934
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.223, 725.614
+Particle 1 velocity: -0.00297746, 0.000527823
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.214, 725.616
+Particle 1 velocity: -0.00297748, 0.000527708
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.206, 725.617
+Particle 1 velocity: -0.00297751, 0.000527589
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.197, 725.619
+Particle 1 velocity: -0.00297753, 0.000527466
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.187, 725.62
+Particle 1 velocity: -0.00297755, 0.000527338
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.178, 725.622
+Particle 1 velocity: -0.00297757, 0.000527207
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.168, 725.624
+Particle 1 velocity: -0.0029776, 0.000527071
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.158, 725.625
+Particle 1 velocity: -0.00297762, 0.000526931
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.147, 725.627
+Particle 1 velocity: -0.00297765, 0.000526787
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.137, 725.629
+Particle 1 velocity: -0.00297767, 0.000526639
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.126, 725.631
+Particle 1 velocity: -0.0029777, 0.000526487
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.114, 725.633
+Particle 1 velocity: -0.00297773, 0.000526331
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.103, 725.635
+Particle 1 velocity: -0.00297776, 0.00052617
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.091, 725.637
+Particle 1 velocity: -0.00297779, 0.000526006
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.079, 725.64
+Particle 1 velocity: -0.00297782, 0.000525837
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.066, 725.642
+Particle 1 velocity: -0.00297785, 0.000525665
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.053, 725.644
+Particle 1 velocity: -0.00297788, 0.000525488
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.04, 725.646
+Particle 1 velocity: -0.00297791, 0.000525307
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.027, 725.649
+Particle 1 velocity: -0.00297794, 0.000525122
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 548.013, 725.651
+Particle 1 velocity: -0.00297797, 0.000524933
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.999, 725.654
+Particle 1 velocity: -0.00297801, 0.000524739
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.985, 725.656
+Particle 1 velocity: -0.00297804, 0.000524542
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.97, 725.659
+Particle 1 velocity: -0.00297808, 0.00052434
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.955, 725.661
+Particle 1 velocity: -0.00297812, 0.000524135
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.94, 725.664
+Particle 1 velocity: -0.00297815, 0.000523925
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.925, 725.667
+Particle 1 velocity: -0.00297819, 0.000523711
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.909, 725.669
+Particle 1 velocity: -0.00297823, 0.000523493
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.893, 725.672
+Particle 1 velocity: -0.00297827, 0.000523271
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.876, 725.675
+Particle 1 velocity: -0.00297831, 0.000523045
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.86, 725.678
+Particle 1 velocity: -0.00297835, 0.000522815
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.843, 725.681
+Particle 1 velocity: -0.00297839, 0.00052258
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.826, 725.684
+Particle 1 velocity: -0.00297843, 0.000522342
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.808, 725.687
+Particle 1 velocity: -0.00297847, 0.000522099
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.79, 725.69
+Particle 1 velocity: -0.00297852, 0.000521852
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.772, 725.693
+Particle 1 velocity: -0.00297856, 0.000521601
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.753, 725.697
+Particle 1 velocity: -0.0029786, 0.000521346
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.735, 725.7
+Particle 1 velocity: -0.00297865, 0.000521087
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.716, 725.703
+Particle 1 velocity: -0.0029787, 0.000520824
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.696, 725.707
+Particle 1 velocity: -0.00297874, 0.000520556
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.677, 725.71
+Particle 1 velocity: -0.00297879, 0.000520285
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.657, 725.714
+Particle 1 velocity: -0.00297884, 0.000520009
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.636, 725.717
+Particle 1 velocity: -0.00297889, 0.00051973
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.616, 725.721
+Particle 1 velocity: -0.00297894, 0.000519446
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.595, 725.724
+Particle 1 velocity: -0.00297899, 0.000519158
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.574, 725.728
+Particle 1 velocity: -0.00297904, 0.000518866
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.552, 725.732
+Particle 1 velocity: -0.00297909, 0.00051857
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.531, 725.736
+Particle 1 velocity: -0.00297914, 0.000518269
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.509, 725.739
+Particle 1 velocity: -0.00297919, 0.000517965
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.486, 725.743
+Particle 1 velocity: -0.00297925, 0.000517656
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.464, 725.747
+Particle 1 velocity: -0.0029793, 0.000517344
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.441, 725.751
+Particle 1 velocity: -0.00297936, 0.000517027
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.417, 725.755
+Particle 1 velocity: -0.00297941, 0.000516706
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.394, 725.759
+Particle 1 velocity: -0.00297947, 0.000516381
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.37, 725.763
+Particle 1 velocity: -0.00297953, 0.000516052
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.346, 725.768
+Particle 1 velocity: -0.00297958, 0.000515718
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.321, 725.772
+Particle 1 velocity: -0.00297964, 0.000515381
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.297, 725.776
+Particle 1 velocity: -0.0029797, 0.000515039
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.272, 725.78
+Particle 1 velocity: -0.00297976, 0.000514694
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.246, 725.785
+Particle 1 velocity: -0.00297982, 0.000514344
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.221, 725.789
+Particle 1 velocity: -0.00297988, 0.00051399
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.195, 725.794
+Particle 1 velocity: -0.00297994, 0.000513632
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.169, 725.798
+Particle 1 velocity: -0.00298001, 0.00051327
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.142, 725.803
+Particle 1 velocity: -0.00298007, 0.000512904
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.115, 725.807
+Particle 1 velocity: -0.00298013, 0.000512533
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.088, 725.812
+Particle 1 velocity: -0.0029802, 0.000512159
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.061, 725.817
+Particle 1 velocity: -0.00298026, 0.00051178
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.033, 725.822
+Particle 1 velocity: -0.00298033, 0.000511398
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 547.005, 725.826
+Particle 1 velocity: -0.0029804, 0.000511011
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.977, 725.831
+Particle 1 velocity: -0.00298046, 0.00051062
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.948, 725.836
+Particle 1 velocity: -0.00298053, 0.000510225
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.919, 725.841
+Particle 1 velocity: -0.0029806, 0.000509825
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.89, 725.846
+Particle 1 velocity: -0.00298067, 0.000509422
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.86, 725.851
+Particle 1 velocity: -0.00298074, 0.000509014
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.831, 725.856
+Particle 1 velocity: -0.00298081, 0.000508603
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.801, 725.861
+Particle 1 velocity: -0.00298088, 0.000508187
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.77, 725.866
+Particle 1 velocity: -0.00298095, 0.000507767
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.739, 725.872
+Particle 1 velocity: -0.00298102, 0.000507343
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.708, 725.877
+Particle 1 velocity: -0.00298109, 0.000506915
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.677, 725.882
+Particle 1 velocity: -0.00298117, 0.000506483
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.646, 725.888
+Particle 1 velocity: -0.00298124, 0.000506046
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.614, 725.893
+Particle 1 velocity: -0.00298132, 0.000505606
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.581, 725.899
+Particle 1 velocity: -0.00298139, 0.000505161
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.549, 725.904
+Particle 1 velocity: -0.00298147, 0.000504712
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.516, 725.91
+Particle 1 velocity: -0.00298155, 0.00050426
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.483, 725.915
+Particle 1 velocity: -0.00298162, 0.000503803
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.45, 725.921
+Particle 1 velocity: -0.0029817, 0.000503341
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.416, 725.927
+Particle 1 velocity: -0.00298178, 0.000502876
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.382, 725.932
+Particle 1 velocity: -0.00298186, 0.000502407
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.348, 725.938
+Particle 1 velocity: -0.00298194, 0.000501933
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.313, 725.944
+Particle 1 velocity: -0.00298202, 0.000501455
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.278, 725.95
+Particle 1 velocity: -0.0029821, 0.000500974
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.243, 725.956
+Particle 1 velocity: -0.00298218, 0.000500488
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.208, 725.962
+Particle 1 velocity: -0.00298226, 0.000499998
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.172, 725.968
+Particle 1 velocity: -0.00298235, 0.000499503
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.136, 725.974
+Particle 1 velocity: -0.00298243, 0.000499005
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.099, 725.98
+Particle 1 velocity: -0.00298251, 0.000498503
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.063, 725.986
+Particle 1 velocity: -0.0029826, 0.000497996
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 546.026, 725.992
+Particle 1 velocity: -0.00298268, 0.000497485
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.988, 725.998
+Particle 1 velocity: -0.00298277, 0.00049697
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.951, 726.004
+Particle 1 velocity: -0.00298286, 0.000496451
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.913, 726.011
+Particle 1 velocity: -0.00298294, 0.000495928
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.875, 726.017
+Particle 1 velocity: -0.00298303, 0.000495401
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.836, 726.023
+Particle 1 velocity: -0.00298312, 0.00049487
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.797, 726.03
+Particle 1 velocity: -0.00298321, 0.000494334
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.758, 726.036
+Particle 1 velocity: -0.0029833, 0.000493794
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.719, 726.043
+Particle 1 velocity: -0.00298339, 0.000493251
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.679, 726.049
+Particle 1 velocity: -0.00298348, 0.000492703
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.639, 726.056
+Particle 1 velocity: -0.00298357, 0.000492151
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.599, 726.063
+Particle 1 velocity: -0.00298366, 0.000491594
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.558, 726.069
+Particle 1 velocity: -0.00298375, 0.000491034
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.518, 726.076
+Particle 1 velocity: -0.00298384, 0.000490469
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.476, 726.083
+Particle 1 velocity: -0.00298394, 0.000489901
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.435, 726.09
+Particle 1 velocity: -0.00298403, 0.000489328
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.393, 726.097
+Particle 1 velocity: -0.00298413, 0.000488751
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.351, 726.103
+Particle 1 velocity: -0.00298422, 0.00048817
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.309, 726.11
+Particle 1 velocity: -0.00298432, 0.000487585
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.266, 726.117
+Particle 1 velocity: -0.00298441, 0.000486996
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.223, 726.124
+Particle 1 velocity: -0.00298451, 0.000486402
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.18, 726.131
+Particle 1 velocity: -0.00298461, 0.000485804
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.136, 726.138
+Particle 1 velocity: -0.00298471, 0.000485203
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.092, 726.146
+Particle 1 velocity: -0.0029848, 0.000484597
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.048, 726.153
+Particle 1 velocity: -0.0029849, 0.000483987
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 545.004, 726.16
+Particle 1 velocity: -0.002985, 0.000483373
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.959, 726.167
+Particle 1 velocity: -0.0029851, 0.000482754
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.914, 726.174
+Particle 1 velocity: -0.0029852, 0.000482132
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.868, 726.182
+Particle 1 velocity: -0.0029853, 0.000481505
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.823, 726.189
+Particle 1 velocity: -0.00298541, 0.000480874
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.777, 726.197
+Particle 1 velocity: -0.00298551, 0.00048024
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.73, 726.204
+Particle 1 velocity: -0.00298561, 0.000479601
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.684, 726.211
+Particle 1 velocity: -0.00298571, 0.000478957
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.637, 726.219
+Particle 1 velocity: -0.00298582, 0.00047831
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.59, 726.227
+Particle 1 velocity: -0.00298592, 0.000477659
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.542, 726.234
+Particle 1 velocity: -0.00298603, 0.000477003
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.495, 726.242
+Particle 1 velocity: -0.00298613, 0.000476343
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.446, 726.249
+Particle 1 velocity: -0.00298624, 0.000475679
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.398, 726.257
+Particle 1 velocity: -0.00298634, 0.000475011
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.349, 726.265
+Particle 1 velocity: -0.00298645, 0.000474339
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.3, 726.273
+Particle 1 velocity: -0.00298656, 0.000473663
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.251, 726.28
+Particle 1 velocity: -0.00298667, 0.000472982
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.202, 726.288
+Particle 1 velocity: -0.00298677, 0.000472297
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.152, 726.296
+Particle 1 velocity: -0.00298688, 0.000471609
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.102, 726.304
+Particle 1 velocity: -0.00298699, 0.000470916
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544.051, 726.312
+Particle 1 velocity: -0.0029871, 0.000470219
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 544, 726.32
+Particle 1 velocity: -0.00298721, 0.000469517
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.949, 726.328
+Particle 1 velocity: -0.00298732, 0.000468812
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.898, 726.336
+Particle 1 velocity: -0.00298744, 0.000468102
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.846, 726.344
+Particle 1 velocity: -0.00298755, 0.000467389
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.794, 726.352
+Particle 1 velocity: -0.00298766, 0.000466671
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.742, 726.361
+Particle 1 velocity: -0.00298777, 0.000465949
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.689, 726.369
+Particle 1 velocity: -0.00298788, 0.000465223
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.636, 726.377
+Particle 1 velocity: -0.002988, 0.000464492
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.583, 726.385
+Particle 1 velocity: -0.00298811, 0.000463758
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.53, 726.393
+Particle 1 velocity: -0.00298823, 0.000463019
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.476, 726.402
+Particle 1 velocity: -0.00298834, 0.000462276
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.422, 726.41
+Particle 1 velocity: -0.00298846, 0.000461529
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.367, 726.419
+Particle 1 velocity: -0.00298857, 0.000460778
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.313, 726.427
+Particle 1 velocity: -0.00298869, 0.000460023
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.258, 726.435
+Particle 1 velocity: -0.00298881, 0.000459264
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.202, 726.444
+Particle 1 velocity: -0.00298892, 0.0004585
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.147, 726.452
+Particle 1 velocity: -0.00298904, 0.000457732
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.091, 726.461
+Particle 1 velocity: -0.00298916, 0.00045696
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 543.035, 726.47
+Particle 1 velocity: -0.00298928, 0.000456184
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.978, 726.478
+Particle 1 velocity: -0.0029894, 0.000455404
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.921, 726.487
+Particle 1 velocity: -0.00298952, 0.00045462
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.864, 726.496
+Particle 1 velocity: -0.00298964, 0.000453831
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.807, 726.504
+Particle 1 velocity: -0.00298976, 0.000453039
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.749, 726.513
+Particle 1 velocity: -0.00298988, 0.000452242
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.691, 726.522
+Particle 1 velocity: -0.00299, 0.000451441
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.633, 726.531
+Particle 1 velocity: -0.00299012, 0.000450636
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.574, 726.539
+Particle 1 velocity: -0.00299024, 0.000449826
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.515, 726.548
+Particle 1 velocity: -0.00299036, 0.000449013
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.456, 726.557
+Particle 1 velocity: -0.00299049, 0.000448195
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.397, 726.566
+Particle 1 velocity: -0.00299061, 0.000447373
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.337, 726.575
+Particle 1 velocity: -0.00299073, 0.000446547
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.277, 726.584
+Particle 1 velocity: -0.00299086, 0.000445717
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.216, 726.593
+Particle 1 velocity: -0.00299098, 0.000444883
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.156, 726.602
+Particle 1 velocity: -0.00299111, 0.000444044
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.095, 726.611
+Particle 1 velocity: -0.00299123, 0.000443202
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 542.033, 726.62
+Particle 1 velocity: -0.00299136, 0.000442355
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.972, 726.629
+Particle 1 velocity: -0.00299148, 0.000441504
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.91, 726.638
+Particle 1 velocity: -0.00299161, 0.000440649
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.848, 726.647
+Particle 1 velocity: -0.00299173, 0.000439789
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.785, 726.657
+Particle 1 velocity: -0.00299186, 0.000438926
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.722, 726.666
+Particle 1 velocity: -0.00299199, 0.000438058
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.659, 726.675
+Particle 1 velocity: -0.00299212, 0.000437187
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.596, 726.684
+Particle 1 velocity: -0.00299224, 0.000436311
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.532, 726.694
+Particle 1 velocity: -0.00299237, 0.00043543
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.468, 726.703
+Particle 1 velocity: -0.0029925, 0.000434546
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.403, 726.712
+Particle 1 velocity: -0.00299263, 0.000433658
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.339, 726.722
+Particle 1 velocity: -0.00299276, 0.000432765
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.274, 726.731
+Particle 1 velocity: -0.00299289, 0.000431868
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.209, 726.74
+Particle 1 velocity: -0.00299302, 0.000430967
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.143, 726.75
+Particle 1 velocity: -0.00299315, 0.000430062
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.077, 726.759
+Particle 1 velocity: -0.00299328, 0.000429153
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 541.011, 726.769
+Particle 1 velocity: -0.00299341, 0.000428239
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.945, 726.778
+Particle 1 velocity: -0.00299354, 0.000427321
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.878, 726.788
+Particle 1 velocity: -0.00299367, 0.000426399
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.811, 726.797
+Particle 1 velocity: -0.0029938, 0.000425473
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.743, 726.807
+Particle 1 velocity: -0.00299394, 0.000424543
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.676, 726.816
+Particle 1 velocity: -0.00299407, 0.000423609
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.608, 726.826
+Particle 1 velocity: -0.0029942, 0.00042267
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.54, 726.836
+Particle 1 velocity: -0.00299433, 0.000421727
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.471, 726.845
+Particle 1 velocity: -0.00299447, 0.000420781
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.402, 726.855
+Particle 1 velocity: -0.0029946, 0.000419829
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.333, 726.865
+Particle 1 velocity: -0.00299473, 0.000418874
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.263, 726.874
+Particle 1 velocity: -0.00299487, 0.000417915
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.194, 726.884
+Particle 1 velocity: -0.002995, 0.000416951
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.124, 726.894
+Particle 1 velocity: -0.00299514, 0.000415983
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 540.053, 726.904
+Particle 1 velocity: -0.00299527, 0.000415011
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.983, 726.913
+Particle 1 velocity: -0.00299541, 0.000414035
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.912, 726.923
+Particle 1 velocity: -0.00299554, 0.000413055
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.84, 726.933
+Particle 1 velocity: -0.00299568, 0.00041207
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.769, 726.943
+Particle 1 velocity: -0.00299581, 0.000411081
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.697, 726.953
+Particle 1 velocity: -0.00299595, 0.000410088
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.625, 726.963
+Particle 1 velocity: -0.00299609, 0.000409091
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.552, 726.972
+Particle 1 velocity: -0.00299622, 0.00040809
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.479, 726.982
+Particle 1 velocity: -0.00299636, 0.000407085
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.406, 726.992
+Particle 1 velocity: -0.0029965, 0.000406075
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.333, 727.002
+Particle 1 velocity: -0.00299663, 0.000405061
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.259, 727.012
+Particle 1 velocity: -0.00299677, 0.000404043
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.185, 727.022
+Particle 1 velocity: -0.00299691, 0.000403021
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.111, 727.032
+Particle 1 velocity: -0.00299705, 0.000401995
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 539.036, 727.042
+Particle 1 velocity: -0.00299718, 0.000400964
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.961, 727.052
+Particle 1 velocity: -0.00299732, 0.000399929
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.886, 727.062
+Particle 1 velocity: -0.00299746, 0.00039889
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.81, 727.072
+Particle 1 velocity: -0.0029976, 0.000397847
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.734, 727.082
+Particle 1 velocity: -0.00299774, 0.0003968
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.658, 727.092
+Particle 1 velocity: -0.00299788, 0.000395748
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.582, 727.102
+Particle 1 velocity: -0.00299802, 0.000394693
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.505, 727.113
+Particle 1 velocity: -0.00299816, 0.000393633
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.428, 727.123
+Particle 1 velocity: -0.0029983, 0.000392569
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.351, 727.133
+Particle 1 velocity: -0.00299844, 0.000391501
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.273, 727.143
+Particle 1 velocity: -0.00299858, 0.000390428
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.195, 727.153
+Particle 1 velocity: -0.00299872, 0.000389351
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.117, 727.163
+Particle 1 velocity: -0.00299886, 0.000388271
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 538.038, 727.173
+Particle 1 velocity: -0.002999, 0.000387186
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.959, 727.183
+Particle 1 velocity: -0.00299914, 0.000386096
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.88, 727.194
+Particle 1 velocity: -0.00299928, 0.000385003
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.801, 727.204
+Particle 1 velocity: -0.00299942, 0.000383905
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.721, 727.214
+Particle 1 velocity: -0.00299956, 0.000382804
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.641, 727.224
+Particle 1 velocity: -0.0029997, 0.000381698
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.56, 727.234
+Particle 1 velocity: -0.00299984, 0.000380587
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.48, 727.245
+Particle 1 velocity: -0.00299998, 0.000379473
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.399, 727.255
+Particle 1 velocity: -0.00300012, 0.000378354
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.317, 727.265
+Particle 1 velocity: -0.00300026, 0.000377232
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.236, 727.275
+Particle 1 velocity: -0.00300041, 0.000376105
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.154, 727.286
+Particle 1 velocity: -0.00300055, 0.000374974
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 537.072, 727.296
+Particle 1 velocity: -0.00300069, 0.000373838
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.989, 727.306
+Particle 1 velocity: -0.00300083, 0.000372699
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.906, 727.316
+Particle 1 velocity: -0.00300097, 0.000371555
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.823, 727.327
+Particle 1 velocity: -0.00300111, 0.000370407
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.74, 727.337
+Particle 1 velocity: -0.00300126, 0.000369255
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.656, 727.347
+Particle 1 velocity: -0.0030014, 0.000368098
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.572, 727.358
+Particle 1 velocity: -0.00300154, 0.000366938
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.488, 727.368
+Particle 1 velocity: -0.00300168, 0.000365773
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.403, 727.378
+Particle 1 velocity: -0.00300182, 0.000364604
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.318, 727.388
+Particle 1 velocity: -0.00300197, 0.000363431
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.233, 727.399
+Particle 1 velocity: -0.00300211, 0.000362254
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.147, 727.409
+Particle 1 velocity: -0.00300225, 0.000361072
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 536.061, 727.419
+Particle 1 velocity: -0.00300239, 0.000359886
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.975, 727.43
+Particle 1 velocity: -0.00300254, 0.000358696
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.889, 727.44
+Particle 1 velocity: -0.00300268, 0.000357502
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.802, 727.45
+Particle 1 velocity: -0.00300282, 0.000356304
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.715, 727.461
+Particle 1 velocity: -0.00300296, 0.000355101
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.627, 727.471
+Particle 1 velocity: -0.00300311, 0.000353895
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.54, 727.481
+Particle 1 velocity: -0.00300325, 0.000352684
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.452, 727.492
+Particle 1 velocity: -0.00300339, 0.000351468
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.363, 727.502
+Particle 1 velocity: -0.00300353, 0.000350249
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.275, 727.512
+Particle 1 velocity: -0.00300368, 0.000349025
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.186, 727.523
+Particle 1 velocity: -0.00300382, 0.000347798
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.097, 727.533
+Particle 1 velocity: -0.00300396, 0.000346566
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 535.007, 727.543
+Particle 1 velocity: -0.0030041, 0.000345329
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.917, 727.553
+Particle 1 velocity: -0.00300425, 0.000344089
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.827, 727.564
+Particle 1 velocity: -0.00300439, 0.000342844
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.737, 727.574
+Particle 1 velocity: -0.00300453, 0.000341596
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.646, 727.584
+Particle 1 velocity: -0.00300467, 0.000340342
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.555, 727.595
+Particle 1 velocity: -0.00300481, 0.000339085
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.464, 727.605
+Particle 1 velocity: -0.00300496, 0.000337824
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.372, 727.615
+Particle 1 velocity: -0.0030051, 0.000336558
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.28, 727.625
+Particle 1 velocity: -0.00300524, 0.000335288
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.188, 727.636
+Particle 1 velocity: -0.00300538, 0.000334014
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.095, 727.646
+Particle 1 velocity: -0.00300552, 0.000332736
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 534.002, 727.656
+Particle 1 velocity: -0.00300567, 0.000331453
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.909, 727.667
+Particle 1 velocity: -0.00300581, 0.000330167
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.816, 727.677
+Particle 1 velocity: -0.00300595, 0.000328876
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.722, 727.687
+Particle 1 velocity: -0.00300609, 0.000327581
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.628, 727.697
+Particle 1 velocity: -0.00300623, 0.000326281
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.533, 727.708
+Particle 1 velocity: -0.00300637, 0.000324978
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.439, 727.718
+Particle 1 velocity: -0.00300651, 0.00032367
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.344, 727.728
+Particle 1 velocity: -0.00300665, 0.000322358
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.248, 727.738
+Particle 1 velocity: -0.0030068, 0.000321042
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.153, 727.748
+Particle 1 velocity: -0.00300694, 0.000319721
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 533.057, 727.758
+Particle 1 velocity: -0.00300708, 0.000318397
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.961, 727.769
+Particle 1 velocity: -0.00300722, 0.000317068
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.864, 727.779
+Particle 1 velocity: -0.00300736, 0.000315735
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.767, 727.789
+Particle 1 velocity: -0.0030075, 0.000314397
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.67, 727.799
+Particle 1 velocity: -0.00300764, 0.000313056
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.573, 727.809
+Particle 1 velocity: -0.00300778, 0.00031171
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.475, 727.819
+Particle 1 velocity: -0.00300792, 0.00031036
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.377, 727.829
+Particle 1 velocity: -0.00300806, 0.000309006
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.279, 727.839
+Particle 1 velocity: -0.0030082, 0.000307648
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.18, 727.85
+Particle 1 velocity: -0.00300833, 0.000306285
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 532.081, 727.86
+Particle 1 velocity: -0.00300847, 0.000304918
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.982, 727.87
+Particle 1 velocity: -0.00300861, 0.000303547
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.882, 727.88
+Particle 1 velocity: -0.00300875, 0.000302172
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.782, 727.89
+Particle 1 velocity: -0.00300889, 0.000300793
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.682, 727.9
+Particle 1 velocity: -0.00300903, 0.000299409
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.581, 727.91
+Particle 1 velocity: -0.00300916, 0.000298021
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.481, 727.92
+Particle 1 velocity: -0.0030093, 0.000296629
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.379, 727.93
+Particle 1 velocity: -0.00300944, 0.000295233
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.278, 727.939
+Particle 1 velocity: -0.00300958, 0.000293832
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.176, 727.949
+Particle 1 velocity: -0.00300971, 0.000292427
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 531.074, 727.959
+Particle 1 velocity: -0.00300985, 0.000291018
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.972, 727.969
+Particle 1 velocity: -0.00300999, 0.000289605
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.869, 727.979
+Particle 1 velocity: -0.00301012, 0.000288188
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.766, 727.989
+Particle 1 velocity: -0.00301026, 0.000286766
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.663, 727.999
+Particle 1 velocity: -0.00301039, 0.00028534
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.56, 728.008
+Particle 1 velocity: -0.00301053, 0.00028391
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.456, 728.018
+Particle 1 velocity: -0.00301066, 0.000282476
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.352, 728.028
+Particle 1 velocity: -0.0030108, 0.000281037
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.247, 728.038
+Particle 1 velocity: -0.00301093, 0.000279595
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.142, 728.047
+Particle 1 velocity: -0.00301107, 0.000278148
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 530.037, 728.057
+Particle 1 velocity: -0.0030112, 0.000276696
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.932, 728.067
+Particle 1 velocity: -0.00301133, 0.000275241
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.826, 728.076
+Particle 1 velocity: -0.00301147, 0.000273781
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.72, 728.086
+Particle 1 velocity: -0.0030116, 0.000272317
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.614, 728.096
+Particle 1 velocity: -0.00301173, 0.000270849
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.507, 728.105
+Particle 1 velocity: -0.00301186, 0.000269377
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.4, 728.115
+Particle 1 velocity: -0.003012, 0.0002679
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.293, 728.124
+Particle 1 velocity: -0.00301213, 0.00026642
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.185, 728.134
+Particle 1 velocity: -0.00301226, 0.000264935
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 529.078, 728.143
+Particle 1 velocity: -0.00301239, 0.000263446
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.969, 728.153
+Particle 1 velocity: -0.00301252, 0.000261952
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.861, 728.162
+Particle 1 velocity: -0.00301265, 0.000260454
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.752, 728.171
+Particle 1 velocity: -0.00301278, 0.000258953
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.643, 728.181
+Particle 1 velocity: -0.00301291, 0.000257446
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.534, 728.19
+Particle 1 velocity: -0.00301304, 0.000255936
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.424, 728.199
+Particle 1 velocity: -0.00301316, 0.000254422
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.314, 728.209
+Particle 1 velocity: -0.00301329, 0.000252903
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.204, 728.218
+Particle 1 velocity: -0.00301342, 0.00025138
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 528.093, 728.227
+Particle 1 velocity: -0.00301355, 0.000249852
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.982, 728.236
+Particle 1 velocity: -0.00301367, 0.000248321
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.871, 728.245
+Particle 1 velocity: -0.0030138, 0.000246785
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.76, 728.254
+Particle 1 velocity: -0.00301392, 0.000245245
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.648, 728.263
+Particle 1 velocity: -0.00301405, 0.000243701
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.536, 728.272
+Particle 1 velocity: -0.00301417, 0.000242153
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.423, 728.281
+Particle 1 velocity: -0.0030143, 0.0002406
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.311, 728.29
+Particle 1 velocity: -0.00301442, 0.000239043
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.197, 728.299
+Particle 1 velocity: -0.00301455, 0.000237482
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 527.084, 728.308
+Particle 1 velocity: -0.00301467, 0.000235917
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.97, 728.317
+Particle 1 velocity: -0.00301479, 0.000234348
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.857, 728.326
+Particle 1 velocity: -0.00301491, 0.000232774
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.742, 728.335
+Particle 1 velocity: -0.00301503, 0.000231196
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.628, 728.344
+Particle 1 velocity: -0.00301516, 0.000229614
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.513, 728.352
+Particle 1 velocity: -0.00301528, 0.000228027
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.398, 728.361
+Particle 1 velocity: -0.0030154, 0.000226437
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.282, 728.37
+Particle 1 velocity: -0.00301552, 0.000224842
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.166, 728.378
+Particle 1 velocity: -0.00301563, 0.000223243
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 526.05, 728.387
+Particle 1 velocity: -0.00301575, 0.000221639
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.934, 728.395
+Particle 1 velocity: -0.00301587, 0.000220032
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.817, 728.404
+Particle 1 velocity: -0.00301599, 0.00021842
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.7, 728.412
+Particle 1 velocity: -0.0030161, 0.000216804
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.583, 728.421
+Particle 1 velocity: -0.00301622, 0.000215184
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.465, 728.429
+Particle 1 velocity: -0.00301634, 0.000213559
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.347, 728.437
+Particle 1 velocity: -0.00301645, 0.000211931
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.229, 728.446
+Particle 1 velocity: -0.00301656, 0.000210298
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 525.11, 728.454
+Particle 1 velocity: -0.00301668, 0.000208661
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.992, 728.462
+Particle 1 velocity: -0.00301679, 0.000207019
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.872, 728.47
+Particle 1 velocity: -0.0030169, 0.000205374
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.753, 728.478
+Particle 1 velocity: -0.00301702, 0.000203724
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.633, 728.486
+Particle 1 velocity: -0.00301713, 0.00020207
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.513, 728.494
+Particle 1 velocity: -0.00301724, 0.000200412
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.393, 728.502
+Particle 1 velocity: -0.00301735, 0.000198749
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.272, 728.51
+Particle 1 velocity: -0.00301746, 0.000197082
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.151, 728.518
+Particle 1 velocity: -0.00301757, 0.000195411
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 524.03, 728.526
+Particle 1 velocity: -0.00301767, 0.000193736
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.908, 728.534
+Particle 1 velocity: -0.00301778, 0.000192057
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.786, 728.541
+Particle 1 velocity: -0.00301789, 0.000190373
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.664, 728.549
+Particle 1 velocity: -0.00301799, 0.000188685
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.541, 728.557
+Particle 1 velocity: -0.0030181, 0.000186993
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.418, 728.564
+Particle 1 velocity: -0.0030182, 0.000185297
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.295, 728.572
+Particle 1 velocity: -0.00301831, 0.000183596
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.172, 728.579
+Particle 1 velocity: -0.00301841, 0.000181892
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 523.048, 728.587
+Particle 1 velocity: -0.00301851, 0.000180183
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.924, 728.594
+Particle 1 velocity: -0.00301861, 0.000178469
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.8, 728.601
+Particle 1 velocity: -0.00301872, 0.000176752
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.675, 728.609
+Particle 1 velocity: -0.00301882, 0.00017503
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.55, 728.616
+Particle 1 velocity: -0.00301892, 0.000173304
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.425, 728.623
+Particle 1 velocity: -0.00301901, 0.000171574
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.299, 728.63
+Particle 1 velocity: -0.00301911, 0.00016984
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.173, 728.637
+Particle 1 velocity: -0.00301921, 0.000168101
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 522.047, 728.644
+Particle 1 velocity: -0.00301931, 0.000166359
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.921, 728.651
+Particle 1 velocity: -0.0030194, 0.000164612
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.794, 728.658
+Particle 1 velocity: -0.0030195, 0.00016286
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.667, 728.665
+Particle 1 velocity: -0.00301959, 0.000161105
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.539, 728.671
+Particle 1 velocity: -0.00301968, 0.000159345
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.411, 728.678
+Particle 1 velocity: -0.00301978, 0.000157581
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.283, 728.685
+Particle 1 velocity: -0.00301987, 0.000155813
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.155, 728.691
+Particle 1 velocity: -0.00301996, 0.000154041
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 521.026, 728.698
+Particle 1 velocity: -0.00302005, 0.000152264
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 520.897, 728.704
+Particle 1 velocity: -0.00302014, 0.000150483
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 520.768, 728.711
+Particle 1 velocity: -0.00302023, 0.000148698
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 520.639, 728.717
+Particle 1 velocity: -0.00302032, 0.000146909
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 520.509, 728.723
+Particle 1 velocity: -0.0030204, 0.000145115
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 520.379, 728.73
+Particle 1 velocity: -0.00302049, 0.000143318
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 520.248, 728.736
+Particle 1 velocity: -0.00302057, 0.000141516
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 520.117, 728.742
+Particle 1 velocity: -0.00302066, 0.00013971
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.986, 728.748
+Particle 1 velocity: -0.00302074, 0.000137899
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.855, 728.754
+Particle 1 velocity: -0.00302082, 0.000136085
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.723, 728.76
+Particle 1 velocity: -0.0030209, 0.000134266
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.591, 728.766
+Particle 1 velocity: -0.00302098, 0.000132443
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.459, 728.771
+Particle 1 velocity: -0.00302106, 0.000130616
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.326, 728.777
+Particle 1 velocity: -0.00302114, 0.000128784
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.193, 728.783
+Particle 1 velocity: -0.00302122, 0.000126948
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 519.06, 728.788
+Particle 1 velocity: -0.0030213, 0.000125108
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 518.926, 728.794
+Particle 1 velocity: -0.00302137, 0.000123264
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 518.793, 728.799
+Particle 1 velocity: -0.00302145, 0.000121416
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 518.658, 728.804
+Particle 1 velocity: -0.00302152, 0.000119563
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 518.524, 728.81
+Particle 1 velocity: -0.00302159, 0.000117707
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 518.389, 728.815
+Particle 1 velocity: -0.00302167, 0.000115846
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 518.254, 728.82
+Particle 1 velocity: -0.00302174, 0.00011398
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 518.119, 728.825
+Particle 1 velocity: -0.00302181, 0.000112111
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.983, 728.83
+Particle 1 velocity: -0.00302188, 0.000110237
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.847, 728.835
+Particle 1 velocity: -0.00302194, 0.000108359
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.711, 728.84
+Particle 1 velocity: -0.00302201, 0.000106477
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.574, 728.845
+Particle 1 velocity: -0.00302208, 0.000104591
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.437, 728.849
+Particle 1 velocity: -0.00302214, 0.0001027
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.3, 728.854
+Particle 1 velocity: -0.00302221, 0.000100806
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.163, 728.859
+Particle 1 velocity: -0.00302227, 9.89068e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 517.025, 728.863
+Particle 1 velocity: -0.00302233, 9.70036e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 516.887, 728.867
+Particle 1 velocity: -0.00302239, 9.50963e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 516.748, 728.872
+Particle 1 velocity: -0.00302245, 9.31847e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 516.609, 728.876
+Particle 1 velocity: -0.00302251, 9.12689e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 516.47, 728.88
+Particle 1 velocity: -0.00302257, 8.93489e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 516.331, 728.884
+Particle 1 velocity: -0.00302262, 8.74247e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 516.191, 728.888
+Particle 1 velocity: -0.00302268, 8.54963e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 516.051, 728.892
+Particle 1 velocity: -0.00302273, 8.35636e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 515.911, 728.896
+Particle 1 velocity: -0.00302278, 8.16268e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 515.771, 728.9
+Particle 1 velocity: -0.00302284, 7.96858e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 515.63, 728.903
+Particle 1 velocity: -0.00302289, 7.77405e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 515.489, 728.907
+Particle 1 velocity: -0.00302294, 7.5791e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 515.347, 728.91
+Particle 1 velocity: -0.00302298, 7.38374e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 515.205, 728.914
+Particle 1 velocity: -0.00302303, 7.18795e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 515.063, 728.917
+Particle 1 velocity: -0.00302308, 6.99174e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 514.921, 728.92
+Particle 1 velocity: -0.00302312, 6.79512e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 514.778, 728.924
+Particle 1 velocity: -0.00302317, 6.59807e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 514.635, 728.927
+Particle 1 velocity: -0.00302321, 6.4006e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 514.492, 728.93
+Particle 1 velocity: -0.00302325, 6.20271e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 514.348, 728.933
+Particle 1 velocity: -0.00302329, 6.0044e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 514.204, 728.935
+Particle 1 velocity: -0.00302333, 5.80567e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 514.06, 728.938
+Particle 1 velocity: -0.00302337, 5.60652e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 513.916, 728.941
+Particle 1 velocity: -0.0030234, 5.40695e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 513.771, 728.943
+Particle 1 velocity: -0.00302344, 5.20696e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 513.626, 728.946
+Particle 1 velocity: -0.00302347, 5.00656e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 513.48, 728.948
+Particle 1 velocity: -0.0030235, 4.80573e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 513.335, 728.95
+Particle 1 velocity: -0.00302354, 4.60448e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 513.189, 728.953
+Particle 1 velocity: -0.00302357, 4.40281e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 513.042, 728.955
+Particle 1 velocity: -0.00302359, 4.20072e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 512.896, 728.957
+Particle 1 velocity: -0.00302362, 3.99822e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 512.749, 728.958
+Particle 1 velocity: -0.00302365, 3.79529e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 512.601, 728.96
+Particle 1 velocity: -0.00302367, 3.59195e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 512.454, 728.962
+Particle 1 velocity: -0.0030237, 3.38818e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 512.306, 728.964
+Particle 1 velocity: -0.00302372, 3.184e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 512.158, 728.965
+Particle 1 velocity: -0.00302374, 2.9794e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 512.009, 728.967
+Particle 1 velocity: -0.00302376, 2.77438e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 511.861, 728.968
+Particle 1 velocity: -0.00302378, 2.56894e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 511.711, 728.969
+Particle 1 velocity: -0.00302379, 2.36308e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 511.562, 728.97
+Particle 1 velocity: -0.00302381, 2.1568e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 511.412, 728.971
+Particle 1 velocity: -0.00302382, 1.9501e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 511.262, 728.972
+Particle 1 velocity: -0.00302384, 1.74299e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 511.112, 728.973
+Particle 1 velocity: -0.00302385, 1.53546e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 510.962, 728.974
+Particle 1 velocity: -0.00302386, 1.3275e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 510.811, 728.974
+Particle 1 velocity: -0.00302387, 1.11913e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 510.659, 728.975
+Particle 1 velocity: -0.00302387, 9.10347e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 510.508, 728.975
+Particle 1 velocity: -0.00302388, 7.01141e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 510.356, 728.975
+Particle 1 velocity: -0.00302388, 4.91517e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 510.204, 728.976
+Particle 1 velocity: -0.00302388, 2.81476e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 510.052, 728.976
+Particle 1 velocity: -0.00302389, 7.10169e-07
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 509.899, 728.976
+Particle 1 velocity: -0.00302389, -1.3986e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 509.746, 728.976
+Particle 1 velocity: -0.00302388, -3.51154e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 509.593, 728.975
+Particle 1 velocity: -0.00302388, -5.62866e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 509.439, 728.975
+Particle 1 velocity: -0.00302388, -7.74995e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 509.285, 728.975
+Particle 1 velocity: -0.00302387, -9.87541e-06
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 509.131, 728.974
+Particle 1 velocity: -0.00302386, -1.2005e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 508.976, 728.973
+Particle 1 velocity: -0.00302385, -1.41388e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 508.822, 728.973
+Particle 1 velocity: -0.00302384, -1.62768e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 508.666, 728.972
+Particle 1 velocity: -0.00302383, -1.8419e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 508.511, 728.971
+Particle 1 velocity: -0.00302382, -2.05653e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 508.355, 728.97
+Particle 1 velocity: -0.0030238, -2.27157e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 508.199, 728.968
+Particle 1 velocity: -0.00302378, -2.48704e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 508.043, 728.967
+Particle 1 velocity: -0.00302377, -2.70292e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 507.886, 728.966
+Particle 1 velocity: -0.00302374, -2.91921e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 507.729, 728.964
+Particle 1 velocity: -0.00302372, -3.13592e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 507.572, 728.962
+Particle 1 velocity: -0.0030237, -3.35305e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 507.415, 728.96
+Particle 1 velocity: -0.00302368, -3.5706e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 507.257, 728.959
+Particle 1 velocity: -0.00302365, -3.78855e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 507.099, 728.957
+Particle 1 velocity: -0.00302362, -4.00693e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 506.94, 728.954
+Particle 1 velocity: -0.00302359, -4.22572e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 506.781, 728.952
+Particle 1 velocity: -0.00302356, -4.44493e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 506.622, 728.95
+Particle 1 velocity: -0.00302353, -4.66455e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 506.463, 728.947
+Particle 1 velocity: -0.00302349, -4.88458e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 506.303, 728.945
+Particle 1 velocity: -0.00302345, -5.10503e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 506.143, 728.942
+Particle 1 velocity: -0.00302342, -5.3259e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 505.983, 728.939
+Particle 1 velocity: -0.00302338, -5.54718e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 505.823, 728.936
+Particle 1 velocity: -0.00302334, -5.76887e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 505.662, 728.933
+Particle 1 velocity: -0.00302329, -5.99098e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 505.501, 728.93
+Particle 1 velocity: -0.00302325, -6.21351e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 505.339, 728.926
+Particle 1 velocity: -0.0030232, -6.43645e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 505.178, 728.923
+Particle 1 velocity: -0.00302315, -6.6598e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 505.015, 728.919
+Particle 1 velocity: -0.0030231, -6.88356e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 504.853, 728.915
+Particle 1 velocity: -0.00302305, -7.10774e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 504.691, 728.911
+Particle 1 velocity: -0.003023, -7.33233e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 504.528, 728.907
+Particle 1 velocity: -0.00302294, -7.55734e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 504.364, 728.903
+Particle 1 velocity: -0.00302288, -7.78276e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 504.201, 728.899
+Particle 1 velocity: -0.00302283, -8.00859e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 504.037, 728.895
+Particle 1 velocity: -0.00302276, -8.23484e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 503.873, 728.89
+Particle 1 velocity: -0.0030227, -8.4615e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 503.708, 728.885
+Particle 1 velocity: -0.00302264, -8.68857e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 503.544, 728.881
+Particle 1 velocity: -0.00302257, -8.91605e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 503.379, 728.876
+Particle 1 velocity: -0.0030225, -9.14395e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 503.213, 728.871
+Particle 1 velocity: -0.00302243, -9.37225e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 503.048, 728.865
+Particle 1 velocity: -0.00302236, -9.60097e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 502.882, 728.86
+Particle 1 velocity: -0.00302229, -9.83011e-05
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 502.716, 728.855
+Particle 1 velocity: -0.00302221, -0.000100596
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 502.549, 728.849
+Particle 1 velocity: -0.00302213, -0.000102896
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 502.382, 728.843
+Particle 1 velocity: -0.00302206, -0.0001052
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 502.215, 728.837
+Particle 1 velocity: -0.00302197, -0.000107507
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 502.048, 728.831
+Particle 1 velocity: -0.00302189, -0.000109819
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 501.88, 728.825
+Particle 1 velocity: -0.00302181, -0.000112135
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 501.712, 728.819
+Particle 1 velocity: -0.00302172, -0.000114455
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 501.544, 728.812
+Particle 1 velocity: -0.00302163, -0.00011678
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 501.375, 728.806
+Particle 1 velocity: -0.00302154, -0.000119108
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 501.206, 728.799
+Particle 1 velocity: -0.00302145, -0.00012144
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 501.037, 728.792
+Particle 1 velocity: -0.00302135, -0.000123777
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 500.867, 728.785
+Particle 1 velocity: -0.00302125, -0.000126118
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 500.698, 728.778
+Particle 1 velocity: -0.00302116, -0.000128462
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 500.528, 728.771
+Particle 1 velocity: -0.00302106, -0.000130811
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 500.357, 728.763
+Particle 1 velocity: -0.00302095, -0.000133164
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 500.186, 728.756
+Particle 1 velocity: -0.00302085, -0.000135521
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 500.016, 728.748
+Particle 1 velocity: -0.00302074, -0.000137882
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 499.844, 728.74
+Particle 1 velocity: -0.00302063, -0.000140247
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 499.673, 728.732
+Particle 1 velocity: -0.00302052, -0.000142616
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 499.501, 728.724
+Particle 1 velocity: -0.00302041, -0.00014499
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 499.329, 728.716
+Particle 1 velocity: -0.00302029, -0.000147367
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 499.156, 728.707
+Particle 1 velocity: -0.00302018, -0.000149749
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 498.983, 728.698
+Particle 1 velocity: -0.00302006, -0.000152134
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 498.81, 728.69
+Particle 1 velocity: -0.00301994, -0.000154524
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 498.637, 728.681
+Particle 1 velocity: -0.00301981, -0.000156918
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 498.463, 728.672
+Particle 1 velocity: -0.00301969, -0.000159315
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 498.289, 728.662
+Particle 1 velocity: -0.00301956, -0.000161717
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 498.115, 728.653
+Particle 1 velocity: -0.00301943, -0.000164123
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 497.941, 728.643
+Particle 1 velocity: -0.0030193, -0.000166533
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 497.766, 728.634
+Particle 1 velocity: -0.00301916, -0.000168947
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 497.591, 728.624
+Particle 1 velocity: -0.00301903, -0.000171365
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 497.415, 728.614
+Particle 1 velocity: -0.00301889, -0.000173787
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 497.24, 728.604
+Particle 1 velocity: -0.00301875, -0.000176214
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 497.064, 728.593
+Particle 1 velocity: -0.0030186, -0.000178644
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 496.887, 728.583
+Particle 1 velocity: -0.00301846, -0.000181078
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 496.711, 728.572
+Particle 1 velocity: -0.00301831, -0.000183517
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 496.534, 728.561
+Particle 1 velocity: -0.00301816, -0.000185959
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 496.357, 728.55
+Particle 1 velocity: -0.00301801, -0.000188406
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 496.179, 728.539
+Particle 1 velocity: -0.00301786, -0.000190856
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 496.002, 728.528
+Particle 1 velocity: -0.0030177, -0.000193311
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 495.824, 728.516
+Particle 1 velocity: -0.00301754, -0.000195769
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 495.645, 728.505
+Particle 1 velocity: -0.00301738, -0.000198232
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 495.467, 728.493
+Particle 1 velocity: -0.00301722, -0.000200699
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 495.288, 728.481
+Particle 1 velocity: -0.00301705, -0.000203169
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 495.109, 728.469
+Particle 1 velocity: -0.00301689, -0.000205644
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 494.929, 728.456
+Particle 1 velocity: -0.00301672, -0.000208123
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 494.749, 728.444
+Particle 1 velocity: -0.00301654, -0.000210606
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 494.569, 728.431
+Particle 1 velocity: -0.00301637, -0.000213092
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 494.389, 728.419
+Particle 1 velocity: -0.00301619, -0.000215583
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 494.208, 728.406
+Particle 1 velocity: -0.00301601, -0.000218078
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 494.027, 728.392
+Particle 1 velocity: -0.00301583, -0.000220577
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 493.846, 728.379
+Particle 1 velocity: -0.00301565, -0.00022308
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 493.664, 728.366
+Particle 1 velocity: -0.00301546, -0.000225587
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 493.483, 728.352
+Particle 1 velocity: -0.00301527, -0.000228098
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 493.3, 728.338
+Particle 1 velocity: -0.00301508, -0.000230613
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 493.118, 728.324
+Particle 1 velocity: -0.00301489, -0.000233131
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 492.935, 728.31
+Particle 1 velocity: -0.00301469, -0.000235654
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 492.752, 728.295
+Particle 1 velocity: -0.00301449, -0.000238181
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 492.569, 728.281
+Particle 1 velocity: -0.00301429, -0.000240712
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 492.385, 728.266
+Particle 1 velocity: -0.00301409, -0.000243247
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 492.202, 728.251
+Particle 1 velocity: -0.00301388, -0.000245786
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 492.018, 728.236
+Particle 1 velocity: -0.00301367, -0.000248329
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 491.833, 728.221
+Particle 1 velocity: -0.00301346, -0.000250876
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 491.648, 728.205
+Particle 1 velocity: -0.00301325, -0.000253426
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 491.463, 728.19
+Particle 1 velocity: -0.00301303, -0.000255981
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 491.278, 728.174
+Particle 1 velocity: -0.00301281, -0.00025854
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 491.092, 728.158
+Particle 1 velocity: -0.00301259, -0.000261103
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 490.907, 728.142
+Particle 1 velocity: -0.00301237, -0.00026367
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 490.72, 728.125
+Particle 1 velocity: -0.00301214, -0.00026624
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 490.534, 728.109
+Particle 1 velocity: -0.00301191, -0.000268815
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 490.347, 728.092
+Particle 1 velocity: -0.00301168, -0.000271394
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 490.16, 728.075
+Particle 1 velocity: -0.00301145, -0.000273976
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 489.973, 728.058
+Particle 1 velocity: -0.00301121, -0.000276563
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 489.785, 728.041
+Particle 1 velocity: -0.00301097, -0.000279153
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 489.597, 728.023
+Particle 1 velocity: -0.00301073, -0.000281748
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 489.409, 728.005
+Particle 1 velocity: -0.00301049, -0.000284346
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 489.221, 727.988
+Particle 1 velocity: -0.00301024, -0.000286948
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 489.032, 727.97
+Particle 1 velocity: -0.00300999, -0.000289555
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 488.843, 727.951
+Particle 1 velocity: -0.00300974, -0.000292165
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 488.654, 727.933
+Particle 1 velocity: -0.00300948, -0.000294779
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 488.464, 727.914
+Particle 1 velocity: -0.00300923, -0.000297397
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 488.274, 727.895
+Particle 1 velocity: -0.00300897, -0.000300019
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 488.084, 727.876
+Particle 1 velocity: -0.0030087, -0.000302645
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 487.894, 727.857
+Particle 1 velocity: -0.00300844, -0.000305275
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 487.703, 727.838
+Particle 1 velocity: -0.00300817, -0.000307909
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 487.512, 727.818
+Particle 1 velocity: -0.0030079, -0.000310547
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 487.321, 727.798
+Particle 1 velocity: -0.00300762, -0.000313188
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 487.129, 727.778
+Particle 1 velocity: -0.00300735, -0.000315834
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 486.937, 727.758
+Particle 1 velocity: -0.00300707, -0.000318483
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 486.745, 727.737
+Particle 1 velocity: -0.00300679, -0.000321137
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 486.553, 727.717
+Particle 1 velocity: -0.0030065, -0.000323794
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 486.36, 727.696
+Particle 1 velocity: -0.00300621, -0.000326455
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 486.167, 727.675
+Particle 1 velocity: -0.00300592, -0.00032912
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 485.974, 727.654
+Particle 1 velocity: -0.00300563, -0.000331789
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 485.78, 727.632
+Particle 1 velocity: -0.00300533, -0.000334462
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 485.586, 727.611
+Particle 1 velocity: -0.00300503, -0.000337139
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 485.392, 727.589
+Particle 1 velocity: -0.00300473, -0.000339819
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 485.198, 727.567
+Particle 1 velocity: -0.00300443, -0.000342504
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 485.003, 727.544
+Particle 1 velocity: -0.00300412, -0.000345192
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 484.808, 727.522
+Particle 1 velocity: -0.00300381, -0.000347884
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 484.613, 727.499
+Particle 1 velocity: -0.00300349, -0.00035058
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 484.417, 727.476
+Particle 1 velocity: -0.00300318, -0.00035328
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 484.222, 727.453
+Particle 1 velocity: -0.00300286, -0.000355984
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 484.026, 727.43
+Particle 1 velocity: -0.00300254, -0.000358692
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 483.829, 727.406
+Particle 1 velocity: -0.00300221, -0.000361403
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 483.633, 727.382
+Particle 1 velocity: -0.00300188, -0.000364119
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 483.436, 727.358
+Particle 1 velocity: -0.00300155, -0.000366838
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 483.238, 727.334
+Particle 1 velocity: -0.00300122, -0.000369561
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 483.041, 727.31
+Particle 1 velocity: -0.00300088, -0.000372288
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 482.843, 727.285
+Particle 1 velocity: -0.00300054, -0.000375019
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 482.645, 727.26
+Particle 1 velocity: -0.0030002, -0.000377753
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 482.447, 727.235
+Particle 1 velocity: -0.00299985, -0.000380492
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 482.248, 727.21
+Particle 1 velocity: -0.0029995, -0.000383234
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 482.05, 727.185
+Particle 1 velocity: -0.00299915, -0.00038598
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 481.85, 727.159
+Particle 1 velocity: -0.0029988, -0.00038873
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 481.651, 727.133
+Particle 1 velocity: -0.00299844, -0.000391483
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 481.451, 727.107
+Particle 1 velocity: -0.00299808, -0.000394241
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 481.251, 727.08
+Particle 1 velocity: -0.00299771, -0.000397002
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 481.051, 727.054
+Particle 1 velocity: -0.00299734, -0.000399767
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 480.851, 727.027
+Particle 1 velocity: -0.00299697, -0.000402536
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 480.65, 727
+Particle 1 velocity: -0.0029966, -0.000405309
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 480.449, 726.973
+Particle 1 velocity: -0.00299622, -0.000408085
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 480.247, 726.945
+Particle 1 velocity: -0.00299584, -0.000410866
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 480.046, 726.917
+Particle 1 velocity: -0.00299546, -0.00041365
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 479.844, 726.889
+Particle 1 velocity: -0.00299507, -0.000416438
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 479.642, 726.861
+Particle 1 velocity: -0.00299468, -0.000419229
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 479.439, 726.833
+Particle 1 velocity: -0.00299429, -0.000422025
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 479.237, 726.804
+Particle 1 velocity: -0.0029939, -0.000424824
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 479.034, 726.775
+Particle 1 velocity: -0.0029935, -0.000427627
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 478.83, 726.746
+Particle 1 velocity: -0.00299309, -0.000430433
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 478.627, 726.717
+Particle 1 velocity: -0.00299269, -0.000433244
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 478.423, 726.687
+Particle 1 velocity: -0.00299228, -0.000436058
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 478.219, 726.657
+Particle 1 velocity: -0.00299187, -0.000438876
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 478.015, 726.627
+Particle 1 velocity: -0.00299145, -0.000441698
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 477.81, 726.597
+Particle 1 velocity: -0.00299103, -0.000444523
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 477.605, 726.566
+Particle 1 velocity: -0.00299061, -0.000447352
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 477.4, 726.535
+Particle 1 velocity: -0.00299019, -0.000450185
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 477.195, 726.504
+Particle 1 velocity: -0.00298976, -0.000453022
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 476.989, 726.473
+Particle 1 velocity: -0.00298933, -0.000455862
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 476.783, 726.442
+Particle 1 velocity: -0.00298889, -0.000458706
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 476.577, 726.41
+Particle 1 velocity: -0.00298845, -0.000461554
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 476.37, 726.378
+Particle 1 velocity: -0.00298801, -0.000464405
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 476.164, 726.346
+Particle 1 velocity: -0.00298757, -0.00046726
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 475.957, 726.313
+Particle 1 velocity: -0.00298712, -0.000470119
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 475.749, 726.28
+Particle 1 velocity: -0.00298667, -0.000472982
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 475.542, 726.247
+Particle 1 velocity: -0.00298621, -0.000475848
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 475.334, 726.214
+Particle 1 velocity: -0.00298575, -0.000478718
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 475.126, 726.181
+Particle 1 velocity: -0.00298529, -0.000481591
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 474.917, 726.147
+Particle 1 velocity: -0.00298482, -0.000484469
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 474.709, 726.113
+Particle 1 velocity: -0.00298436, -0.000487349
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 474.5, 726.079
+Particle 1 velocity: -0.00298388, -0.000490234
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 474.291, 726.044
+Particle 1 velocity: -0.00298341, -0.000493122
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 474.081, 726.01
+Particle 1 velocity: -0.00298293, -0.000496014
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 473.872, 725.975
+Particle 1 velocity: -0.00298244, -0.00049891
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 473.662, 725.94
+Particle 1 velocity: -0.00298196, -0.000501809
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 473.452, 725.904
+Particle 1 velocity: -0.00298147, -0.000504712
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 473.241, 725.868
+Particle 1 velocity: -0.00298097, -0.000507618
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 473.03, 725.832
+Particle 1 velocity: -0.00298048, -0.000510529
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 472.819, 725.796
+Particle 1 velocity: -0.00297998, -0.000513442
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 472.608, 725.76
+Particle 1 velocity: -0.00297947, -0.00051636
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 472.397, 725.723
+Particle 1 velocity: -0.00297897, -0.000519281
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 472.185, 725.686
+Particle 1 velocity: -0.00297845, -0.000522205
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 471.973, 725.648
+Particle 1 velocity: -0.00297794, -0.000525134
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 471.76, 725.611
+Particle 1 velocity: -0.00297742, -0.000528065
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 471.548, 725.573
+Particle 1 velocity: -0.0029769, -0.000531001
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 471.335, 725.535
+Particle 1 velocity: -0.00297637, -0.00053394
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 471.122, 725.497
+Particle 1 velocity: -0.00297584, -0.000536883
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 470.909, 725.458
+Particle 1 velocity: -0.00297531, -0.000539829
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 470.695, 725.419
+Particle 1 velocity: -0.00297477, -0.000542779
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 470.481, 725.38
+Particle 1 velocity: -0.00297423, -0.000545732
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 470.267, 725.341
+Particle 1 velocity: -0.00297369, -0.000548689
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 470.053, 725.301
+Particle 1 velocity: -0.00297314, -0.000551649
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 469.838, 725.261
+Particle 1 velocity: -0.00297259, -0.000554613
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 469.623, 725.221
+Particle 1 velocity: -0.00297203, -0.000557581
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 469.408, 725.18
+Particle 1 velocity: -0.00297148, -0.000560552
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 469.192, 725.14
+Particle 1 velocity: -0.00297091, -0.000563527
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 468.977, 725.099
+Particle 1 velocity: -0.00297035, -0.000566505
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 468.761, 725.057
+Particle 1 velocity: -0.00296978, -0.000569487
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 468.545, 725.016
+Particle 1 velocity: -0.0029692, -0.000572472
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 468.328, 724.974
+Particle 1 velocity: -0.00296862, -0.000575461
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 468.112, 724.932
+Particle 1 velocity: -0.00296804, -0.000578453
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 467.895, 724.889
+Particle 1 velocity: -0.00296746, -0.000581449
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 467.677, 724.847
+Particle 1 velocity: -0.00296687, -0.000584448
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 467.46, 724.804
+Particle 1 velocity: -0.00296627, -0.000587451
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 467.242, 724.761
+Particle 1 velocity: -0.00296568, -0.000590457
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 467.024, 724.717
+Particle 1 velocity: -0.00296508, -0.000593467
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 466.806, 724.673
+Particle 1 velocity: -0.00296447, -0.000596481
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 466.588, 724.629
+Particle 1 velocity: -0.00296386, -0.000599497
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 466.369, 724.585
+Particle 1 velocity: -0.00296325, -0.000602518
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 466.15, 724.54
+Particle 1 velocity: -0.00296263, -0.000605541
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 465.931, 724.495
+Particle 1 velocity: -0.00296201, -0.000608568
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 465.711, 724.45
+Particle 1 velocity: -0.00296139, -0.000611599
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 465.492, 724.405
+Particle 1 velocity: -0.00296076, -0.000614633
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 465.272, 724.359
+Particle 1 velocity: -0.00296013, -0.000617671
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 465.051, 724.313
+Particle 1 velocity: -0.00295949, -0.000620712
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 464.831, 724.266
+Particle 1 velocity: -0.00295885, -0.000623756
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 464.61, 724.22
+Particle 1 velocity: -0.00295821, -0.000626804
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 464.389, 724.173
+Particle 1 velocity: -0.00295756, -0.000629855
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 464.168, 724.126
+Particle 1 velocity: -0.00295691, -0.00063291
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 463.947, 724.078
+Particle 1 velocity: -0.00295625, -0.000635968
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 463.725, 724.03
+Particle 1 velocity: -0.00295559, -0.000639029
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 463.503, 723.982
+Particle 1 velocity: -0.00295493, -0.000642094
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 463.281, 723.934
+Particle 1 velocity: -0.00295426, -0.000645162
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 463.058, 723.885
+Particle 1 velocity: -0.00295359, -0.000648234
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 462.836, 723.836
+Particle 1 velocity: -0.00295291, -0.000651309
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 462.613, 723.787
+Particle 1 velocity: -0.00295223, -0.000654387
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 462.39, 723.737
+Particle 1 velocity: -0.00295155, -0.000657469
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 462.166, 723.687
+Particle 1 velocity: -0.00295086, -0.000660554
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 461.943, 723.637
+Particle 1 velocity: -0.00295016, -0.000663642
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 461.719, 723.587
+Particle 1 velocity: -0.00294947, -0.000666734
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 461.495, 723.536
+Particle 1 velocity: -0.00294876, -0.000669829
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 461.27, 723.485
+Particle 1 velocity: -0.00294806, -0.000672928
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 461.046, 723.433
+Particle 1 velocity: -0.00294735, -0.00067603
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 460.821, 723.382
+Particle 1 velocity: -0.00294664, -0.000679135
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 460.596, 723.33
+Particle 1 velocity: -0.00294592, -0.000682243
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 460.37, 723.277
+Particle 1 velocity: -0.0029452, -0.000685355
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 460.145, 723.225
+Particle 1 velocity: -0.00294447, -0.00068847
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 459.919, 723.172
+Particle 1 velocity: -0.00294374, -0.000691588
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 459.693, 723.119
+Particle 1 velocity: -0.002943, -0.00069471
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 459.467, 723.065
+Particle 1 velocity: -0.00294226, -0.000697835
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 459.24, 723.011
+Particle 1 velocity: -0.00294152, -0.000700963
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 459.013, 722.957
+Particle 1 velocity: -0.00294077, -0.000704094
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 458.786, 722.903
+Particle 1 velocity: -0.00294002, -0.000707229
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 458.559, 722.848
+Particle 1 velocity: -0.00293926, -0.000710367
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 458.332, 722.793
+Particle 1 velocity: -0.0029385, -0.000713508
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 458.104, 722.737
+Particle 1 velocity: -0.00293774, -0.000716652
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 457.876, 722.681
+Particle 1 velocity: -0.00293697, -0.0007198
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 457.648, 722.625
+Particle 1 velocity: -0.00293619, -0.000722951
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 457.419, 722.569
+Particle 1 velocity: -0.00293541, -0.000726105
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 457.191, 722.512
+Particle 1 velocity: -0.00293463, -0.000729263
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 456.962, 722.455
+Particle 1 velocity: -0.00293384, -0.000732423
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 456.733, 722.398
+Particle 1 velocity: -0.00293305, -0.000735587
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 456.503, 722.34
+Particle 1 velocity: -0.00293226, -0.000738754
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 456.274, 722.282
+Particle 1 velocity: -0.00293146, -0.000741924
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 456.044, 722.224
+Particle 1 velocity: -0.00293065, -0.000745097
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 455.814, 722.166
+Particle 1 velocity: -0.00292984, -0.000748274
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 455.584, 722.107
+Particle 1 velocity: -0.00292903, -0.000751453
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 455.353, 722.047
+Particle 1 velocity: -0.00292821, -0.000754636
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 455.123, 721.988
+Particle 1 velocity: -0.00292739, -0.000757822
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 454.892, 721.928
+Particle 1 velocity: -0.00292656, -0.000761011
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 454.66, 721.868
+Particle 1 velocity: -0.00292573, -0.000764203
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 454.429, 721.807
+Particle 1 velocity: -0.00292489, -0.000767399
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 454.197, 721.746
+Particle 1 velocity: -0.00292405, -0.000770597
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 453.966, 721.685
+Particle 1 velocity: -0.0029232, -0.000773799
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 453.734, 721.623
+Particle 1 velocity: -0.00292235, -0.000777004
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 453.501, 721.561
+Particle 1 velocity: -0.0029215, -0.000780211
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 453.269, 721.499
+Particle 1 velocity: -0.00292064, -0.000783422
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 453.036, 721.437
+Particle 1 velocity: -0.00291978, -0.000786636
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 452.803, 721.374
+Particle 1 velocity: -0.00291891, -0.000789853
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 452.57, 721.31
+Particle 1 velocity: -0.00291803, -0.000793073
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 452.336, 721.247
+Particle 1 velocity: -0.00291716, -0.000796297
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 452.103, 721.183
+Particle 1 velocity: -0.00291627, -0.000799523
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 451.869, 721.119
+Particle 1 velocity: -0.00291539, -0.000802752
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 451.635, 721.054
+Particle 1 velocity: -0.00291449, -0.000805985
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 451.401, 720.989
+Particle 1 velocity: -0.0029136, -0.00080922
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 451.166, 720.924
+Particle 1 velocity: -0.0029127, -0.000812458
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 450.931, 720.858
+Particle 1 velocity: -0.00291179, -0.0008157
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 450.696, 720.792
+Particle 1 velocity: -0.00291088, -0.000818944
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 450.461, 720.726
+Particle 1 velocity: -0.00290996, -0.000822192
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 450.226, 720.659
+Particle 1 velocity: -0.00290904, -0.000825442
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 449.99, 720.592
+Particle 1 velocity: -0.00290812, -0.000828695
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 449.755, 720.525
+Particle 1 velocity: -0.00290719, -0.000831952
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 449.518, 720.457
+Particle 1 velocity: -0.00290625, -0.000835211
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 449.282, 720.389
+Particle 1 velocity: -0.00290531, -0.000838473
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 449.046, 720.321
+Particle 1 velocity: -0.00290437, -0.000841739
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 448.809, 720.252
+Particle 1 velocity: -0.00290342, -0.000845007
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 448.572, 720.183
+Particle 1 velocity: -0.00290247, -0.000848278
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 448.335, 720.114
+Particle 1 velocity: -0.00290151, -0.000851552
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 448.098, 720.044
+Particle 1 velocity: -0.00290054, -0.000854829
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 447.86, 719.974
+Particle 1 velocity: -0.00289957, -0.000858109
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 447.623, 719.903
+Particle 1 velocity: -0.0028986, -0.000861392
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 447.385, 719.832
+Particle 1 velocity: -0.00289762, -0.000864678
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 447.147, 719.761
+Particle 1 velocity: -0.00289664, -0.000867966
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 446.908, 719.69
+Particle 1 velocity: -0.00289565, -0.000871258
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 446.67, 719.618
+Particle 1 velocity: -0.00289466, -0.000874552
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 446.431, 719.545
+Particle 1 velocity: -0.00289366, -0.000877849
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 446.192, 719.473
+Particle 1 velocity: -0.00289266, -0.000881149
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 445.953, 719.4
+Particle 1 velocity: -0.00289165, -0.000884452
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 445.713, 719.326
+Particle 1 velocity: -0.00289064, -0.000887758
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 445.474, 719.253
+Particle 1 velocity: -0.00288962, -0.000891067
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 445.234, 719.179
+Particle 1 velocity: -0.00288859, -0.000894378
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 444.994, 719.104
+Particle 1 velocity: -0.00288757, -0.000897692
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 444.754, 719.029
+Particle 1 velocity: -0.00288653, -0.000901009
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 444.513, 718.954
+Particle 1 velocity: -0.00288549, -0.000904329
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 444.273, 718.879
+Particle 1 velocity: -0.00288445, -0.000907652
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 444.032, 718.803
+Particle 1 velocity: -0.0028834, -0.000910977
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 443.791, 718.726
+Particle 1 velocity: -0.00288235, -0.000914305
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 443.55, 718.65
+Particle 1 velocity: -0.00288129, -0.000917636
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 443.308, 718.573
+Particle 1 velocity: -0.00288023, -0.00092097
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 443.067, 718.495
+Particle 1 velocity: -0.00287916, -0.000924306
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 442.825, 718.417
+Particle 1 velocity: -0.00287808, -0.000927646
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 442.583, 718.339
+Particle 1 velocity: -0.002877, -0.000930987
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 442.341, 718.261
+Particle 1 velocity: -0.00287592, -0.000934332
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 442.098, 718.182
+Particle 1 velocity: -0.00287483, -0.000937679
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 441.856, 718.103
+Particle 1 velocity: -0.00287373, -0.000941029
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 441.613, 718.023
+Particle 1 velocity: -0.00287263, -0.000944382
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 441.37, 717.943
+Particle 1 velocity: -0.00287153, -0.000947737
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 441.127, 717.862
+Particle 1 velocity: -0.00287042, -0.000951095
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 440.883, 717.782
+Particle 1 velocity: -0.0028693, -0.000954456
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 440.64, 717.7
+Particle 1 velocity: -0.00286818, -0.000957819
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 440.396, 717.619
+Particle 1 velocity: -0.00286706, -0.000961185
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 440.152, 717.537
+Particle 1 velocity: -0.00286592, -0.000964554
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 439.908, 717.455
+Particle 1 velocity: -0.00286479, -0.000967925
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 439.664, 717.372
+Particle 1 velocity: -0.00286365, -0.000971299
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 439.419, 717.289
+Particle 1 velocity: -0.0028625, -0.000974676
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 439.174, 717.205
+Particle 1 velocity: -0.00286135, -0.000978055
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 438.93, 717.121
+Particle 1 velocity: -0.00286019, -0.000981436
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 438.685, 717.037
+Particle 1 velocity: -0.00285902, -0.000984821
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 438.439, 716.953
+Particle 1 velocity: -0.00285785, -0.000988207
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 438.194, 716.868
+Particle 1 velocity: -0.00285668, -0.000991597
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 437.948, 716.782
+Particle 1 velocity: -0.0028555, -0.000994989
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 437.702, 716.696
+Particle 1 velocity: -0.00285432, -0.000998383
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 437.456, 716.61
+Particle 1 velocity: -0.00285313, -0.00100178
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 437.21, 716.524
+Particle 1 velocity: -0.00285193, -0.00100518
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 436.964, 716.437
+Particle 1 velocity: -0.00285073, -0.00100858
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 436.717, 716.349
+Particle 1 velocity: -0.00284952, -0.00101199
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 436.471, 716.261
+Particle 1 velocity: -0.00284831, -0.00101539
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 436.224, 716.173
+Particle 1 velocity: -0.00284709, -0.0010188
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 435.977, 716.085
+Particle 1 velocity: -0.00284587, -0.00102221
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 435.729, 715.996
+Particle 1 velocity: -0.00284464, -0.00102563
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 435.482, 715.906
+Particle 1 velocity: -0.0028434, -0.00102905
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 435.234, 715.816
+Particle 1 velocity: -0.00284217, -0.00103246
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 434.987, 715.726
+Particle 1 velocity: -0.00284092, -0.00103589
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 434.739, 715.636
+Particle 1 velocity: -0.00283967, -0.00103931
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 434.491, 715.545
+Particle 1 velocity: -0.00283841, -0.00104274
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 434.242, 715.453
+Particle 1 velocity: -0.00283715, -0.00104617
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 433.994, 715.362
+Particle 1 velocity: -0.00283588, -0.0010496
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 433.745, 715.269
+Particle 1 velocity: -0.00283461, -0.00105303
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 433.496, 715.177
+Particle 1 velocity: -0.00283333, -0.00105647
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 433.247, 715.084
+Particle 1 velocity: -0.00283205, -0.00105991
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 432.998, 714.99
+Particle 1 velocity: -0.00283076, -0.00106335
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 432.749, 714.896
+Particle 1 velocity: -0.00282946, -0.00106679
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 432.499, 714.802
+Particle 1 velocity: -0.00282816, -0.00107024
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 432.25, 714.708
+Particle 1 velocity: -0.00282685, -0.00107368
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 432, 714.612
+Particle 1 velocity: -0.00282554, -0.00107713
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 431.75, 714.517
+Particle 1 velocity: -0.00282422, -0.00108059
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 431.5, 714.421
+Particle 1 velocity: -0.0028229, -0.00108404
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 431.249, 714.325
+Particle 1 velocity: -0.00282157, -0.0010875
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 430.999, 714.228
+Particle 1 velocity: -0.00282023, -0.00109096
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 430.748, 714.131
+Particle 1 velocity: -0.00281889, -0.00109442
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 430.497, 714.033
+Particle 1 velocity: -0.00281754, -0.00109788
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 430.246, 713.935
+Particle 1 velocity: -0.00281619, -0.00110135
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 429.995, 713.837
+Particle 1 velocity: -0.00281483, -0.00110482
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 429.744, 713.738
+Particle 1 velocity: -0.00281347, -0.00110829
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 429.492, 713.639
+Particle 1 velocity: -0.0028121, -0.00111176
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 429.241, 713.539
+Particle 1 velocity: -0.00281072, -0.00111523
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 428.989, 713.439
+Particle 1 velocity: -0.00280934, -0.00111871
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 428.737, 713.339
+Particle 1 velocity: -0.00280795, -0.00112219
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 428.485, 713.238
+Particle 1 velocity: -0.00280656, -0.00112567
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 428.233, 713.136
+Particle 1 velocity: -0.00280516, -0.00112915
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 427.98, 713.035
+Particle 1 velocity: -0.00280375, -0.00113264
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 427.728, 712.932
+Particle 1 velocity: -0.00280234, -0.00113613
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 427.475, 712.83
+Particle 1 velocity: -0.00280092, -0.00113962
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 427.222, 712.727
+Particle 1 velocity: -0.0027995, -0.00114311
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 426.969, 712.623
+Particle 1 velocity: -0.00279807, -0.0011466
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 426.716, 712.519
+Particle 1 velocity: -0.00279663, -0.0011501
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 426.463, 712.415
+Particle 1 velocity: -0.00279519, -0.0011536
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 426.209, 712.31
+Particle 1 velocity: -0.00279375, -0.0011571
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 425.956, 712.205
+Particle 1 velocity: -0.00279229, -0.0011606
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 425.702, 712.099
+Particle 1 velocity: -0.00279083, -0.0011641
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 425.448, 711.993
+Particle 1 velocity: -0.00278937, -0.00116761
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 425.194, 711.887
+Particle 1 velocity: -0.0027879, -0.00117112
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 424.94, 711.78
+Particle 1 velocity: -0.00278642, -0.00117463
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 424.685, 711.672
+Particle 1 velocity: -0.00278494, -0.00117814
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 424.431, 711.564
+Particle 1 velocity: -0.00278345, -0.00118165
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 424.176, 711.456
+Particle 1 velocity: -0.00278195, -0.00118517
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 423.922, 711.347
+Particle 1 velocity: -0.00278045, -0.00118869
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 423.667, 711.238
+Particle 1 velocity: -0.00277894, -0.00119221
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 423.412, 711.129
+Particle 1 velocity: -0.00277743, -0.00119573
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 423.156, 711.019
+Particle 1 velocity: -0.00277591, -0.00119925
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 422.901, 710.908
+Particle 1 velocity: -0.00277438, -0.00120278
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 422.646, 710.797
+Particle 1 velocity: -0.00277285, -0.00120631
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 422.39, 710.686
+Particle 1 velocity: -0.00277131, -0.00120984
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 422.134, 710.574
+Particle 1 velocity: -0.00276977, -0.00121337
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 421.879, 710.462
+Particle 1 velocity: -0.00276822, -0.0012169
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 421.623, 710.349
+Particle 1 velocity: -0.00276666, -0.00122044
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 421.366, 710.236
+Particle 1 velocity: -0.0027651, -0.00122397
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 421.11, 710.122
+Particle 1 velocity: -0.00276353, -0.00122751
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 420.854, 710.008
+Particle 1 velocity: -0.00276196, -0.00123105
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 420.597, 709.894
+Particle 1 velocity: -0.00276037, -0.00123459
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 420.341, 709.779
+Particle 1 velocity: -0.00275879, -0.00123814
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 420.084, 709.663
+Particle 1 velocity: -0.00275719, -0.00124168
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 419.827, 709.547
+Particle 1 velocity: -0.00275559, -0.00124523
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 419.57, 709.431
+Particle 1 velocity: -0.00275399, -0.00124878
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 419.313, 709.314
+Particle 1 velocity: -0.00275237, -0.00125233
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 419.056, 709.197
+Particle 1 velocity: -0.00275075, -0.00125588
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 418.798, 709.079
+Particle 1 velocity: -0.00274913, -0.00125944
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 418.541, 708.961
+Particle 1 velocity: -0.0027475, -0.00126299
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 418.283, 708.842
+Particle 1 velocity: -0.00274586, -0.00126655
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 418.025, 708.723
+Particle 1 velocity: -0.00274421, -0.00127011
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 417.767, 708.604
+Particle 1 velocity: -0.00274256, -0.00127367
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 417.509, 708.484
+Particle 1 velocity: -0.0027409, -0.00127724
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 417.251, 708.363
+Particle 1 velocity: -0.00273924, -0.0012808
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 416.993, 708.242
+Particle 1 velocity: -0.00273757, -0.00128437
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 416.735, 708.121
+Particle 1 velocity: -0.00273589, -0.00128793
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 416.476, 707.999
+Particle 1 velocity: -0.00273421, -0.0012915
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 416.218, 707.877
+Particle 1 velocity: -0.00273252, -0.00129507
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 415.959, 707.754
+Particle 1 velocity: -0.00273083, -0.00129865
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 415.7, 707.63
+Particle 1 velocity: -0.00272912, -0.00130222
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 415.441, 707.507
+Particle 1 velocity: -0.00272741, -0.0013058
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 415.182, 707.383
+Particle 1 velocity: -0.0027257, -0.00130937
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 414.923, 707.258
+Particle 1 velocity: -0.00272398, -0.00131295
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 414.664, 707.133
+Particle 1 velocity: -0.00272225, -0.00131653
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 414.404, 707.007
+Particle 1 velocity: -0.00272051, -0.00132011
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 414.145, 706.881
+Particle 1 velocity: -0.00271877, -0.00132369
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 413.885, 706.754
+Particle 1 velocity: -0.00271702, -0.00132728
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 413.626, 706.627
+Particle 1 velocity: -0.00271527, -0.00133086
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 413.366, 706.5
+Particle 1 velocity: -0.00271351, -0.00133445
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 413.106, 706.372
+Particle 1 velocity: -0.00271174, -0.00133804
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 412.846, 706.243
+Particle 1 velocity: -0.00270997, -0.00134163
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 412.586, 706.114
+Particle 1 velocity: -0.00270818, -0.00134522
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 412.326, 705.985
+Particle 1 velocity: -0.0027064, -0.00134881
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 412.066, 705.855
+Particle 1 velocity: -0.0027046, -0.00135241
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 411.805, 705.724
+Particle 1 velocity: -0.0027028, -0.001356
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 411.545, 705.594
+Particle 1 velocity: -0.00270099, -0.0013596
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 411.284, 705.462
+Particle 1 velocity: -0.00269918, -0.0013632
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 411.024, 705.33
+Particle 1 velocity: -0.00269736, -0.0013668
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 410.763, 705.198
+Particle 1 velocity: -0.00269553, -0.0013704
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 410.502, 705.065
+Particle 1 velocity: -0.0026937, -0.001374
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 410.241, 704.932
+Particle 1 velocity: -0.00269186, -0.00137761
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 409.98, 704.798
+Particle 1 velocity: -0.00269001, -0.00138121
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 409.719, 704.664
+Particle 1 velocity: -0.00268815, -0.00138482
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 409.458, 704.529
+Particle 1 velocity: -0.00268629, -0.00138842
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 409.197, 704.394
+Particle 1 velocity: -0.00268443, -0.00139203
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 408.935, 704.258
+Particle 1 velocity: -0.00268255, -0.00139564
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 408.674, 704.122
+Particle 1 velocity: -0.00268067, -0.00139925
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 408.412, 703.985
+Particle 1 velocity: -0.00267878, -0.00140286
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 408.151, 703.848
+Particle 1 velocity: -0.00267689, -0.00140647
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 407.889, 703.71
+Particle 1 velocity: -0.00267498, -0.00141009
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 407.627, 703.572
+Particle 1 velocity: -0.00267307, -0.0014137
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 407.365, 703.433
+Particle 1 velocity: -0.00267116, -0.00141732
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 407.103, 703.294
+Particle 1 velocity: -0.00266924, -0.00142094
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 406.841, 703.154
+Particle 1 velocity: -0.00266731, -0.00142456
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 406.579, 703.014
+Particle 1 velocity: -0.00266537, -0.00142818
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 406.317, 702.873
+Particle 1 velocity: -0.00266343, -0.0014318
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 406.055, 702.732
+Particle 1 velocity: -0.00266148, -0.00143542
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 405.792, 702.59
+Particle 1 velocity: -0.00265952, -0.00143904
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 405.53, 702.448
+Particle 1 velocity: -0.00265756, -0.00144266
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 405.267, 702.305
+Particle 1 velocity: -0.00265559, -0.00144629
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 405.005, 702.162
+Particle 1 velocity: -0.00265361, -0.00144991
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 404.742, 702.018
+Particle 1 velocity: -0.00265162, -0.00145354
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 404.48, 701.874
+Particle 1 velocity: -0.00264963, -0.00145717
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 404.217, 701.729
+Particle 1 velocity: -0.00264763, -0.0014608
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 403.954, 701.584
+Particle 1 velocity: -0.00264563, -0.00146442
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 403.691, 701.438
+Particle 1 velocity: -0.00264362, -0.00146806
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 403.428, 701.292
+Particle 1 velocity: -0.0026416, -0.00147169
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 403.165, 701.145
+Particle 1 velocity: -0.00263957, -0.00147532
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 402.902, 700.998
+Particle 1 velocity: -0.00263754, -0.00147895
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 402.639, 700.85
+Particle 1 velocity: -0.00263549, -0.00148258
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Particle 1: 402.376, 700.702
+Particle 1 velocity: -0.00263345, -0.00148622
+Particle 1 acceleration: 0, 0
+Particle 1 mass: 1
+Finished simulation
+Time: 4s
+Time: 4973ms
+Time: 4973497us

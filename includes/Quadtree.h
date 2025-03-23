@@ -363,6 +363,7 @@ namespace quadtree
             // if not, recursively apply Barnes-Hut algorithm to children
             if (isLeaf(node))
             {
+                //std::cout << "Computing force on leaf node" << std::endl;
                 // std::cout << "Computing force on leaf node" << std::endl;
                 for (T v : node->values)
                 {
@@ -371,6 +372,7 @@ namespace quadtree
             }
             else
             {
+                //std::cout << "Computing force on internal node" << std::endl;
                 // std::cout << "Computing force on internal node" << std::endl;
                 //  compute s/d quotient
                 double s = box.width;
@@ -378,15 +380,16 @@ namespace quadtree
                 Vector2<float> boxCenter = valueBox.getCenter();
                 Vector2<double> center = {boxCenter.x, boxCenter.y};
                 double d = Vector2<double>::distance(center, node->centerOfMass);
-
-                /*                 std::cout << "----------------------------------" << std::endl;
-                                std::cout << "Box center: " << boxCenter.x << ", " << boxCenter.y << std::endl;
-                                std::cout << "Node center of mass: " << node->centerOfMass.x << ", " << node->centerOfMass.y << std::endl;
-                                std::cout << "Box width: " << s << std::endl;
-                                std::cout << "Distance: " << d << std::endl;
-                                std::cout << "s/d: " << s / d << std::endl;
-                                std::cout << "Theta: " << THETA << std::endl;
-                                std::cout << "----------------------------------" << std::endl; */
+/* 
+                std::cout << "----------------------------------" << std::endl;
+                std::cout << "Box center: " << boxCenter.x << ", " << boxCenter.y << std::endl;
+                std::cout << "Node center of mass: " << node->centerOfMass.x << ", " << node->centerOfMass.y << std::endl;
+                std::cout << "Box width: " << s << std::endl;
+                std::cout << "Distance: " << d << std::endl;
+                std::cout << "s/d: " << s / d << std::endl;
+                std::cout << "Theta: " << THETA << std::endl;
+                std::cout << "----------------------------------" << std::endl;
+ */
                 if (s / d < THETA)
                 {
                     // std::cout << "Node " << node << " is far enough" << std::endl;
@@ -419,10 +422,12 @@ namespace quadtree
 
             if (r_mag > 0)
             {
+                //std::cout << "Vector r: " << r.x << ", " << r.y << std::endl;
                 double acceleration = -G * node->totalMass / (r_mag * r_mag);
                 Vector2<double> r_unit_vector = r / r_mag;
                 a_g += acceleration * r_unit_vector;
             }
+            //std::cout << "Acceleration: " << a_g.x << ", " << a_g.y << std::endl;
 
             // Update particle acceleration
             particle->update_acceleration(a_g);
@@ -448,10 +453,12 @@ namespace quadtree
 
             if (r_mag > 0)
             {
+                //std::cout << "Vector r: " << r.x << ", " << r.y << std::endl;
                 double acceleration = -G * p2->mass / (r_mag * r_mag);
                 Vector2<double> r_unit_vector = r / r_mag;
                 a_g += acceleration * r_unit_vector;
             }
+            //std::cout << "Acceleration: " << a_g.x << ", " << a_g.y << std::endl;
 
             p1->update_acceleration(a_g);
         }

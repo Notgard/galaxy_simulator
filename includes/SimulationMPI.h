@@ -6,7 +6,7 @@
 
 namespace simulation
 {
-    class SimulationMPI : public Simulation
+    class SimulationMPI : public virtual Simulation
     {
     public:
         SimulationMPI(int num_particles, int num_runs, int rank, int size)
@@ -20,7 +20,7 @@ namespace simulation
         {
         }
 
-        void mpi_start();
+        virtual void mpi_start();
         void mpi_step(double dtime);
 
         void init_mpi();
@@ -35,7 +35,7 @@ namespace simulation
 
         void clean_mpi();
 
-    private:
+    protected:
         int rank;
         int size;
 

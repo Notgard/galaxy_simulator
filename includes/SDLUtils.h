@@ -152,6 +152,4 @@ protected:
         TTF_Quit();
         SDL_Quit();
     }
-
-
 };

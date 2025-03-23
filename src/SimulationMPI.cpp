@@ -19,13 +19,8 @@ void simulation::SimulationMPI::init_mpi()
     MPI_Type_create_struct(num_fields, block_lengths, displacements, dtypes, &mpi_particle_data_type);
     MPI_Type_commit(&mpi_particle_data_type);
 
-    std::cout << "MPI initialized, sending particles..." << std::endl;
-}
-
-void simulation::SimulationMPI::mpi_start()
-{
-    // same as start but this time to divide the computation of the mpi through multiple mpi processes
-    is_running = true;
+    std::cout << "Created MPI particle data type" << std::endl;
+    std::cout << "Now calculating chunk size..." << std::endl;
 
     if (rank != 0)
     {
@@ -33,11 +28,19 @@ void simulation::SimulationMPI::mpi_start()
         int workers = size - 1; // Exclude rank 0 from the division
         int chunk_size = nb_particles / workers;
         int remainder = nb_particles % workers;
-    
+
         // Assign start and end positions for each process
         startpos = (rank - 1) * chunk_size + std::min(rank - 1, remainder);
         endpos = startpos + chunk_size + ((rank - 1) < remainder ? 1 : 0);
-    }      
+    }
+
+    std::cout << "MPI initialized, sending particles..." << std::endl;
+}
+
+void simulation::SimulationMPI::mpi_start()
+{
+    // same as start but this time to divide the computation of the mpi through multiple mpi processes
+    is_running = true;
 
     while (is_running && /* (t < t_end) &&  */ (run_count < num_runs))
     {
@@ -47,7 +50,7 @@ void simulation::SimulationMPI::mpi_start()
         run_count++;
     }
 
-    //MPI_Barrier(MPI_COMM_WORLD);
+    // MPI_Barrier(MPI_COMM_WORLD);
 }
 
 // the step function is parallelized throughout the mpi processes
@@ -77,8 +80,8 @@ void simulation::SimulationMPI::mpi_step(double dtime)
     // distribute the particles to each process
     distribute_particles(local_particles, dtime);
 
-    if(rank != 0)
-        std::cout << "Rank " << rank << " has to process " << endpos - startpos << " particles for " << dtime << std::endl;
+    //if (rank != 0)
+    //    std::cout << "Rank " << rank << " has to process " << endpos - startpos << " particles for " << dtime << std::endl;
 
     // std::cout << "Rank " << rank << " has " << local_particles.size() << " particles" << std::endl;
     // std::cout << "Rank " << rank << " now computing workload" << std::endl;
@@ -88,8 +91,19 @@ void simulation::SimulationMPI::mpi_step(double dtime)
     // save the updated particle accelerations in a buffer to send back
     std::vector<double> local_particles_acceleration /*  = std::vector<double>(nb_particles * 2) */;
 
+    // half step
+    if (rank == 0)
+    {
+        for (size_t i = 0; i < particles.size(); i++)
+        {
+            particles[i]->update_position(worldBounds, dtime * 0.5);
+        }
+    }
+
+    MPI_Barrier(MPI_COMM_WORLD);
+
     // compute the workload for each process
-    if(rank != 0)
+    if (rank != 0)
         compute_workload(local_particles, local_particles_acceleration, dtime);
 
     // MPI_Barrier(MPI_COMM_WORLD);
@@ -107,8 +121,12 @@ void simulation::SimulationMPI::mpi_step(double dtime)
         for (size_t i = 0; i < particles.size(); i++)
         {
             // assuming velocity is update by each other process along with acceleration
-            particles[i]->update_position(worldBounds, dtime);
+            particles[i]->update_position(worldBounds, dtime * 0.5);
         }
+/*         std::cout << "Particle 1: " << particles[1]->position.x << ", " << particles[1]->position.y << std::endl;
+        std::cout << "Particle 1 velocity: " << particles[1]->velocity.x << ", " << particles[1]->velocity.y << std::endl;
+        std::cout << "Particle 1 acceleration: " << particles[1]->acceleration.x << ", " << particles[1]->acceleration.y << std::endl;
+        std::cout << "Particle 1 mass: " << particles[1]->mass << std::endl; */
     }
 }
 
@@ -128,6 +146,7 @@ void simulation::SimulationMPI::distribute_particles(std::vector<ParticleData> &
         for (int idx = 0; idx < nb_particles; idx++)
         {
             local_particles.push_back(particles[idx]->serialize()); // Convert before sending
+            // std::cout << "Rank " << rank << " sending Particle " << idx << " with acceleration " << local_particles[idx].ax << ", " << local_particles[idx].ay << std::endl;
         }
     }
 
@@ -144,37 +163,6 @@ void simulation::SimulationMPI::distribute_particles(std::vector<ParticleData> &
 
 void simulation::SimulationMPI::gather_particles(std::vector<ParticleData> &local_particles, std::vector<double> &local_accelerations, double dtime)
 {
-    /*     // gather the particles from all the processes from the root process
-        std::vector<ParticleData> global_particles;
-        if (rank == 0)
-        {
-            std::cout << "New size: " << particles.size() << std::endl;
-            std::cout << "New size: " << local_particles.size() << std::endl;
-            std::cout << "New size: " << global_particles.size() << std::endl;
-            global_particles.resize(particles.size());
-        }
-
-        // gather the particles from all the processes
-        MPI_Gather(local_particles.data(), local_particles.size(), mpi_particle_data_type,
-                   global_particles.data(), global_particles.size(), mpi_particle_data_type, 0, MPI_COMM_WORLD); */
-
-    /*     std::vector<double> global_accelerations;
-        if(rank == 0)
-            global_accelerations.resize(particles.size()*2);
-        // Sum accelerations of all particles across all processes
-        MPI_Reduce(local_accelerations.data(), global_accelerations.data(),
-                   local_accelerations.size() * 2, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
-
-        if (rank == 0)
-        {
-            // Update each Particle with received data
-            for (int i = 0; i < particles.size(); i++)
-            {
-                particles[i]->acceleration.x = global_accelerations[i*2];
-                particles[i]->acceleration.y = global_accelerations[i*2+1];
-            }
-        } */
-
     // send each particle buffer one by one to the root process
     // this is done to avoid the need to allocate a large buffer to store all the particles
     // this way we can send the particles one by one and update the particles in the root process
@@ -221,6 +209,7 @@ void simulation::SimulationMPI::compute_workload(std::vector<ParticleData> &loca
     {
         all_particles[idx] = std::make_unique<Particle>();
         all_particles[idx]->deserialize(local_particles[idx]);
+        // std::cout << "Rank " << rank << " Particle " << idx << " has starting acceleration " << local_particles[idx].ax << ", " << local_particles[idx].ay << std::endl;
     }
 
     // add the subtree particles
@@ -232,15 +221,20 @@ void simulation::SimulationMPI::compute_workload(std::vector<ParticleData> &loca
     // update the masses of the nodes
     quadtree->update_tree_masses();
 
+    //if (run_count == 0)
+    //    quadtree->printTree();
+
     // compute the forces on the particles in the subtree
     // quadtree->update_barnes_hut_forces(dtime);
     // #pragma omp parallel for
     for (int idx = 0; idx < nb_particles; idx++)
     {
-        qt->update_individual_barnes_hut_forces(all_particles[idx].get(), dtime);
+        quadtree->update_individual_barnes_hut_forces(all_particles[idx].get(), dtime);
+        //quadtree->update_barnes_hut_forces(dtime);
         /*         local_accelerations[idx * 2] = all_particles[idx]->acceleration.x;
                 local_accelerations[idx * 2 + 1] = all_particles[idx]->acceleration.y; */
         local_particles[idx] = all_particles[idx]->serialize();
+        //std::cout << "Rank " << rank << " Particle " << idx << " has after acceleration " << all_particles[idx]->acceleration.x << ", " << all_particles[idx]->acceleration.y << std::endl;
     }
 }
 

@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include "Config.h"
-#include "SimulationMPI.h"
+#include "SimulationMPISDL.h"
 
 #include <mpi.h>
 
@@ -59,9 +59,18 @@ int main(int argc, char **argv)
         printf("\t   Number of atoms: %d\n", number_of_atoms);
         printf("\t   Number of runs: %d\n", number_of_runs);
         printf("==============================================================\n");
+        if (use_sdl)
+        {
+            printf("\t   SDL Visualization: ENABLED\n");
+        }
+        else
+        {
+            printf("\t   SDL Visualization: DISABLED\n");
+        }
+        printf("==============================================================\n");
     }
 
-    SimulationMPI sim_mpi(number_of_atoms, number_of_runs, rank, size);
+    SimulationMPISDL sim_mpi(number_of_atoms, number_of_runs, rank, size, use_sdl);
     if (rank == 0)
     {
         sim_mpi.setup();

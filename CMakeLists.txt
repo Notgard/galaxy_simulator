@@ -25,16 +25,15 @@ set(SOURCES
     src/Simulation.cpp # default Simulation file
 )
 
-# If MPI is enabled, use the MPI-specific files
-if(USE_MPI)
-    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_main.cpp) # replace main.cpp with mpi_main.cpp
+# If both MPI and SDL are enabled, use the MPI+SDL-specific files
+if(USE_MPI AND USE_SDL)
+    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_sdl_main.cpp)
+    list(APPEND SOURCES src/SimulationMPISDL.cpp src/SimulationSDL.cpp src/SimulationMPI.cpp)
+elseif(USE_MPI)
+    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_main.cpp)
     list(APPEND SOURCES src/SimulationMPI.cpp)
-    #list(TRANSFORM SOURCES REPLACE src/Simulation.cpp src/SimulationMPI.cpp)  # replace Simulation.cpp with SimulationMPI.cpp
-endif()
-
-# If SDL is enabled, use the SDL-specific files
-if(USE_SDL)
-    list(TRANSFORM SOURCES REPLACE src/main.cpp src/sdl_main.cpp) # replace main.cpp with mpi_main.cpp
+elseif(USE_SDL)
+    list(TRANSFORM SOURCES REPLACE src/main.cpp src/sdl_main.cpp)
     list(APPEND SOURCES src/SimulationSDL.cpp)
 endif()
 
@@ -46,6 +45,7 @@ set(HEADERS
     includes/Simulation.h
     includes/SimulationMPI.h
     includes/SimulationSDL.h
+    includes/SimulationMPISDL.h
     includes/Vector2d.h
     includes/Particle.h
 )
@@ -61,17 +61,21 @@ target_include_directories(${CMAKE_PROJECT_NAME}
 
 target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE ${CUSTOM_COMPILE_FLAGS_LIST})
 
+# SDL Support
 if(USE_SDL)
     find_package(SDL2 REQUIRED)
-    message("SDL version: " ${SDL2_VERSION})
-    include_directories(${SDL2_INCLUDE_DIRS})
+    if(SDL2_FOUND)
+        message("SDL version: " ${SDL2_VERSION})
+        include_directories(${SDL2_INCLUDE_DIRS})
+        target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_SDL)
 
-    target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_SDL)
-
-    # Find SDL_ttf
-    find_package(SDL2_ttf REQUIRED)
-    message("SDL_ttf found")
-    target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::Main SDL2::TTF)
+        # Find SDL_ttf
+        find_package(SDL2_ttf REQUIRED)
+        message("SDL_ttf found")
+        target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::Main SDL2::TTF)
+    else()
+        message(FATAL_ERROR "SDL2 not found")
+    endif()
 endif()
 
 # MPI Support

@@ -129,7 +129,8 @@ void simulation::SimulationSDL::start()
 {
     is_running = true;
 
-    while (is_running && (t < t_end) && (run_count < num_runs))
+    init_sdl();
+    while (is_running /* && (t < t_end)  */&& (run_count < num_runs))
     {
         if (graphical)
         {
@@ -148,4 +149,5 @@ void simulation::SimulationSDL::start()
         t += delta_time;
         run_count++;
     }
+    clean_sdl();
 }
