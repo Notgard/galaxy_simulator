@@ -19,25 +19,11 @@ option(USE_OPENMP "Enable OpenMP for parallel execution" ON)
 set(CUSTOM_COMPILE_FLAGS "-pg -g -gdwarf-3 -O0 -march=native")
 string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${CUSTOM_COMPILE_FLAGS})
 
-# Source files (conditionally include MPI or SDL versions)
-set(SOURCES
-    src/main.cpp # default main file
-    src/Simulation.cpp # default Simulation file
+set(COMMON_SOURCES
+    src/Simulation.cpp
 )
 
-# If both MPI and SDL are enabled, use the MPI+SDL-specific files
-if(USE_MPI AND USE_SDL)
-    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_sdl_main.cpp)
-    list(APPEND SOURCES src/SimulationMPISDL.cpp src/SimulationSDL.cpp src/SimulationMPI.cpp)
-elseif(USE_MPI)
-    list(TRANSFORM SOURCES REPLACE src/main.cpp src/mpi_main.cpp)
-    list(APPEND SOURCES src/SimulationMPI.cpp)
-elseif(USE_SDL)
-    list(TRANSFORM SOURCES REPLACE src/main.cpp src/sdl_main.cpp)
-    list(APPEND SOURCES src/SimulationSDL.cpp)
-endif()
-
-set(HEADERS
+set(COMMON_HEADERS
     includes/SDLUtils.h
     includes/Box.h
     includes/Config.h
@@ -52,42 +38,73 @@ set(HEADERS
 
 include_directories(includes)
 
-# Add executable
-add_executable(particleSimulation ${SOURCES} ${HEADERS})
+# --- Non-MPI Version ---
+if(NOT USE_MPI)
+    set(NON_MPI_SOURCES ${COMMON_SOURCES} src/main.cpp)
+    
+    if(USE_SDL)
+        list(APPEND NON_MPI_SOURCES src/SimulationSDL.cpp src/sdl_main.cpp)
+    endif()
 
-target_include_directories(${CMAKE_PROJECT_NAME}
-    PRIVATE ${CMAKE_SOURCE_DIR}/includes
-)
+    add_executable(particleSimulation ${NON_MPI_SOURCES} ${COMMON_HEADERS})
 
-target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE ${CUSTOM_COMPILE_FLAGS_LIST})
+    target_include_directories(particleSimulation PRIVATE ${CMAKE_SOURCE_DIR}/includes)
+    target_compile_options(particleSimulation PRIVATE ${CUSTOM_COMPILE_FLAGS_LIST})
 
-# SDL Support
-if(USE_SDL)
-    find_package(SDL2 REQUIRED)
-    if(SDL2_FOUND)
-        message("SDL version: " ${SDL2_VERSION})
-        include_directories(${SDL2_INCLUDE_DIRS})
-        target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_SDL)
+    # SDL Support
+    if(USE_SDL)
+        find_package(SDL2 REQUIRED)
+        if(SDL2_FOUND)
+            message("SDL version: " ${SDL2_VERSION})
+            target_include_directories(particleSimulation PRIVATE ${SDL2_INCLUDE_DIRS})
+            target_compile_definitions(particleSimulation PRIVATE USE_SDL)
 
-        # Find SDL_ttf
-        find_package(SDL2_ttf REQUIRED)
-        message("SDL_ttf found")
-        target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::Main SDL2::TTF)
-    else()
-        message(FATAL_ERROR "SDL2 not found")
+            find_package(SDL2_ttf REQUIRED)
+            message("SDL_ttf found")
+            target_link_libraries(particleSimulation PRIVATE SDL2::Main SDL2::TTF)
+        else()
+            message(FATAL_ERROR "SDL2 not found")
+        endif()
     endif()
 endif()
 
-# MPI Support
+# --- MPI Version ---
 if(USE_MPI)
+    set(MPI_SOURCES ${COMMON_SOURCES} src/mpi_main.cpp src/SimulationMPI.cpp)
+
+    if(USE_SDL)
+        list(APPEND MPI_SOURCES src/SimulationMPISDL.cpp src/SimulationSDL.cpp src/mpi_sdl_main.cpp)
+    endif()
+
+    add_executable(particleSimulationMPI ${MPI_SOURCES} ${COMMON_HEADERS})
+
+    target_include_directories(particleSimulationMPI PRIVATE ${CMAKE_SOURCE_DIR}/includes)
+    target_compile_options(particleSimulationMPI PRIVATE ${CUSTOM_COMPILE_FLAGS_LIST})
+
     find_package(MPI REQUIRED)
     if(MPI_FOUND)
         message("MPI found: " ${MPI_CXX_COMPILER})
-        target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${MPI_INCLUDE_PATH})
-        target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE MPI::MPI_CXX)
-        target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_MPI)
+        target_include_directories(particleSimulationMPI PRIVATE ${MPI_INCLUDE_PATH})
+        target_link_libraries(particleSimulationMPI PRIVATE MPI::MPI_CXX)
+        target_compile_definitions(particleSimulationMPI PRIVATE USE_MPI)
     else()
         message(FATAL_ERROR "MPI is required but not found.")
+    endif()
+
+    # SDL Support in MPI Version
+    if(USE_SDL)
+        find_package(SDL2 REQUIRED)
+        if(SDL2_FOUND)
+            message("SDL version: " ${SDL2_VERSION})
+            target_include_directories(particleSimulationMPI PRIVATE ${SDL2_INCLUDE_DIRS})
+            target_compile_definitions(particleSimulationMPI PRIVATE USE_SDL)
+
+            find_package(SDL2_ttf REQUIRED)
+            message("SDL_ttf found")
+            target_link_libraries(particleSimulationMPI PRIVATE SDL2::Main SDL2::TTF)
+        else()
+            message(FATAL_ERROR "SDL2 not found")
+        endif()
     endif()
 endif()
 
@@ -96,13 +113,17 @@ if(USE_OPENMP)
     find_package(OpenMP REQUIRED)
     if(OpenMP_CXX_FOUND)
         message("OpenMP found")
-        target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE -fopenmp)
-        target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE OpenMP::OpenMP_CXX)
-        target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE USE_OPENMP)
+        
+        if(TARGET particleSimulation)
+            target_compile_options(particleSimulation PRIVATE -fopenmp)
+            target_link_libraries(particleSimulation PRIVATE OpenMP::OpenMP_CXX)
+            target_compile_definitions(particleSimulation PRIVATE USE_OPENMP)
+        endif()
+
+        if(TARGET particleSimulationMPI)
+            target_compile_options(particleSimulationMPI PRIVATE -fopenmp)
+            target_link_libraries(particleSimulationMPI PRIVATE OpenMP::OpenMP_CXX)
+            target_compile_definitions(particleSimulationMPI PRIVATE USE_OPENMP)
+        endif()
     endif()
 endif()
-
-# Add source files
-target_sources(${CMAKE_PROJECT_NAME}
-    PRIVATE ${sources}
-)
