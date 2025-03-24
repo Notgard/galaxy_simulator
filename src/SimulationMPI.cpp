@@ -32,6 +32,8 @@ void simulation::SimulationMPI::init_mpi()
         // Assign start and end positions for each process
         startpos = (rank - 1) * chunk_size + std::min(rank - 1, remainder);
         endpos = startpos + chunk_size + ((rank - 1) < remainder ? 1 : 0);
+
+        std::cout << "Rank " << rank << " processing " << endpos - startpos << " particles" << std::endl;
     }
 
     std::cout << "MPI initialized, sending particles..." << std::endl;
