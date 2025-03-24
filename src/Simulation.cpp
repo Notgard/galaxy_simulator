@@ -173,8 +173,17 @@ void simulation::Simulation::step(double dtime)
 {
     counter++;
 
-    leapfrog(dtime);
-    // qt->update_barnes_hut_forces(dtime);
+    //leapfrog(dtime);
+    qt->update_barnes_hut_forces(dtime);
+
+#ifdef USE_OPENMP
+#pragma omp parallel for
+#endif
+    for (int i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
+    {
+        particles[i]->update_velocity(dtime);
+        particles[i]->update_position(worldBounds, dtime * 0.5);
+    }
     // brute_force(dtime);
     recreate_tree();
 }

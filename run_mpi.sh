@@ -11,6 +11,8 @@ if [ "$5" == "sdl" ]; then
     use_sdl="sdl"
 fi
 
+exec=./build/particleSimulationMPI
+
 # Assign arguments to variables
 number_of_process=$1
 number_of_threads=$2
@@ -18,4 +20,4 @@ number_of_particles=$3
 number_of_iterations=$4
 
 # Execute the command
-mpiexec -n $number_of_process -x OMP_NUM_THREADS=$number_of_threads ./build/particleSimulation $number_of_particles $number_of_iterations $use_sdl
+mpiexec -n $number_of_process -x OMP_NUM_THREADS=$number_of_threads $exec $number_of_particles $number_of_iterations $use_sdl

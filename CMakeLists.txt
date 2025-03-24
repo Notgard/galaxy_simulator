@@ -73,7 +73,8 @@ if(USE_MPI)
     set(MPI_SOURCES ${COMMON_SOURCES} src/mpi_main.cpp src/SimulationMPI.cpp)
 
     if(USE_SDL)
-        list(APPEND MPI_SOURCES src/SimulationMPISDL.cpp src/SimulationSDL.cpp src/mpi_sdl_main.cpp)
+        list(APPEND MPI_SOURCES src/SimulationMPISDL.cpp src/SimulationSDL.cpp)
+        list(TRANSFORM MPI_SOURCES REPLACE "src/mpi_main.cpp" "src/mpi_sdl_main.cpp")
     endif()
 
     add_executable(particleSimulationMPI ${MPI_SOURCES} ${COMMON_HEADERS})

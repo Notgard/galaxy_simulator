@@ -27,7 +27,8 @@ namespace simulation
 
         void distribute_subtrees();
         void distribute_particles(std::vector<ParticleData> &local_particles, double dtime);
-        void gather_particles(std::vector<ParticleData> &local_particles, std::vector<double> &local_accelerations, double dtime);
+        void gather_particles(std::vector<ParticleData> &local_particles, double dtime);
+        void gather_particles(std::vector<double> &local_accelerations, double dtime);
         //void gather_particles(std::vector<ParticleData> &local_particles, std::vector<Vector2<double>> &local_accelerations, double dtime);
 
         void compute_workload(std::vector<ParticleData> &local_particles, std::vector<double> &local_accelerations, double dtime);

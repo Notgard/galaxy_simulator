@@ -68,7 +68,9 @@ namespace quadtree
 
         void update_barnes_hut_forces(double dtime)
         {
+#ifdef USE_OPENMP
 #pragma omp parallel for
+#endif
             for (int i = 0; i < mValues.size(); i++)
             {
                 T value = mValues[i];
