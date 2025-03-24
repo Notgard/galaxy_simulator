@@ -30,6 +30,7 @@ int main(int argc, char **argv)
 
     if (rank == 0)
     {
+#ifdef USE_OPENMP
 #pragma omp parallel
         {
             if (omp_get_thread_num() == 0)
@@ -41,6 +42,7 @@ int main(int argc, char **argv)
                 omp_set_num_threads(omp_get_num_threads());
             }
         }
+#endif
     }
     MPI_Barrier(MPI_COMM_WORLD);
 
