@@ -29,10 +29,15 @@ namespace simulation
         void distribute_particles(std::vector<ParticleData> &local_particles, double dtime);
         void gather_particles(std::vector<ParticleData> &local_particles, double dtime);
         void gather_particles(std::vector<double> &local_accelerations, double dtime);
+        void gather_chunk_particles(std::vector<ParticleData> &updated_chunk, double dtime);
         //void gather_particles(std::vector<ParticleData> &local_particles, std::vector<Vector2<double>> &local_accelerations, double dtime);
 
         void compute_workload(std::vector<ParticleData> &local_particles, std::vector<double> &local_accelerations, double dtime);
+        void compute_entire_workload(std::vector<ParticleData> &local_particles, std::vector<ParticleData> &computed_chunk, double dtime);
         //void compute_workload(std::vector<ParticleData> &local_particles, std::vector<Vector2<double>> &local_accelerations, double dtime, int startpos, int endpos);
+
+        void chunked_processing(std::vector<ParticleData> &local_particles, double dtime);
+        void sub_tree_processing(std::vector<ParticleData> &local_particles, double dtime);
 
         void clean_mpi();
 

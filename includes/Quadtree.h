@@ -71,7 +71,7 @@ namespace quadtree
 #ifdef USE_OPENMP
 #pragma omp parallel for
 #endif
-            for (int i = 0; i < mValues.size(); i++)
+            for (size_t i = 0; i < mValues.size(); i++)
             {
                 T value = mValues[i];
                 Particle *particle = static_cast<Particle *>(value);

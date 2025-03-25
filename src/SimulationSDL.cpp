@@ -97,8 +97,6 @@ void simulation::SimulationSDL::render()
 
     // End frame timing
     Uint32 endTicks = SDL_GetTicks();
-    Uint64 endPerf = SDL_GetPerformanceCounter();
-    Uint64 framePerf = endPerf - perf_ticks;
     float frameTime = (endTicks - ticks) / 1000.0f;
     total_frame_ticks += endTicks - ticks;
 

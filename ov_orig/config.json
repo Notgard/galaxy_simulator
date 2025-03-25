@@ -49,7 +49,7 @@
 "#": "  example: \"<executable> -n4\"",
 "#": "Use an empty string or remove the declaration if no ",
 "#": "specific command is required to run the application",
-    "run_command"    : "<executable> 10000 10",
+    "run_command"    : "<executable>  10000 1",
 
 "#": "Script to use with job scheduler. ",
 "#": "If your application must be run on a cluster using a job scheduler (ex. SLURM), fill",
@@ -148,7 +148,7 @@
 "#": "Use an empty table if no frequency must be used.",
 "#": "!! Need permissions to change cpufreq files !!",
 "#": "!! Do not specify frequencies if MAQAO can not modify these files !!",
-    "_frequencies"    : [2400000, 1900000, 1500000],
+    "_frequencies"    : [],
 
 "#": "Table describing additional hardware counters analyzed.",
 "#": "Each entry is a list of hardware counters analyzed during a run.",

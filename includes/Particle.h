@@ -56,6 +56,11 @@ struct Particle
         acceleration.y += data.ay;
     }
 
+    void update(ParticleData data) {
+        position = {data.x, data.y};
+        velocity = {data.vx, data.vy};
+    }
+
     void update_position(quadtree::Box<float> worldBounds, double dtime)
     {
         /*         position_history.push_back(position);
@@ -91,6 +96,47 @@ struct Particle
 
         // position after wrapping around
         // std::cout << "Particle " << id << ", Position after wrapping around: " << position.x << ", " << position.y << std::endl;
+    }
+
+    ParticleData updated_position(quadtree::Box<float> worldBounds, double dtime)
+    {
+        ParticleData data;
+        Vector2<double> position = this->position;
+        position += velocity * dtime;
+
+        // position before wrapping around
+        // std::cout << "Particle " << id << ", Position before wrapping around: " << position.x << ", " << position.y << std::endl;
+
+        // Wrap around to the other side if out of bounds
+        float right = worldBounds.getRight();
+        float bottom = worldBounds.getBottom();
+
+        // print world bounds
+        // std::cout << "World bounds: " << worldBounds.left << ", " << worldBounds.top << ", " << worldBounds.width << ", " << worldBounds.height << std::endl;
+
+        float worldWidth = worldBounds.width;
+        float worldHeight = worldBounds.height;
+
+        // Correct wrapping using modulo to handle large out-of-bounds values
+        if (position.x < worldBounds.left)
+            position.x = right - std::fmod(worldBounds.left - position.x, worldWidth);
+        else if (position.x > right)
+            position.x = worldBounds.left + std::fmod(position.x - right, worldWidth);
+
+        if (position.y < worldBounds.top)
+            position.y = bottom - std::fmod(worldBounds.top - position.y, worldHeight);
+        else if (position.y > bottom)
+            position.y = worldBounds.top + std::fmod(position.y - bottom, worldHeight);
+
+        data.id = id;
+        data.x = position.x;
+        data.y = position.y;
+        data.ax = acceleration.x;
+        data.ay = acceleration.y;
+        data.vx = velocity.x;
+        data.vy = velocity.y;
+
+        return data;
     }
 
     void update_velocity(double dtime)

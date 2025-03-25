@@ -41,40 +41,6 @@ namespace simulation
     // Max real distance (Neptune's distance in meters)
     constexpr double MAX_REAL_DISTANCE = 4.495060e12;
 
-    // Function to scale solar system positions to fit inside the simulation box
-    static std::vector<std::array<double, 8>> scale_solar_system(const std::vector<std::array<double, 8>> &real_solar_system)
-    {
-        std::vector<std::array<double, 8>> scaled_solar_system;
-
-        double box_center_x = BOX_LEFT + BOX_WIDTH / 2;
-        double box_center_y = BOX_TOP + BOX_HEIGHT / 2;
-
-        // Scale factor based on max planet distance
-        double scale_factor = (BOX_WIDTH - 20.0) / (2.0 * MAX_REAL_DISTANCE); // Keep a margin of 10px
-        double time_scale_factor = sqrt(scale_factor);                        // Fix velocity scaling
-        double mass_scale_factor = pow(scale_factor, 3);                      // Scale mass properly
-
-        for (const auto &body : real_solar_system)
-        {
-            double x_scaled = box_center_x + (body[0] * scale_factor); // Centered around the Sun
-            double y_scaled = box_center_y + (body[1] * scale_factor); // Should be 0 initially (2D view)
-
-            double vx_scaled = body[2] * time_scale_factor;
-            double vy_scaled = body[3] * time_scale_factor;
-
-            double mass_scaled = body[4] * mass_scale_factor;
-
-            scaled_solar_system.push_back({
-                x_scaled, y_scaled,       // x, y positions
-                body[2], body[3],         // Properly scaled velocities
-                body[4],                  // Properly scaled mass
-                body[5], body[6], body[7] // r, g, b colors unchanged
-            });
-        }
-
-        return scaled_solar_system;
-    }
-
     class Simulation
     {
     public:
@@ -87,39 +53,6 @@ namespace simulation
               qt(std::make_unique<TREE_TYPE>(
                   worldBounds, getBoxFunc))
         {
-            particles = std::vector<std::unique_ptr<Particle>>(num_particles + CELESTIAL_BODY_COUNT);
-
-            std::cout << "Setting up simulation..." << std::endl;
-
-            std::vector<std::array<double, 8>> scaled_solar_system = scale_solar_system(solar_system);
-
-            // Assign planets based on scaled positions
-            for (size_t i = 0; i < CELESTIAL_BODY_COUNT; i++)
-            {
-                particles[i] = std::make_unique<Particle>();
-                particles[i]->id = i;
-                particles[i]->position = {scaled_solar_system[i][0], scaled_solar_system[i][1]};
-                particles[i]->velocity = {scaled_solar_system[i][2], scaled_solar_system[i][3]};
-                particles[i]->mass = scaled_solar_system[i][4];
-                float r = scaled_solar_system[i][5];
-                float g = scaled_solar_system[i][6];
-                float b = scaled_solar_system[i][7];
-                particles[i]->color[0] = r;
-                particles[i]->color[1] = g;
-                particles[i]->color[2] = b;
-                particles[i]->color[3] = 1.0f;
-                particles[i]->radius = PLANET_RADIUS;
-                if (i == 0)
-                {
-                    std::cout << "Particle 0 is the SUN" << std::endl;
-                    particles[i]->radius = SUN_RADIUS;
-                    particles[i]->is_sun = true;
-                }
-                std::cout << "Particle " << i << " at " << particles[i]->position.x << ", " << particles[i]->position.y << std::endl;
-                std::cout << " with velocity " << particles[i]->velocity.x << ", " << particles[i]->velocity.y << std::endl;
-                std::cout << "with mass " << particles[i]->mass << std::endl;
-            }
-            std::cout << "Solar system setup complete" << std::endl;
         }
 
         ~Simulation();
@@ -151,8 +84,8 @@ namespace simulation
         void leapfrog(double dtime);
         void brute_force(double dtime);
 
-        int num_runs = -1; // Number of runs (-1 for infite number of runs till manually stopped)
-        int num_particles = 0;
+        unsigned long int num_runs; // Number of runs (-1 for infite number of runs till manually stopped)
+        int num_particles;
         int counter = 0;
         int particle_count = 0;
 

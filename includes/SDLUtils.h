@@ -128,7 +128,7 @@ protected:
         }
         SDL_SetHint(SDL_HINT_RENDER_DRIVER, "openGL");
 
-        font = TTF_OpenFont("JetBrainsMono-ExtraLight.ttf", 21);
+        font = TTF_OpenFont("JetBrainsMono-ExtraLight.ttf", 18);
         if (!font)
         {
             std::cerr << "Error loading font: " << TTF_GetError() << std::endl;

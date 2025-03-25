@@ -16,7 +16,7 @@ option(USE_SDL "Enable SDL for visualization" ON)
 option(USE_MPI "Enable MPI for parallel execution" ON)
 option(USE_OPENMP "Enable OpenMP for parallel execution" ON)
 
-set(CUSTOM_COMPILE_FLAGS "-pg -g -gdwarf-3 -O0 -Wall -march=native")
+set(CUSTOM_COMPILE_FLAGS "-O0")
 string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${CUSTOM_COMPILE_FLAGS})
 
 set(COMMON_SOURCES

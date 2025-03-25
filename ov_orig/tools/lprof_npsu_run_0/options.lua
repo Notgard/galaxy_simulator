@@ -7,7 +7,7 @@ Table:new({
 	["calls_src_info"] = true;
 	["mmap_pages"] = 0;
 	["sampling_engine"] = 0;
-	["exe_args"] = " 10000 10";
+	["exe_args"] = " 10000 1";
 	["CPU_time_itv"] = true;
 	["cpu_list"] = "";
 	["collect_topology"] = true;
@@ -22,10 +22,10 @@ Table:new({
 	["caller"] = "oneview";
 	["may_multiprocess"] = false;
 	["max_threads"] = 0;
-	["maqao_path"] = "/home/garouba/MAQAO/maqao.x86_64.2.21.1/bin/maqao";
+	["maqao_path"] = "/usr/bin/maqao";
 	["cnt_evts_string"] = "";
 	["ref_cycles_rate"] = 0;
-	["exe_path"] = "/home/garouba/galaxy_simulator/ov_orig/binaries/particleSimulation";
+	["exe_path"] = "/home/notgard/CHPS0901/projet/ov_orig/binaries/particleSimulation";
 	["node_MB_RAM"] = 0;
 	["max_processes"] = 0;
 	["use_OS_timers"] = false;
@@ -38,7 +38,7 @@ Table:new({
 	["backtrace_mode"] = 1;
 	["user_guided"] = -1;
 	["kill_signals"] = "";
-	["experiment_path"] = "/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0";
+	["experiment_path"] = "/home/notgard/CHPS0901/projet/ov_orig/tools/lprof_npsu_run_0";
 	["ign_signals"] = "";
 	["cpu_clock_rate"] = 0;
 	["max_callchain_len"] = 20;

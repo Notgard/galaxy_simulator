@@ -14,6 +14,33 @@
 
 using namespace quadtree;
 
+// Function to scale solar system positions to fit inside the simulation box
+static std::vector<std::array<double, 8>> scale_solar_system(const std::vector<std::array<double, 8>> &real_solar_system)
+{
+    std::vector<std::array<double, 8>> scaled_solar_system;
+
+    double box_center_x = BOX_LEFT + BOX_WIDTH / 2;
+    double box_center_y = BOX_TOP + BOX_HEIGHT / 2;
+
+    // Scale factor based on max planet distance
+    double scale_factor = (BOX_WIDTH - 20.0) / (2.0 * simulation::MAX_REAL_DISTANCE); // Keep a margin of 10px
+
+    for (const auto &body : real_solar_system)
+    {
+        double x_scaled = box_center_x + (body[0] * scale_factor); // Centered around the Sun
+        double y_scaled = box_center_y + (body[1] * scale_factor); // Should be 0 initially (2D view)
+
+        scaled_solar_system.push_back({
+            x_scaled, y_scaled,       // x, y positions
+            body[2], body[3],         // Properly scaled velocities
+            body[4],                  // Properly scaled mass
+            body[5], body[6], body[7] // r, g, b colors unchanged
+        });
+    }
+
+    return scaled_solar_system;
+}
+
 simulation::Simulation::~Simulation()
 {
     particles.clear();
@@ -42,9 +69,46 @@ void simulation::Simulation::recreate_tree()
 
 void simulation::Simulation::setup()
 {
+    particles = std::vector<std::unique_ptr<Particle>>(num_particles + CELESTIAL_BODY_COUNT);
+
+    std::cout << "Setting up simulation..." << std::endl;
+
+    std::vector<std::array<double, 8>> scaled_solar_system = scale_solar_system(solar_system);
+
+    // Assign planets based on scaled positions
+    for (size_t i = 0; i < CELESTIAL_BODY_COUNT; i++)
+    {
+        particles[i] = std::make_unique<Particle>();
+        particles[i]->id = i;
+        particles[i]->position = {scaled_solar_system[i][0], scaled_solar_system[i][1]};
+        particles[i]->velocity = {scaled_solar_system[i][2], scaled_solar_system[i][3]};
+        particles[i]->mass = scaled_solar_system[i][4];
+
+        float r = scaled_solar_system[i][5];
+        float g = scaled_solar_system[i][6];
+        float b = scaled_solar_system[i][7];
+
+        particles[i]->color[0] = r;
+        particles[i]->color[1] = g;
+        particles[i]->color[2] = b;
+        particles[i]->color[3] = 1.0f;
+        particles[i]->radius = PLANET_RADIUS;
+        if (i == 0)
+        {
+            std::cout << "Particle 0 is the SUN" << std::endl;
+            particles[i]->radius = SUN_RADIUS;
+            particles[i]->is_sun = true;
+        }
+        std::cout << "Particle " << i << " at " << particles[i]->position.x << ", " << particles[i]->position.y << std::endl;
+        std::cout << " with velocity " << particles[i]->velocity.x << ", " << particles[i]->velocity.y << std::endl;
+        std::cout << "with mass " << particles[i]->mass << std::endl;
+    }
+    std::cout << "Solar system setup complete" << std::endl;
+
     std::cout << "Setting up particle simulation..." << std::endl;
 
     worldBounds = quadtree::Box<float>(BOX_LEFT, BOX_TOP, BOX_WIDTH, BOX_HEIGHT);
+    
     Vector2<float> c = worldBounds.getCenter();
     Vector2<double> center = {c.x, c.y};
 
@@ -52,7 +116,7 @@ void simulation::Simulation::setup()
 
     // Random number generator setup
     std::random_device rd;
-    std::mt19937 gen(5);
+    std::mt19937 gen(rd());
     std::uniform_real_distribution<double> radiusDist(10.0f, worldBounds.width / 4.0f); // Ensure particles are within bounds
     std::uniform_real_distribution<float> angleDist(0.0f, 2.0f * M_PI);
     // std::uniform_real_distribution<float> xDist(worldBounds.left, worldBounds.getRight());
@@ -173,7 +237,7 @@ void simulation::Simulation::step(double dtime)
 {
     counter++;
 
-    //leapfrog(dtime);
+    // leapfrog(dtime);
     qt->update_barnes_hut_forces(dtime);
 
 #ifdef USE_OPENMP
