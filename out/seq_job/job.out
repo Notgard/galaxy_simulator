@@ -1,9 +1,7 @@
 Loading x86_64 (no gpu) environment
 Environment loaded. Spack available.
-Number of threads: 1
-Number of cores: 1
-Number of MPI processes: 1
-From rank 0: Starting simulation with the following config...
+Sequential Version
+Starting simulation with the following config...
 ==============================================================
 	Quadtree Config:
 	   QUADTREE_MAX_DEPTH: 50
@@ -22,12 +20,8 @@ Solar system setup complete
 Setting up particle simulation...
 Center of the world: 510, 510
 Particle simulation setup complete
-Created MPI particle data type
-Now calculating chunk size...
-MPI initialized, sending particles...
 Starting N-Body simulation
-From rank 0: Starting MPI simulation...
-Time: 3s
-Time: 3834ms
-Time: 3834272us
-From rank 0: Simulation complete
+Finished simulation
+Time: 1008s
+Time: 1008865ms
+Time: 1008865308us

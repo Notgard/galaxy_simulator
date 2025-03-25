@@ -1,0 +1,48 @@
+
+* Info: "ref-cycles" not supported on romeo-c023: fallback to "cpu-clock"Sequential Version
+Starting simulation with the following config...
+==============================================================
+	Quadtree Config:
+	   QUADTREE_MAX_DEPTH: 50
+	   QUADTREE_MAX_VALUES: 4
+	   QUADTREE_THRESHOLD: 16
+	Simualtion configuration:
+	   Number of atoms: 10000
+	   Number of runs: 10
+==============================================================
+Setting up simulation...
+Particle 0 is the SUN
+Particle 0 at 510, 510
+ with velocity 0, 0
+with mass 3e+07
+Solar system setup complete
+Setting up particle simulation...
+Center of the world: 510, 510
+Particle simulation setup complete
+Starting N-Body simulation
+Finished simulation
+Time: 7s
+Time: 7433ms
+Time: 7433476us
+
+* Info: Dumping samples (host romeo-c023, process 597814)
+* Info: Dumping source info for callchain nodes (host romeo-c023, process 597814)
+* Info: Building/writing metadata (host romeo-c023)
+* Info: Finished collect step (host romeo-c023, process 597814)
+
+Your experiment path is /home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0
+
+To display your profiling results:
+#########################################################################################################################
+#    LEVEL    |     REPORT     |                                        COMMAND                                         #
+#########################################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0  #
+#########################################################################################################################
+

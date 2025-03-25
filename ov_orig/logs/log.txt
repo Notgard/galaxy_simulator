@@ -1,0 +1,5 @@
+********************************************************************************
+MAQAO 2.21.1 - a9bb74606c7e260f7f87782e64f16b00a6f20c1b::20250121-112452 || 2025/01/21
+/home/garouba/MAQAO/maqao.x86_64.2.21.1/bin/maqao oneview create-report=one executable=./build/particleSimulation "run_command=<executable> 10000 10" xp=ov_orig --include-kernel --replace 
+CPY:  [true] ./build/particleSimulation --> /home/garouba/galaxy_simulator/ov_orig/binaries/particleSimulation
+CMD:   /home/garouba/MAQAO/maqao.x86_64.2.21.1/bin/maqao lprof _caller=oneview  --xp="/home/garouba/galaxy_simulator/ov_orig/tools/lprof_npsu_run_0" --mpi-command="" --collect-CPU-time-intervals --collect-topology   -- /home/garouba/galaxy_simulator/ov_orig/binaries/particleSimulation 10000 10
