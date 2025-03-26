@@ -46,4 +46,7 @@
 
 #define CELESTIAL_BODY_COUNT 1
 
+#define SUB_TREE_PROCESSING 1
+#define CHUNKED_PROCESSING 2
+
 #define DEBUG 0

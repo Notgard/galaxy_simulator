@@ -68,9 +68,9 @@ namespace simulation
         void end_timer() { end_time = std::chrono::steady_clock::now(); }
         void print_time()
         {
-            std::cout << "Time: " << std::chrono::duration_cast<std::chrono::seconds>(end_time - start_time).count() << "s" << std::endl;
-            std::cout << "Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count() << "ms" << std::endl;
-            std::cout << "Time: " << std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time).count() << "us" << std::endl;
+            std::cout << "Time: (seconds) " << std::chrono::duration_cast<std::chrono::seconds>(end_time - start_time).count() << "s" << std::endl;
+            std::cout << "Time: (milliseconds)" << std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count() << "ms" << std::endl;
+            std::cout << "Time: (microseconds)" << std::chrono::duration_cast<std::chrono::microseconds>(end_time - start_time).count() << "us" << std::endl;
         }
 
     protected:

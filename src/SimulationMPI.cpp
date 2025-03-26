@@ -83,8 +83,14 @@ void simulation::SimulationMPI::mpi_step(double dtime)
     distribute_particles(local_particles, dtime);
 
     // process particles depending on the method
-    chunked_processing(local_particles, dtime);
-    // sub_tree_processing(local_particles, dtime);
+    if (mpi_version == SUB_TREE_PROCESSING)
+    {
+        sub_tree_processing(local_particles, dtime);
+    }
+    else if (mpi_version == CHUNKED_PROCESSING)
+    {
+        chunked_processing(local_particles, dtime);
+    }
 }
 
 void simulation::SimulationMPI::distribute_subtrees()

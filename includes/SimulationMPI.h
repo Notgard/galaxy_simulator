@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Simulation.h"
+#include "Config.h"
 
 #include <mpi.h>
 
@@ -9,8 +10,8 @@ namespace simulation
     class SimulationMPI : public virtual Simulation
     {
     public:
-        SimulationMPI(int num_particles, int num_runs, int rank, int size)
-            : Simulation(num_particles, num_runs), rank(rank), size(size)
+        SimulationMPI(int num_particles, int num_runs,int mpi_version, int rank, int size)
+            : Simulation(num_particles, num_runs),mpi_version(mpi_version), rank(rank), size(size)
         {
             bounding_box = quadtree::Box<float>(BOX_LEFT, BOX_TOP, BOX_WIDTH, BOX_HEIGHT);
             nb_particles = num_particles + CELESTIAL_BODY_COUNT;
@@ -40,10 +41,12 @@ namespace simulation
         void sub_tree_processing(std::vector<ParticleData> &local_particles, double dtime);
 
         void clean_mpi();
+    
 
     protected:
         int rank;
         int size;
+        int mpi_version;
 
         size_t nb_particles;
 

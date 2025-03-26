@@ -11,16 +11,17 @@ using namespace simulation;
 
 int main(int argc, char **argv)
 {
-    if (argc < 3)
+    if (argc < 4)
     {
         // print usage with specifying number of atoms
-        printf("Usage: %s <number of atoms> <num_runs>\n", argv[0]);
+        printf("Usage: %s <number of atoms> <num_runs> <mpi_version>\n", argv[0]);
         exit(EXIT_FAILURE);
     }
 
     int number_of_atoms = atoi(argv[1]);
     int number_of_runs = atoi(argv[2]);
-    bool use_sdl = (argc > 3 && strcmp(argv[3], "sdl") == 0);
+    int mpi_version = atoi(argv[3]);
+    bool use_sdl = (argc > 4 && strcmp(argv[4], "sdl") == 0);
 
     // Initialize MPI variables for ranks and size
     int rank, size;
@@ -30,6 +31,19 @@ int main(int argc, char **argv)
 
     if (rank == 0)
     {
+        if(mpi_version == SUB_TREE_PROCESSING)
+        {
+            printf("Using Sub Tree Processing\n");
+        }
+        else if(mpi_version == CHUNKED_PROCESSING)
+        {
+            printf("Using Chunked Processing\n");
+        }
+        else
+        {
+            printf("Invalid MPI version\n");
+            exit(EXIT_FAILURE);
+        }
 #ifdef USE_OPENMP
 #pragma omp parallel
         {
@@ -63,7 +77,7 @@ int main(int argc, char **argv)
         printf("==============================================================\n");
     }
 
-    SimulationMPI sim_mpi(number_of_atoms, number_of_runs, rank, size);
+    SimulationMPI sim_mpi(number_of_atoms, number_of_runs,mpi_version, rank, size);
     if (rank == 0)
     {
         sim_mpi.setup();

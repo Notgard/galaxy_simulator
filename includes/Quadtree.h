@@ -19,7 +19,9 @@
 
 #include "Particle.h"
 
+#ifdef USE_OPENMP
 #include <omp.h>
+#endif
 
 // Quadtree implementation :
 //  stores the values in a tree structure, where each node has a maximum of 4 children
