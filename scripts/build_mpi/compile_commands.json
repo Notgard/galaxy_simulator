@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi",
+  "command": "/usr/bin/c++ -DUSE_MPI -I/home/zbouzekkar/CHPS901/galaxy_simulator/includes -isystem /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/include -isystem /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/include -O3 -DNDEBUG -std=gnu++17 -Ofast -march=znver3 -m64 -ffast-math -ffp-contract=fast -mavx512f -o CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/src/Simulation.cpp",
+  "file": "/home/zbouzekkar/CHPS901/galaxy_simulator/src/Simulation.cpp",
+  "output": "CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o"
+},
+{
+  "directory": "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi",
+  "command": "/usr/bin/c++ -DUSE_MPI -I/home/zbouzekkar/CHPS901/galaxy_simulator/includes -isystem /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/include -isystem /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/include -O3 -DNDEBUG -std=gnu++17 -Ofast -march=znver3 -m64 -ffast-math -ffp-contract=fast -mavx512f -o CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/src/mpi_main.cpp",
+  "file": "/home/zbouzekkar/CHPS901/galaxy_simulator/src/mpi_main.cpp",
+  "output": "CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o"
+},
+{
+  "directory": "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi",
+  "command": "/usr/bin/c++ -DUSE_MPI -I/home/zbouzekkar/CHPS901/galaxy_simulator/includes -isystem /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/include -isystem /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/include -O3 -DNDEBUG -std=gnu++17 -Ofast -march=znver3 -m64 -ffast-math -ffp-contract=fast -mavx512f -o CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/src/SimulationMPI.cpp",
+  "file": "/home/zbouzekkar/CHPS901/galaxy_simulator/src/SimulationMPI.cpp",
+  "output": "CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o"
+}
+]

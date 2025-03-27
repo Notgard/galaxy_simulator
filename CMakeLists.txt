@@ -18,7 +18,7 @@ option(USE_OPENMP "Enable OpenMP for parallel execution" ON)
 
 # Custom flags
 set(DEBUG_COMPILE_FLAGS "-O0")
-set(OPTIMIZATION_COMPILE_FLAGS "-Ofast -march=znver4 -m64 -ffast-math -ffp-contract=fast -mavx512f")
+set(OPTIMIZATION_COMPILE_FLAGS "-Ofast -march=znver3 -m64 -ffast-math -ffp-contract=fast -mavx512f")
 
 # Apply optimization flags if not in debug mode
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")

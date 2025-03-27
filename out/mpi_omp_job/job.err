@@ -1,0 +1,25 @@
+corrupted size vs. prev_size while consolidating
+[romeo-c033:2014514] *** Process received signal ***
+[romeo-c033:2014514] Signal: Aborted (6)
+[romeo-c033:2014514] Signal code:  (-6)
+[romeo-c033:2014514] [ 0] /usr/lib64/libc.so.6(+0x3e6f0)[0x14ad16e3e6f0]
+[romeo-c033:2014514] [ 1] /usr/lib64/libc.so.6(+0x8b94c)[0x14ad16e8b94c]
+[romeo-c033:2014514] [ 2] /usr/lib64/libc.so.6(raise+0x16)[0x14ad16e3e646]
+[romeo-c033:2014514] [ 3] /usr/lib64/libc.so.6(abort+0xd3)[0x14ad16e287f3]
+[romeo-c033:2014514] [ 4] /usr/lib64/libc.so.6(+0x29130)[0x14ad16e29130]
+[romeo-c033:2014514] [ 5] /usr/lib64/libc.so.6(+0x959f7)[0x14ad16e959f7]
+[romeo-c033:2014514] [ 6] /usr/lib64/libc.so.6(+0x97766)[0x14ad16e97766]
+[romeo-c033:2014514] [ 7] /usr/lib64/libc.so.6(free+0x55)[0x14ad16e99d35]
+[romeo-c033:2014514] [ 8] ../scripts/build_mpi_omp/particleSimulationMPI[0x409678]
+[romeo-c033:2014514] [ 9] /usr/lib64/libgomp.so.1(+0x1d2c6)[0x14ad175d42c6]
+[romeo-c033:2014514] [10] /usr/lib64/libc.so.6(+0x89c02)[0x14ad16e89c02]
+[romeo-c033:2014514] [11] /usr/lib64/libc.so.6(+0x10ec40)[0x14ad16f0ec40]
+[romeo-c033:2014514] *** End of error message ***
+--------------------------------------------------------------------------
+prterun noticed that process rank 0 with PID 2014514 on node romeo-c033 exited on
+signal 6 (Aborted).
+--------------------------------------------------------------------------
+double free or corruption (!prev)
+[romeo-c033:2020963] *** Process received signal ***
+[romeo-c033:2020963] Signal: Aborted (6)
+[romeo-c033:2020963] Signal code:  (-6)

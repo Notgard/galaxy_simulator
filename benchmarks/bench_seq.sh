@@ -14,7 +14,7 @@ for particle in ${particles[@]}; do
     # Run the simulation 10 times
     for i in {1..10}; do
         # Run the simulation with the current number of particles and iterations
-        output=$(../build/particleSimulation $particle 100)
+        output=$(../scripts/build/particleSimulation $particle 100)
 
         # Extract execution times
         seconds=$(echo "$output" | grep "Time: (seconds)" | awk '{print $NF}')

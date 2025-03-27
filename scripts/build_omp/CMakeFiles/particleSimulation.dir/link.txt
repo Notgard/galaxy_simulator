@@ -1,0 +1,1 @@
+/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++ -O3 -DNDEBUG CMakeFiles/particleSimulation.dir/src/Simulation.cpp.o CMakeFiles/particleSimulation.dir/src/main.cpp.o -o particleSimulation  /opt/softwares/amd/aocc-compiler-5.0.0/lib/libomp.so /usr/lib64/libpthread.a

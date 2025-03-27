@@ -11,7 +11,6 @@
 #SBATCH --error=../out/omp_job/job.err
 #SBATCH --output=../out/omp_job/job.out
 
-romeo_load_x64cpu_env
-spack load cmake
+source ../load_env.sh
 
 ./bench_omp.sh

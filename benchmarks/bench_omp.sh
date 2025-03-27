@@ -10,6 +10,9 @@ iterations=100
 mkdir -p logs
 mkdir -p logs/omp
 
+#build folder
+build_dir="../scripts/build_omp"
+
 threads=(1 2 4 8 16 32 64)
 
 # Run the simulation for each number of particles with varying number of threads
@@ -18,7 +21,7 @@ for particle in ${particles[@]}; do
         # Run the simulation 10 times
         for i in {1..10}; do
             # Run the simulation with the current number of particles and threads
-            output=$(../run_omp.sh $thread $particle $iterations)
+            output=$(../scripts/run_omp.sh $thread $particle $iterations $build_dir)
 
             # Extract execution times
             seconds=$(echo "$output" | grep "Time: (seconds)" | awk '{print $NF}')

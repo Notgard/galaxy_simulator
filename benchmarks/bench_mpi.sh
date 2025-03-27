@@ -12,6 +12,12 @@ processes=(4 8 16 32 64 128)
 # Number of threads
 threads=1
 
+#build folder
+build_dir="../scripts/build_mpi"
+
+# MPI versions
+mpi_versions=(1 2)
+
 mkdir -p logs
 mkdir -p logs/mpi
 
@@ -23,7 +29,7 @@ for mpi_version in ${mpi_versions[@]}; do
             # Run the simulation 10 times
             for i in {1..10}; do
                 # Run the simulation with the current number of particles and processes
-                output=$(../run_mpi.sh $process $threads $particle $iterations $mpi_version)
+                output=$(../scripts/run_mpi.sh $process $threads $particle $iterations $mpi_version $build_dir)
 
                 # Extract execution times
                 seconds=$(echo "$output" | grep "Time: (seconds)" | awk '{print $NF}')

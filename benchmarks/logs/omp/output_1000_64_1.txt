@@ -1,1 +1,27 @@
-
+OMP Version
+Number of threads: 64
+Number of cores: 64
+Starting simulation with the following config...
+==============================================================
+	Quadtree Config:
+	   QUADTREE_MAX_DEPTH: 50
+	   QUADTREE_MAX_VALUES: 4
+	   QUADTREE_THRESHOLD: 16
+	Simualtion configuration:
+	   Number of atoms: 1000
+	   Number of runs: 100
+==============================================================
+Setting up simulation...
+Particle 0 is the SUN
+Particle 0 at 510, 510
+ with velocity 0, 0
+with mass 3e+07
+Solar system setup complete
+Setting up particle simulation...
+Center of the world: 510, 510
+Particle simulation setup complete
+Starting N-Body simulation
+Finished simulation
+Time: (seconds) 0s
+Time: (milliseconds) 109ms
+Time: (microseconds) 109263us
