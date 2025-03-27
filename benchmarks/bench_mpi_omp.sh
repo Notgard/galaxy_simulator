@@ -1,76 +1,94 @@
 #!/bin/bash
 
-# create an array of the number of particles
+# Create an array of the number of particles
 particles=(1000 10000 100000 250000 500000)
 
-#first benchmark with 4 threads
-#number of iterations
+# First benchmark with 4 threads
+# Number of iterations
 iterations=100
 
-#number of MPI processes
+# Number of MPI processes
 processes=(4 8 16 32 64)
 
-#number of OMP threads
+# Number of OMP threads
 threads=4
 
-#MPI version
+# MPI version
 mpi_versions=(1 2)
 
-#run the simulation for each number of particles
-for mpi_version in ${mpi_versions[@]}
-do
-    for particle in ${particles[@]}
-    do
-        #run the simulation for each number of processes
-        for process in ${processes[@]}
-        do
-            #run the simulation 10 times
-            for i in {1..10}
-            do
-                #run the simulation with the current number of particles and processes
-                ../run_mpi.sh $process $threads $particle $iterations $mpi_version  > output.txt
+# Create the logs directory if it doesn't exist
+mkdir -p logs
+mkdir -p logs/mpi_omp
 
-                
-                #put the output file in a folder
-                if(mpi_version == 1)
-                then
-                    mv output.txt out/out_mpi/threads_4/sub_tree/output_${particle}_${process}_${i}.txt
+# Run the simulation for each number of particles
+for mpi_version in ${mpi_versions[@]}; do
+    for particle in ${particles[@]}; do
+        # Run the simulation for each number of processes
+        for process in ${processes[@]}; do
+            # Run the simulation 10 times
+            for i in {1..10}; do
+                # Run the simulation with the current number of particles and processes
+                output=$(../run_mpi.sh $process $threads $particle $iterations $mpi_version)
+
+                # Extract execution times
+                seconds=$(echo "$output" | grep "Time: (seconds)" | awk '{print $NF}')
+                milliseconds=$(echo "$output" | grep "Time: (milliseconds)" | awk '{print $NF}')
+                microseconds=$(echo "$output" | grep "Time: (microseconds)" | awk '{print $NF}')
+
+                # Ensure output directory exists
+                if [ $mpi_version -eq 1 ]; then
+                    dir="out/out_mpi_omp/threads_4/sub_tree"
                 else
-                    mv output.txt out/out_mpi/threads_4/chunk/output_${particle}_${process}_${i}.txt
+                    dir="out/out_mpi_omp/threads_4/chunk"
+                fi
+                mkdir -p "$dir"
 
+                # Save the extracted times to a separate file
+                echo "$seconds, $milliseconds, $microseconds" > "${dir}/times_${particle}_${process}_${i}.txt"
+
+                # Save the full output log in the logs directory
+                echo "$output" > "logs/mpi_omp/output_${particle}_${process}_${i}.txt"
             done
         done
     done
 done
-#second benchmark with 2 threads
 
-#number of processes
+# Second benchmark with 2 threads
+
+# Number of processes
 processes=(4 8 16 32 64 128)
 
-#number of threads
+# Number of threads
 threads=2
 
-#run the simulation for each number of particles
-for mpi_version in ${mpi_versions[@]}
-do
-    for particle in ${particles[@]}
-    do
-        #run the simulation for each number of processes
-        for process in ${processes[@]}
-        do
-            #run the simulation 10 times
-            for i in {1..10}
-            do
-                #run the simulation with the current number of particles and processes
-                ../run_mpi.sh $process $threads $particle $iterations > output.txt
+# Run the simulation for each number of particles
+for mpi_version in ${mpi_versions[@]}; do
+    for particle in ${particles[@]}; do
+        # Run the simulation for each number of processes
+        for process in ${processes[@]}; do
+            # Run the simulation 10 times
+            for i in {1..10}; do
+                # Run the simulation with the current number of particles and processes
+                output=$(../run_mpi.sh $process $threads $particle $iterations $mpi_version)
 
-                 #put the output file in a folder
-                if(mpi_version == 1)
-                then
-                    mv output.txt out/out_mpi/threads_2/sub_tree/output_${particle}_${process}_${i}.txt
+                # Extract execution times
+                seconds=$(echo "$output" | grep "Time: (seconds)" | awk '{print $NF}')
+                milliseconds=$(echo "$output" | grep "Time: (milliseconds)" | awk '{print $NF}')
+                microseconds=$(echo "$output" | grep "Time: (microseconds)" | awk '{print $NF}')
+
+                # Ensure output directory exists
+                if [ $mpi_version -eq 1 ]; then
+                    dir="out/out_mpi_omp/threads_2/sub_tree"
                 else
-                    mv output.txt out/out_mpi/threads_2/chunk/output_${particle}_${process}_${i}.txt
+                    dir="out/out_mpi_omp/threads_2/chunk"
+                fi
+                mkdir -p "$dir"
 
+                # Save the extracted times to a separate file
+                echo "$seconds, $milliseconds, $microseconds" > "${dir}/times_${particle}_${process}_${i}.txt"
+
+                # Save the full output log in the logs directory
+                echo "$output" > "logs/mpi_omp/output_${particle}_${process}_${i}.txt"
             done
         done
     done

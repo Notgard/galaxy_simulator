@@ -16,8 +16,18 @@ option(USE_SDL "Enable SDL for visualization" ON)
 option(USE_MPI "Enable MPI for parallel execution" ON)
 option(USE_OPENMP "Enable OpenMP for parallel execution" ON)
 
-set(CUSTOM_COMPILE_FLAGS "-O0")
-string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${CUSTOM_COMPILE_FLAGS})
+# Custom flags
+set(DEBUG_COMPILE_FLAGS "-O0")
+set(OPTIMIZATION_COMPILE_FLAGS "-Ofast -march=znver4 -m64 -ffast-math -ffp-contract=fast -mavx512f")
+
+# Apply optimization flags if not in debug mode
+if (CMAKE_BUILD_TYPE STREQUAL "Debug")
+    string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${DEBUG_COMPILE_FLAGS})
+    message("Compiler flags: ${DEBUG_COMPILE_FLAGS}")
+else()
+    string(REPLACE " " ";" CUSTOM_COMPILE_FLAGS_LIST ${OPTIMIZATION_COMPILE_FLAGS})
+    message("Compiler flags: ${OPTIMIZATION_COMPILE_FLAGS}")
+endif()
 
 set(COMMON_SOURCES
     src/Simulation.cpp
