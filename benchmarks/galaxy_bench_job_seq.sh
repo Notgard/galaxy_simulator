@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --job-name "bench_seq"
 #SBATCH --comment "100000 100"
-#SBATCH --error=out/seq_job/job.err
-#SBATCH --output=out/seq_job/job.out
+#SBATCH --error=../out/seq_job/job.err
+#SBATCH --output=../out/seq_job/job.out
 
 romeo_load_x64cpu_env
 spack load cmake

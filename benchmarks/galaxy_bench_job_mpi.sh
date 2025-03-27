@@ -8,8 +8,8 @@
 #SBATCH --cpus-per-task=4 #OpenMP
 #SBATCH --job-name "bench_mpi"
 #SBATCH --comment "100000 100"
-#SBATCH --error=out/mpi_job/job.err
-#SBATCH --output=out/mpi_job/job.out
+#SBATCH --error=../out/mpi_job/job.err
+#SBATCH --output=../out/mpi_job/job.out
 
 source ../load_env.sh
 
