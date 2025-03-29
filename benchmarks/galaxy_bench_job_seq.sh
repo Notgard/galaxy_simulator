@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 #SBATCH --account="r250059"
-#SBATCH --time=12:00:00
-#SBATCH --mem=30G
+#SBATCH --time=24:00:00
+#SBATCH --mem=100G
 #SBATCH --constraint=x64cpu
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --job-name "bench_seq"
-#SBATCH --comment "100000 100"
 #SBATCH --error=../out/seq_job/job.err
 #SBATCH --output=../out/seq_job/job.out
 
-romeo_load_x64cpu_env
-spack load cmake
+source ../load_env.sh
 
 ./bench_seq.sh

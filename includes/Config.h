@@ -18,10 +18,10 @@
 #define QUADTREE_THRESHOLD 16
 #define QUADTREE_MAX_DEPTH 50
 
-#define BOX_WIDTH 1000.0f
-#define BOX_HEIGHT 1000.0f
-#define BOX_LEFT 10.0f
-#define BOX_TOP 10.0f
+#define BOX_WIDTH 1000.0
+#define BOX_HEIGHT 1000.0
+#define BOX_LEFT 10.0
+#define BOX_TOP 10.0
 
 //simulation constants
 #define delta_time 0.1

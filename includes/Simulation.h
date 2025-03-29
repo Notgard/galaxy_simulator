@@ -16,7 +16,7 @@
 #include <thread>
 #include <atomic>
 
-#define BOX_GETTER_TYPE std::function<quadtree::Box<float>(Particle *)>
+#define BOX_GETTER_TYPE std::function<quadtree::Box<double>(Particle *)>
 #define TREE_TYPE quadtree::Quadtree<Particle *, BOX_GETTER_TYPE>
 
 namespace simulation
@@ -47,9 +47,9 @@ namespace simulation
         Simulation(int num_particles, int num_runs = -1)
             : num_particles(num_particles), num_runs(num_runs),
               getBoxFunc([](Particle *p)
-                         { return quadtree::Box<float>(
-                               quadtree::Vector2<float>(p->position.x, p->position.y),
-                               quadtree::Vector2<float>(0.0f, 0.0f)); }),
+                         { return quadtree::Box<double>(
+                               quadtree::Vector2<double>(p->position.x, p->position.y),
+                               quadtree::Vector2<double>(0.0, 0.0)); }),
               qt(std::make_unique<TREE_TYPE>(
                   worldBounds, getBoxFunc))
         {
@@ -76,7 +76,7 @@ namespace simulation
     protected:
         BOX_GETTER_TYPE getBoxFunc;
 
-        quadtree::Box<float> worldBounds;
+        quadtree::Box<double> worldBounds = quadtree::Box<double>(BOX_LEFT, BOX_TOP, BOX_WIDTH, BOX_HEIGHT);
         std::unique_ptr<TREE_TYPE> qt;
 
         std::vector<std::unique_ptr<Particle>> particles;

@@ -22,7 +22,7 @@ namespace simulation
         void step(double dtime) override;
     protected:
         
-        void draw_quadtree(const TREE_TYPE::Node *node, const quadtree::Box<float> &box, int depth = 0);
+        void draw_quadtree(const TREE_TYPE::Node *node, const quadtree::Box<double> &box, int depth = 0);
         void draw_galaxy();
         void render_tree();
 

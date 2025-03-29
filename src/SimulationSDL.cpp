@@ -1,6 +1,6 @@
 #include "SimulationSDL.h"
 
-void simulation::SimulationSDL::draw_quadtree(const TREE_TYPE::Node *node, const quadtree::Box<float> &box, int depth)
+void simulation::SimulationSDL::draw_quadtree(const TREE_TYPE::Node *node, const quadtree::Box<double> &box, int depth)
 {
     if (!node)
         return;

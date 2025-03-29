@@ -61,72 +61,80 @@ struct Particle
         velocity = {data.vx, data.vy};
     }
 
-    void update_position(quadtree::Box<float> worldBounds, double dtime)
+    void update_position(quadtree::Box<double> worldBounds, double dtime)
     {
-        /*         position_history.push_back(position);
-                if (position_history.size() > PARTICLE_POSITION_HISTORY_SIZE) {
-                    position_history.erase(position_history.begin());
-                } */
-
-        position += velocity * dtime;
+        Vector2<double> pos;
+        pos.x = this->position.x;
+        pos.y = this->position.y;
+        pos += velocity * dtime;
 
         // position before wrapping around
         // std::cout << "Particle " << id << ", Position before wrapping around: " << position.x << ", " << position.y << std::endl;
 
         // Wrap around to the other side if out of bounds
-        float right = worldBounds.getRight();
-        float bottom = worldBounds.getBottom();
+        double right = worldBounds.getRight();
+        double bottom = worldBounds.getBottom();
 
         // print world bounds
         // std::cout << "World bounds: " << worldBounds.left << ", " << worldBounds.top << ", " << worldBounds.width << ", " << worldBounds.height << std::endl;
 
-        float worldWidth = worldBounds.width;
-        float worldHeight = worldBounds.height;
+        double worldWidth = worldBounds.width;
+        double worldHeight = worldBounds.height;
 
         // Correct wrapping using modulo to handle large out-of-bounds values
-        if (position.x < worldBounds.left)
-            position.x = right - std::fmod(worldBounds.left - position.x, worldWidth);
-        else if (position.x > right)
-            position.x = worldBounds.left + std::fmod(position.x - right, worldWidth);
+        if (pos.x < worldBounds.left)
+            pos.x = right - std::fmod(worldBounds.left - pos.x, worldWidth);
+        else if (pos.x > right)
+            pos.x = worldBounds.left + std::fmod(pos.x - right, worldWidth);
 
-        if (position.y < worldBounds.top)
-            position.y = bottom - std::fmod(worldBounds.top - position.y, worldHeight);
-        else if (position.y > bottom)
-            position.y = worldBounds.top + std::fmod(position.y - bottom, worldHeight);
+        if (pos.y < worldBounds.top)
+            pos.y = bottom - std::fmod(worldBounds.top - pos.y, worldHeight);
+        else if (pos.y > bottom)
+            pos.y = worldBounds.top + std::fmod(pos.y - bottom, worldHeight);
+
+        this->position.x = pos.x;
+        this->position.y = pos.y;
 
         // position after wrapping around
         // std::cout << "Particle " << id << ", Position after wrapping around: " << position.x << ", " << position.y << std::endl;
     }
 
-    ParticleData updated_position(quadtree::Box<float> worldBounds, double dtime)
+    ParticleData updated_position(quadtree::Box<double> worldBounds, double dtime)
     {
         ParticleData data;
-        Vector2<double> position = this->position;
-        position += velocity * dtime;
+
+        Vector2<double> pos;
+        pos.x = this->position.x;
+        pos.y = this->position.y;
+
+        pos += velocity * dtime;
 
         // position before wrapping around
         // std::cout << "Particle " << id << ", Position before wrapping around: " << position.x << ", " << position.y << std::endl;
 
         // Wrap around to the other side if out of bounds
-        float right = worldBounds.getRight();
-        float bottom = worldBounds.getBottom();
+        double right = worldBounds.getRight();
+        double bottom = worldBounds.getBottom();
 
         // print world bounds
         // std::cout << "World bounds: " << worldBounds.left << ", " << worldBounds.top << ", " << worldBounds.width << ", " << worldBounds.height << std::endl;
 
-        float worldWidth = worldBounds.width;
-        float worldHeight = worldBounds.height;
+        double worldWidth = worldBounds.width;
+        double worldHeight = worldBounds.height;
 
         // Correct wrapping using modulo to handle large out-of-bounds values
-        if (position.x < worldBounds.left)
-            position.x = right - std::fmod(worldBounds.left - position.x, worldWidth);
-        else if (position.x > right)
-            position.x = worldBounds.left + std::fmod(position.x - right, worldWidth);
+        if (pos.x < worldBounds.left)
+            pos.x = right - std::fmod(worldBounds.left - pos.x, worldWidth);
+        else if (pos.x > right)
+            pos.x = worldBounds.left + std::fmod(pos.x - right, worldWidth);
 
-        if (position.y < worldBounds.top)
-            position.y = bottom - std::fmod(worldBounds.top - position.y, worldHeight);
-        else if (position.y > bottom)
-            position.y = worldBounds.top + std::fmod(position.y - bottom, worldHeight);
+        if (pos.y < worldBounds.top)
+            pos.y = bottom - std::fmod(worldBounds.top - pos.y, worldHeight);
+        else if (pos.y > bottom)
+            pos.y = worldBounds.top + std::fmod(pos.y - bottom, worldHeight);
+
+        this->position.x = pos.x;
+        this->position.y = pos.y;
 
         data.id = id;
         data.x = position.x;
@@ -145,8 +153,8 @@ struct Particle
         acceleration = {0.0, 0.0};
     }
 
-    void update_acceleration(Vector2<double> acceleration)
+    void update_acceleration(Vector2<double> accel)
     {
-        this->acceleration += acceleration;
+        this->acceleration += accel;
     }
 };

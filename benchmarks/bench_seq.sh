@@ -8,6 +8,7 @@ iterations=100
 
 # Create the logs directory if it doesn't exist
 mkdir -p logs
+mkdir -p logs/seq
 
 # Run the simulation for each number of particles
 for particle in ${particles[@]}; do
@@ -25,6 +26,6 @@ for particle in ${particles[@]}; do
         echo "$seconds, $milliseconds, $microseconds" > "out/out_seq/times_${particle}_${i}.txt"
 
         # Save the full output log in the logs directory
-        echo "$output" > "logs/output_${particle}_${i}.txt"
+        echo "$output" > "logs/seq/output_${particle}_${i}.txt"
     done
 done

@@ -54,10 +54,10 @@ RM = /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zbouzekkar/CHPS901/galaxy_simulator
+CMAKE_SOURCE_DIR = /home/garouba/galaxy_simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi
+CMAKE_BINARY_DIR = /home/garouba/galaxy_simulator/scripts/build_mpi
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/particleSimulationMPI.dir/clean
 CMakeFiles/particleSimulationMPI.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/particleSimulationMPI.dir/build.make CMakeFiles/particleSimulationMPI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/particleSimulationMPI.dir/build.make CMakeFiles/particleSimulationMPI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=1,2,3,4 "Built target particleSimulationMPI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=1,2,3,4 "Built target particleSimulationMPI"
 .PHONY : CMakeFiles/particleSimulationMPI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/particleSimulationMPI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/particleSimulationMPI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles 0
 .PHONY : CMakeFiles/particleSimulationMPI.dir/rule
 
 # Convenience name for target.

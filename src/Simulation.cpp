@@ -48,8 +48,9 @@ simulation::Simulation::~Simulation()
 
 void simulation::Simulation::recreate_tree()
 {
-    // reallocate the quadtree
-    worldBounds = quadtree::Box<float>(BOX_LEFT, BOX_TOP, BOX_WIDTH, BOX_HEIGHT);
+    // reallocate the quadtree    
+    qt.reset(); 
+
     qt = std::make_unique<TREE_TYPE>(worldBounds, getBoxFunc);
 
     for (int i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
@@ -106,10 +107,8 @@ void simulation::Simulation::setup()
     std::cout << "Solar system setup complete" << std::endl;
 
     std::cout << "Setting up particle simulation..." << std::endl;
-
-    worldBounds = quadtree::Box<float>(BOX_LEFT, BOX_TOP, BOX_WIDTH, BOX_HEIGHT);
     
-    Vector2<float> c = worldBounds.getCenter();
+    Vector2<double> c = worldBounds.getCenter();
     Vector2<double> center = {c.x, c.y};
 
     std::cout << "Center of the world: " << center.x << ", " << center.y << std::endl;
@@ -117,8 +116,8 @@ void simulation::Simulation::setup()
     // Random number generator setup
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_real_distribution<double> radiusDist(10.0f, worldBounds.width / 4.0f); // Ensure particles are within bounds
-    std::uniform_real_distribution<float> angleDist(0.0f, 2.0f * M_PI);
+    std::uniform_real_distribution<double> radiusDist(10.0, worldBounds.width / 4.0); // Ensure particles are within bounds
+    std::uniform_real_distribution<double> angleDist(0.0, 2.0 * M_PI);
     // std::uniform_real_distribution<float> xDist(worldBounds.left, worldBounds.getRight());
     // std::uniform_real_distribution<float> yDist(worldBounds.top, worldBounds.getBottom());
 
@@ -126,10 +125,10 @@ void simulation::Simulation::setup()
     std::uniform_real_distribution<float> colorDist(0.0f, 1.0f);
 
     // generate random particle velocities
-    std::uniform_real_distribution<float> velocityDist(-1.0f, 1.0f);
+    std::uniform_real_distribution<double> velocityDist(-1.0, 1.0);
 
     // we start at 1 because the first particle is the sun
-    for (int i = CELESTIAL_BODY_COUNT; i < num_particles + CELESTIAL_BODY_COUNT; i++)
+    for (size_t i = CELESTIAL_BODY_COUNT; i < num_particles + CELESTIAL_BODY_COUNT; i++)
     {
         double angle = angleDist(gen);
         double radius = radiusDist(gen);
@@ -163,7 +162,7 @@ void simulation::Simulation::setup()
         particle_count++;
     }
 
-    for (int i = 1; i < CELESTIAL_BODY_COUNT; i++)
+    for (size_t i = 1; i < CELESTIAL_BODY_COUNT; i++)
     {
         double dx = particles[i]->position.x - 410; // Distance from center
         double dy = particles[i]->position.y - 410;
@@ -203,11 +202,11 @@ void simulation::Simulation::leapfrog(double dtime)
 void simulation::Simulation::brute_force(double dtime)
 {
 #pragma omp parallel for
-    for (int i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
+    for (size_t i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
     {
         Vector2<double> a_g(0.0);
 
-        for (int j = 0; j < num_particles + CELESTIAL_BODY_COUNT; j++)
+        for (size_t j = 0; j < num_particles + CELESTIAL_BODY_COUNT; j++)
         {
             if (particles[i]->id != particles[j]->id && !particles[i]->is_sun)
             {
@@ -227,7 +226,7 @@ void simulation::Simulation::brute_force(double dtime)
     }
 
 #pragma omp parallel for
-    for (int i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
+    for (size_t i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
     {
         particles[i]->update_position(worldBounds, dtime);
     }
@@ -243,7 +242,7 @@ void simulation::Simulation::step(double dtime)
 #ifdef USE_OPENMP
 #pragma omp parallel for
 #endif
-    for (int i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
+    for (size_t i = 0; i < num_particles + CELESTIAL_BODY_COUNT; i++)
     {
         particles[i]->update_velocity(dtime);
         particles[i]->update_position(worldBounds, dtime * 0.5);

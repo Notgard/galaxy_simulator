@@ -13,7 +13,7 @@ namespace simulation
         SimulationMPI(int num_particles, int num_runs,int mpi_version, int rank, int size)
             : Simulation(num_particles, num_runs),mpi_version(mpi_version), rank(rank), size(size)
         {
-            bounding_box = quadtree::Box<float>(BOX_LEFT, BOX_TOP, BOX_WIDTH, BOX_HEIGHT);
+            bounding_box = quadtree::Box<double>(BOX_LEFT, BOX_TOP, BOX_WIDTH, BOX_HEIGHT);
             nb_particles = num_particles + CELESTIAL_BODY_COUNT;
         }
 
@@ -52,7 +52,7 @@ namespace simulation
 
         int startpos, endpos;
 
-        quadtree::Box<float> bounding_box;
+        quadtree::Box<double> bounding_box;
 
         // MPI specific variables
         MPI_Datatype mpi_particle_data_type;

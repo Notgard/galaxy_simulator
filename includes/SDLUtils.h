@@ -44,7 +44,7 @@ protected:
         }
     }
 
-    void draw_box(const Box<float> &box, SDL_Color color)
+    void draw_box(const Box<double> &box, SDL_Color color)
     {
         SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, 255);
 

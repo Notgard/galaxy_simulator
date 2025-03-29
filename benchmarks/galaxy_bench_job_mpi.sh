@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --account="r250059"
-#SBATCH --time=12:00:00
-#SBATCH --mem=30G
+#SBATCH --time=24:00:00
+#SBATCH --mem=40G
 #SBATCH --constraint=x64cpu
 #SBATCH --ntasks-per-node=64 #MPI
 #SBATCH --ntasks=128 #MPI

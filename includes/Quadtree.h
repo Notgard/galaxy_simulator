@@ -34,15 +34,23 @@ namespace quadtree
     template <typename T, typename GetBox>
     class Quadtree
     {
-        static_assert(std::is_convertible_v<std::invoke_result_t<GetBox, const T &>, Box<float>>,
-                      "GetBox must be a callable of signature Box<float>(const T&)");
+        static_assert(std::is_convertible_v<std::invoke_result_t<GetBox, const T &>, Box<double>>,
+                      "GetBox must be a callable of signature Box<double>(const T&)");
 
     public:
         struct Node
         {
-            // Node(const Box<float> box) : box(box) {}
+            // Node(const Box<double> box) : box(box) {}
+            ~Node() {
+                // std::cout << "Node destructor called" << std::endl;
+                for (size_t i = 0; i < QUADTREE_MAX_VALUES; ++i)
+                {
+                    children[i].reset();
+                }
+                values.clear();
+            }
 
-            // Box<float> box;
+            // Box<double> box;
             std::array<std::unique_ptr<Node>, QUADTREE_MAX_VALUES> children;
             std::vector<T> values = std::vector<T>();
             Vector2<double> centerOfMass = {0.0, 0.0};
@@ -51,7 +59,16 @@ namespace quadtree
 
         Quadtree() = default;
 
-        Quadtree(const Box<float> &box, const GetBox &getBox = GetBox()) : mBox(box), mRoot(std::make_unique<Node>()), mGetBox(getBox) {}
+        Quadtree(const Box<double> &box, const GetBox &getBox = GetBox()) : mBox(box), mGetBox(getBox) {
+            mRoot = std::make_unique<Node>();
+        }
+
+        ~Quadtree() {
+            //std::cout << "Quadtree destructor called" << std::endl;
+            mRoot.reset();
+            mValues.clear();
+            mBox = {};
+        }
 
         void add(T value)
         {
@@ -61,7 +78,7 @@ namespace quadtree
 
         void remove(T value) { remove(mRoot.get(), mBox, value); }
 
-        std::vector<T> query(const Box<float> &box) const
+        std::vector<T> query(const Box<double> &box) const
         {
             std::vector<T> values;
             query(mRoot.get(), mBox, box, values);
@@ -83,7 +100,7 @@ namespace quadtree
             }
         }
 
-        void update_barnes_hut_subtree_forces(Node *node, const Box<float> &box, T value, double dtime)
+        void update_barnes_hut_subtree_forces(Node *node, const Box<double> &box, T value, double dtime)
         {
             Particle *particle = static_cast<Particle *>(value);
             if (particle->is_sun)
@@ -114,7 +131,7 @@ namespace quadtree
             update_masses(mRoot.get(), mBox);
         }
 
-        Box<float> getBox() const { return mBox; }
+        Box<double> getBox() const { return mBox; }
 
         bool isLeaf(const Node *node) const { return !node->children[0]; }
 
@@ -125,10 +142,10 @@ namespace quadtree
             printNode(mRoot.get(), mBox, 0);
         }
 
-        Box<float> computeBox(const Box<float> &box, int i) const
+        Box<double> computeBox(const Box<double> &box, int i) const
         {
             auto origin = box.getTopLeft();
-            auto size = box.getSize() * 0.5f;
+            auto size = box.getSize() * 0.5;
             switch (i)
             {
             case NORTH_EAST:
@@ -148,12 +165,12 @@ namespace quadtree
         static constexpr size_t q_threshold = QUADTREE_MAX_VALUES;
         static constexpr size_t q_max_depth = QUADTREE_MAX_DEPTH;
 
-        Box<float> mBox;
+        Box<double> mBox;
         std::unique_ptr<Node> mRoot;
         GetBox mGetBox;
         std::vector<T> mValues;
 
-        int getQuadrant(const Box<float> &nodeBox, const Box<float> &valueBox) const
+        int getQuadrant(const Box<double> &nodeBox, const Box<double> &valueBox) const
         {
             auto center = nodeBox.getCenter();
             bool left = valueBox.left < center.x && valueBox.getRight() < center.x;
@@ -173,10 +190,10 @@ namespace quadtree
             return -1; // Particle doesn't fit entirely into one quadrant
         }
 
-        void add(Node *node, size_t depth, const Box<float> &box, T value)
+        void add(Node *node, size_t depth, const Box<double> &box, T value)
         {
             assert(node != nullptr);
-            Box<float> valueBox = mGetBox(value);
+            Box<double> valueBox = mGetBox(value);
             assert(box.contains(valueBox));
 
             // If the node is a leaf and already contains a particle, we must split
@@ -193,7 +210,7 @@ namespace quadtree
                     int i = getQuadrant(box, mGetBox(oldValue));
                     if (i != -1)
                     {
-                        Box<float> childBox = computeBox(box, i);
+                        Box<double> childBox = computeBox(box, i);
                         add(node->children[i].get(), depth + 1, childBox, oldValue);
                     }
                 }
@@ -205,7 +222,7 @@ namespace quadtree
                 int i = getQuadrant(box, mGetBox(value));
                 if (i != -1)
                 {
-                    Box<float> childBox = computeBox(box, i);
+                    Box<double> childBox = computeBox(box, i);
                     add(node->children[i].get(), depth + 1, childBox, value);
                 }
                 else
@@ -221,7 +238,7 @@ namespace quadtree
             // update_masses(node, box);
         }
 
-        void split(Node *node, const Box<float> &box)
+        void split(Node *node, const Box<double> &box)
         {
             for (int i = 0; i < QUADTREE_MAX_VALUES; ++i)
             {
@@ -235,7 +252,7 @@ namespace quadtree
                 int i = getQuadrant(box, mGetBox(value));
                 if (i != -1)
                 {
-                    Box<float> childBox = computeBox(box, i);
+                    Box<double> childBox = computeBox(box, i);
                     add(node->children[i].get(), 0, childBox, value); // Insert properly into the child
                 }
                 else
@@ -246,7 +263,7 @@ namespace quadtree
             node->values = std::move(newValues);
         }
 
-        bool remove(Node *node, const Box<float> &box, T value)
+        bool remove(Node *node, const Box<double> &box, T value)
         {
             assert(node != nullptr);
             assert(box.contains(mGetBox(value)));
@@ -263,7 +280,7 @@ namespace quadtree
             return false;
         }
 
-        void query(const Node *node, const Box<float> &nodeBox, const Box<float> &queryBox, std::vector<T> &results) const
+        void query(const Node *node, const Box<double> &nodeBox, const Box<double> &queryBox, std::vector<T> &results) const
         {
             for (T value : node->values)
             {
@@ -281,7 +298,7 @@ namespace quadtree
             }
         }
 
-        void printNode(const Node *node, const Box<float> &box, int depth) const
+        void printNode(const Node *node, const Box<double> &box, int depth) const
         {
             if (!node)
                 return;
@@ -301,7 +318,7 @@ namespace quadtree
             for (const auto &value : node->values)
             {
                 Particle *particle = static_cast<Particle *>(value);
-                Box<float> valueBox = mGetBox(value);
+                Box<double> valueBox = mGetBox(value);
                 int i = getQuadrant(box, valueBox);
                 std::cout << "(" << particle->position.x << ", " << particle->position.y << ") [q " << i << "] "; // outputs particle positions
             }
@@ -312,13 +329,13 @@ namespace quadtree
             {
                 if (node->children[i])
                 {
-                    Box<float> childBox = computeBox(box, i);
+                    Box<double> childBox = computeBox(box, i);
                     printNode(node->children[i].get(), childBox, depth + 1);
                 }
             }
         }
 
-        void update_masses(Node *node, const Box<float> &box)
+        void update_masses(Node *node, const Box<double> &box)
         {
             if (!node)
                 return; // Avoid null checks later
@@ -354,7 +371,7 @@ namespace quadtree
             }
         }
 
-        void compute_forces(Node *node, const Box<float> &box, T value, double dtime)
+        void compute_forces(Node *node, const Box<double> &box, T value, double dtime)
         {
             assert(node != nullptr);
             /*
@@ -380,8 +397,8 @@ namespace quadtree
                 // std::cout << "Computing force on internal node" << std::endl;
                 //  compute s/d quotient
                 double s = box.width;
-                Box<float> valueBox = mGetBox(value);
-                Vector2<float> boxCenter = valueBox.getCenter();
+                Box<double> valueBox = mGetBox(value);
+                Vector2<double> boxCenter = valueBox.getCenter();
                 Vector2<double> center = {boxCenter.x, boxCenter.y};
                 double d = Vector2<double>::distance(center, node->centerOfMass);
 /* 

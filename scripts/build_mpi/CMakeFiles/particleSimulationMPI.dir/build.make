@@ -53,10 +53,10 @@ RM = /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zbouzekkar/CHPS901/galaxy_simulator
+CMAKE_SOURCE_DIR = /home/garouba/galaxy_simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi
+CMAKE_BINARY_DIR = /home/garouba/galaxy_simulator/scripts/build_mpi
 
 # Include any dependencies generated for this target.
 include CMakeFiles/particleSimulationMPI.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/particleSimulationMPI.dir/progress.make
 include CMakeFiles/particleSimulationMPI.dir/flags.make
 
 CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o: CMakeFiles/particleSimulationMPI.dir/flags.make
-CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o: /home/zbouzekkar/CHPS901/galaxy_simulator/src/Simulation.cpp
+CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o: /home/garouba/galaxy_simulator/src/Simulation.cpp
 CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o: CMakeFiles/particleSimulationMPI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o -MF CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o.d -o CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/src/Simulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o"
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o -MF CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o.d -o CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o -c /home/garouba/galaxy_simulator/src/Simulation.cpp
 
 CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbouzekkar/CHPS901/galaxy_simulator/src/Simulation.cpp > CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.i
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/garouba/galaxy_simulator/src/Simulation.cpp > CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.i
 
 CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbouzekkar/CHPS901/galaxy_simulator/src/Simulation.cpp -o CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.s
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/garouba/galaxy_simulator/src/Simulation.cpp -o CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.s
 
 CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o: CMakeFiles/particleSimulationMPI.dir/flags.make
-CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o: /home/zbouzekkar/CHPS901/galaxy_simulator/src/mpi_main.cpp
+CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o: /home/garouba/galaxy_simulator/src/mpi_main.cpp
 CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o: CMakeFiles/particleSimulationMPI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o -MF CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o.d -o CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/src/mpi_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o"
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o -MF CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o.d -o CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o -c /home/garouba/galaxy_simulator/src/mpi_main.cpp
 
 CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbouzekkar/CHPS901/galaxy_simulator/src/mpi_main.cpp > CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.i
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/garouba/galaxy_simulator/src/mpi_main.cpp > CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.i
 
 CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbouzekkar/CHPS901/galaxy_simulator/src/mpi_main.cpp -o CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.s
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/garouba/galaxy_simulator/src/mpi_main.cpp -o CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.s
 
 CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o: CMakeFiles/particleSimulationMPI.dir/flags.make
-CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o: /home/zbouzekkar/CHPS901/galaxy_simulator/src/SimulationMPI.cpp
+CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o: /home/garouba/galaxy_simulator/src/SimulationMPI.cpp
 CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o: CMakeFiles/particleSimulationMPI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o -MF CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o.d -o CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/src/SimulationMPI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o"
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o -MF CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o.d -o CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o -c /home/garouba/galaxy_simulator/src/SimulationMPI.cpp
 
 CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zbouzekkar/CHPS901/galaxy_simulator/src/SimulationMPI.cpp > CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.i
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/garouba/galaxy_simulator/src/SimulationMPI.cpp > CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.i
 
 CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zbouzekkar/CHPS901/galaxy_simulator/src/SimulationMPI.cpp -o CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.s
+	/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/garouba/galaxy_simulator/src/SimulationMPI.cpp -o CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.s
 
 # Object files for target particleSimulationMPI
 particleSimulationMPI_OBJECTS = \
@@ -124,9 +124,8 @@ particleSimulationMPI: CMakeFiles/particleSimulationMPI.dir/src/Simulation.cpp.o
 particleSimulationMPI: CMakeFiles/particleSimulationMPI.dir/src/mpi_main.cpp.o
 particleSimulationMPI: CMakeFiles/particleSimulationMPI.dir/src/SimulationMPI.cpp.o
 particleSimulationMPI: CMakeFiles/particleSimulationMPI.dir/build.make
-particleSimulationMPI: /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/lib/libmpi.so
 particleSimulationMPI: CMakeFiles/particleSimulationMPI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable particleSimulationMPI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable particleSimulationMPI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/particleSimulationMPI.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +137,6 @@ CMakeFiles/particleSimulationMPI.dir/clean:
 .PHONY : CMakeFiles/particleSimulationMPI.dir/clean
 
 CMakeFiles/particleSimulationMPI.dir/depend:
-	cd /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zbouzekkar/CHPS901/galaxy_simulator /home/zbouzekkar/CHPS901/galaxy_simulator /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_mpi/CMakeFiles/particleSimulationMPI.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/garouba/galaxy_simulator/scripts/build_mpi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/garouba/galaxy_simulator /home/garouba/galaxy_simulator /home/garouba/galaxy_simulator/scripts/build_mpi /home/garouba/galaxy_simulator/scripts/build_mpi /home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/particleSimulationMPI.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/particleSimulationMPI.dir/depend
 

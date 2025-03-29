@@ -1,4 +1,4 @@
 .vscode/
 build/
 src/template.cpp
-ov_orig/
+ov_*
