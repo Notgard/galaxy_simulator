@@ -24,4 +24,4 @@ Starting N-Body simulation
 Finished simulation
 Time: (seconds) 0s
 Time: (milliseconds) 128ms
-Time: (microseconds) 128135us
+Time: (microseconds) 128870us

@@ -18,3 +18,8 @@ Solar system setup complete
 Setting up particle simulation...
 Center of the world: 510, 510
 Particle simulation setup complete
+Starting N-Body simulation
+Finished simulation
+Time: (seconds) 32s
+Time: (milliseconds) 32539ms
+Time: (microseconds) 32539179us

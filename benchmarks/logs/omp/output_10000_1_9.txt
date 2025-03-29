@@ -23,5 +23,5 @@ Particle simulation setup complete
 Starting N-Body simulation
 Finished simulation
 Time: (seconds) 2s
-Time: (milliseconds) 2000ms
-Time: (microseconds) 2000700us
+Time: (milliseconds) 2001ms
+Time: (microseconds) 2001089us
