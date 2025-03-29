@@ -53,7 +53,8 @@ if(NOT USE_MPI)
     set(NON_MPI_SOURCES ${COMMON_SOURCES} src/main.cpp)
     
     if(USE_SDL)
-        list(APPEND NON_MPI_SOURCES src/SimulationSDL.cpp src/sdl_main.cpp)
+        list(APPEND NON_MPI_SOURCES src/SimulationSDL.cpp)
+        list(TRANSFORM NON_MPI_SOURCES REPLACE "src/main.cpp" "src/sdl_main.cpp")
     endif()
 
     add_executable(particleSimulation ${NON_MPI_SOURCES} ${COMMON_HEADERS})
