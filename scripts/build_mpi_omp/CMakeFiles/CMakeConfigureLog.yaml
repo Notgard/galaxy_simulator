@@ -1345,3 +1345,817 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-YFpW6B"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-YFpW6B"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-YFpW6B'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_ba62c/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_ba62c.dir/build.make CMakeFiles/cmTC_ba62c.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-YFpW6B'
+        Building CXX object CMakeFiles/cmTC_ba62c.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_ba62c.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_ba62c.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_ba62c.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-YFpW6B/test_mpi.cpp
+        Linking CXX executable cmTC_ba62c
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba62c.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_ba62c.dir/test_mpi.cpp.o -o cmTC_ba62c
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-YFpW6B'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-DQHzDo"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-DQHzDo"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-DQHzDo'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_eac3f/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_eac3f.dir/build.make CMakeFiles/cmTC_eac3f.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-DQHzDo'
+        Building CXX object CMakeFiles/cmTC_eac3f.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_eac3f.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_eac3f.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_eac3f.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-DQHzDo/test_mpi.cpp
+        Linking CXX executable cmTC_eac3f
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eac3f.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_eac3f.dir/test_mpi.cpp.o -o cmTC_eac3f
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-DQHzDo'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-sduR3t"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-sduR3t"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-sduR3t'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_eae4e/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_eae4e.dir/build.make CMakeFiles/cmTC_eae4e.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-sduR3t'
+        Building CXX object CMakeFiles/cmTC_eae4e.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_eae4e.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_eae4e.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_eae4e.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-sduR3t/test_mpi.cpp
+        Linking CXX executable cmTC_eae4e
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eae4e.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_eae4e.dir/test_mpi.cpp.o -o cmTC_eae4e
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-sduR3t'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-GB5oQM"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-GB5oQM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-GB5oQM'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_75119/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_75119.dir/build.make CMakeFiles/cmTC_75119.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-GB5oQM'
+        Building CXX object CMakeFiles/cmTC_75119.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_75119.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_75119.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_75119.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-GB5oQM/test_mpi.cpp
+        Linking CXX executable cmTC_75119
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75119.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_75119.dir/test_mpi.cpp.o -o cmTC_75119
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-GB5oQM'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-AYhgXK"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-AYhgXK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-AYhgXK'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_35f9f/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_35f9f.dir/build.make CMakeFiles/cmTC_35f9f.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-AYhgXK'
+        Building CXX object CMakeFiles/cmTC_35f9f.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_35f9f.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_35f9f.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_35f9f.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-AYhgXK/test_mpi.cpp
+        Linking CXX executable cmTC_35f9f
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35f9f.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_35f9f.dir/test_mpi.cpp.o -o cmTC_35f9f
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-AYhgXK'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-kKN7MS"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-kKN7MS"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-kKN7MS'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_eb8b6/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_eb8b6.dir/build.make CMakeFiles/cmTC_eb8b6.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-kKN7MS'
+        Building CXX object CMakeFiles/cmTC_eb8b6.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_eb8b6.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_eb8b6.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_eb8b6.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-kKN7MS/test_mpi.cpp
+        Linking CXX executable cmTC_eb8b6
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb8b6.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_eb8b6.dir/test_mpi.cpp.o -o cmTC_eb8b6
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-kKN7MS'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-OOpIEw"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-OOpIEw"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-OOpIEw'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_3849d/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_3849d.dir/build.make CMakeFiles/cmTC_3849d.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-OOpIEw'
+        Building CXX object CMakeFiles/cmTC_3849d.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_3849d.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_3849d.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_3849d.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-OOpIEw/test_mpi.cpp
+        Linking CXX executable cmTC_3849d
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3849d.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_3849d.dir/test_mpi.cpp.o -o cmTC_3849d
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-OOpIEw'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-5k9NLT"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-5k9NLT"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-5k9NLT'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_90fcd/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_90fcd.dir/build.make CMakeFiles/cmTC_90fcd.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-5k9NLT'
+        Building CXX object CMakeFiles/cmTC_90fcd.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_90fcd.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_90fcd.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_90fcd.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-5k9NLT/test_mpi.cpp
+        Linking CXX executable cmTC_90fcd
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90fcd.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_90fcd.dir/test_mpi.cpp.o -o cmTC_90fcd
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-5k9NLT'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-y8Y5co"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-y8Y5co"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-y8Y5co'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_a90fa/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_a90fa.dir/build.make CMakeFiles/cmTC_a90fa.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-y8Y5co'
+        Building CXX object CMakeFiles/cmTC_a90fa.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_a90fa.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_a90fa.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_a90fa.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-y8Y5co/test_mpi.cpp
+        Linking CXX executable cmTC_a90fa
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a90fa.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_a90fa.dir/test_mpi.cpp.o -o cmTC_a90fa
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-y8Y5co'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-hdrKt5"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-hdrKt5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-hdrKt5'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_8edb4/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_8edb4.dir/build.make CMakeFiles/cmTC_8edb4.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-hdrKt5'
+        Building CXX object CMakeFiles/cmTC_8edb4.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_8edb4.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_8edb4.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_8edb4.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-hdrKt5/test_mpi.cpp
+        Linking CXX executable cmTC_8edb4
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8edb4.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_8edb4.dir/test_mpi.cpp.o -o cmTC_8edb4
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-hdrKt5'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-jseY1I"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-jseY1I"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-jseY1I'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_2941c/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_2941c.dir/build.make CMakeFiles/cmTC_2941c.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-jseY1I'
+        Building CXX object CMakeFiles/cmTC_2941c.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_2941c.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_2941c.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_2941c.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-jseY1I/test_mpi.cpp
+        Linking CXX executable cmTC_2941c
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2941c.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_2941c.dir/test_mpi.cpp.o -o cmTC_2941c
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-jseY1I'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Q7w3P3"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Q7w3P3"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Q7w3P3'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_d742b/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_d742b.dir/build.make CMakeFiles/cmTC_d742b.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Q7w3P3'
+        Building CXX object CMakeFiles/cmTC_d742b.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_d742b.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_d742b.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_d742b.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Q7w3P3/test_mpi.cpp
+        Linking CXX executable cmTC_d742b
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d742b.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_d742b.dir/test_mpi.cpp.o -o cmTC_d742b
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Q7w3P3'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Dv9SqE"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Dv9SqE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Dv9SqE'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_dc459/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_dc459.dir/build.make CMakeFiles/cmTC_dc459.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Dv9SqE'
+        Building CXX object CMakeFiles/cmTC_dc459.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_dc459.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_dc459.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_dc459.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Dv9SqE/test_mpi.cpp
+        Linking CXX executable cmTC_dc459
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc459.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_dc459.dir/test_mpi.cpp.o -o cmTC_dc459
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-Dv9SqE'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-69FfSf"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-69FfSf"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-69FfSf'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_02655/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_02655.dir/build.make CMakeFiles/cmTC_02655.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-69FfSf'
+        Building CXX object CMakeFiles/cmTC_02655.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_02655.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_02655.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_02655.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-69FfSf/test_mpi.cpp
+        Linking CXX executable cmTC_02655
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02655.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_02655.dir/test_mpi.cpp.o -o cmTC_02655
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-69FfSf'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-exjvqG"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-exjvqG"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-exjvqG'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_cd4c8/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_cd4c8.dir/build.make CMakeFiles/cmTC_cd4c8.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-exjvqG'
+        Building CXX object CMakeFiles/cmTC_cd4c8.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_cd4c8.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_cd4c8.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_cd4c8.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-exjvqG/test_mpi.cpp
+        Linking CXX executable cmTC_cd4c8
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd4c8.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_cd4c8.dir/test_mpi.cpp.o -o cmTC_cd4c8
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-exjvqG'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-IhlWhw"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-IhlWhw"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-IhlWhw'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_e87be/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_e87be.dir/build.make CMakeFiles/cmTC_e87be.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-IhlWhw'
+        Building CXX object CMakeFiles/cmTC_e87be.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_e87be.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_e87be.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_e87be.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-IhlWhw/test_mpi.cpp
+        Linking CXX executable cmTC_e87be
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e87be.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_e87be.dir/test_mpi.cpp.o -o cmTC_e87be
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-IhlWhw'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-fRXjEe"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-fRXjEe"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-fRXjEe'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_2208c/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_2208c.dir/build.make CMakeFiles/cmTC_2208c.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-fRXjEe'
+        Building CXX object CMakeFiles/cmTC_2208c.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_2208c.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_2208c.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_2208c.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-fRXjEe/test_mpi.cpp
+        Linking CXX executable cmTC_2208c
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2208c.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_2208c.dir/test_mpi.cpp.o -o cmTC_2208c
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-fRXjEe'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-WU8j6d"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-WU8j6d"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-WU8j6d'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_e16d0/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_e16d0.dir/build.make CMakeFiles/cmTC_e16d0.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-WU8j6d'
+        Building CXX object CMakeFiles/cmTC_e16d0.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_e16d0.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_e16d0.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_e16d0.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-WU8j6d/test_mpi.cpp
+        Linking CXX executable cmTC_e16d0
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e16d0.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_e16d0.dir/test_mpi.cpp.o -o cmTC_e16d0
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-WU8j6d'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-bgVTTc"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-bgVTTc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-bgVTTc'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_6e5e9/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_6e5e9.dir/build.make CMakeFiles/cmTC_6e5e9.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-bgVTTc'
+        Building CXX object CMakeFiles/cmTC_6e5e9.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_6e5e9.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_6e5e9.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_6e5e9.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-bgVTTc/test_mpi.cpp
+        Linking CXX executable cmTC_6e5e9
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e5e9.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_6e5e9.dir/test_mpi.cpp.o -o cmTC_6e5e9
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-bgVTTc'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-w1KtTJ"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-w1KtTJ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-w1KtTJ'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_aeab4/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_aeab4.dir/build.make CMakeFiles/cmTC_aeab4.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-w1KtTJ'
+        Building CXX object CMakeFiles/cmTC_aeab4.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_aeab4.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_aeab4.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_aeab4.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-w1KtTJ/test_mpi.cpp
+        Linking CXX executable cmTC_aeab4
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeab4.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_aeab4.dir/test_mpi.cpp.o -o cmTC_aeab4
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-w1KtTJ'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-LjEfpA"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-LjEfpA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-LjEfpA'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_d5bc0/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_d5bc0.dir/build.make CMakeFiles/cmTC_d5bc0.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-LjEfpA'
+        Building CXX object CMakeFiles/cmTC_d5bc0.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_d5bc0.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_d5bc0.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_d5bc0.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-LjEfpA/test_mpi.cpp
+        Linking CXX executable cmTC_d5bc0
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5bc0.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_d5bc0.dir/test_mpi.cpp.o -o cmTC_d5bc0
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-LjEfpA'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-b66jis"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-b66jis"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-b66jis'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_5e3db/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_5e3db.dir/build.make CMakeFiles/cmTC_5e3db.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-b66jis'
+        Building CXX object CMakeFiles/cmTC_5e3db.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_5e3db.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_5e3db.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_5e3db.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-b66jis/test_mpi.cpp
+        Linking CXX executable cmTC_5e3db
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e3db.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_5e3db.dir/test_mpi.cpp.o -o cmTC_5e3db
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi_omp/CMakeFiles/CMakeScratch/TryCompile-b66jis'
+        
+      exitCode: 0
+...

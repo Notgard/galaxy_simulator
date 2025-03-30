@@ -1,27 +1,20 @@
-Using Sub Tree Processing
+Using Chunked Processing
+MPI Rank 5 running 4 OpenMP threads
+MPI Rank 3 running 4 OpenMP threads
+MPI Rank 1 running 4 OpenMP threads
+MPI Rank 4 running 4 OpenMP threads
+MPI Rank 7 running 4 OpenMP threads
+MPI Rank 6 running 4 OpenMP threads
+MPI Rank 2 running 4 OpenMP threads
 Number of threads: 4
-Number of cores: 1
+Number of cores: 4
+MPI Rank 0 running 4 OpenMP threads
 Number of MPI processes: 8
 From rank 0: Starting simulation with the following config...
 ==============================================================
 	Quadtree Config:
 	   QUADTREE_MAX_DEPTH: 50
 	   QUADTREE_MAX_VALUES: 4
-	   QUADTREE_THRESHOLD: 16
-	Simualtion configuration:
-	   Number of atoms: 100000
-	   Number of runs: 100
-==============================================================
-Created MPI particle data type
-Now calculating chunk size...
-Rank 3 processing 14286 particles
-MPI initialized, sending particles...
-From rank 3: Starting MPI simulation...
-Created MPI particle data type
-Now calculating chunk size...
-Rank 5 processing 14286 particles
-MPI initialized, sending particles...
-From rank 5: Starting MPI simulation...
 Created MPI particle data type
 Now calculating chunk size...
 Rank 1 processing 14286 particles
@@ -29,14 +22,29 @@ MPI initialized, sending particles...
 From rank 1: Starting MPI simulation...
 Created MPI particle data type
 Now calculating chunk size...
-Rank 7 processing 14285 particles
+Rank 3 processing 14286 particles
 MPI initialized, sending particles...
-From rank 7: Starting MPI simulation...
+From rank 3: Starting MPI simulation...
+	   QUADTREE_THRESHOLD: 16
+	Simualtion configuration:
+	   Number of atoms: 100000
+	   Number of runs: 100
+==============================================================
 Created MPI particle data type
 Now calculating chunk size...
 Rank 2 processing 14286 particles
 MPI initialized, sending particles...
 From rank 2: Starting MPI simulation...
+Created MPI particle data type
+Now calculating chunk size...
+Rank 5 processing 14286 particles
+MPI initialized, sending particles...
+From rank 5: Starting MPI simulation...
+Created MPI particle data type
+Now calculating chunk size...
+Rank 7 processing 14285 particles
+MPI initialized, sending particles...
+From rank 7: Starting MPI simulation...
 Created MPI particle data type
 Now calculating chunk size...
 Rank 4 processing 14286 particles
@@ -62,13 +70,13 @@ MPI initialized, sending particles...
 Starting N-Body simulation
 From rank 0: Starting MPI simulation...
 From rank 1: Simulation complete
-From rank 3: Simulation complete
 From rank 2: Simulation complete
-From rank 7: Simulation complete
-From rank 6: Simulation complete
-From rank 5: Simulation complete
+From rank 3: Simulation complete
 From rank 4: Simulation complete
-Time: (seconds) 63s
-Time: (milliseconds) 63989ms
-Time: (microseconds) 63989860us
+From rank 5: Simulation complete
+From rank 6: Simulation complete
+From rank 7: Simulation complete
+Time: (seconds) 23s
+Time: (milliseconds) 23818ms
+Time: (microseconds) 23818759us
 From rank 0: Simulation complete

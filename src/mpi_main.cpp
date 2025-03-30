@@ -58,6 +58,9 @@ int main(int argc, char **argv)
         }
 #endif
     }
+#ifdef USE_OPENMP
+    std::cout << "MPI Rank " << rank << " running " << omp_get_max_threads() << " OpenMP threads\n";
+#endif
     MPI_Barrier(MPI_COMM_WORLD);
 
     if (rank == 0)

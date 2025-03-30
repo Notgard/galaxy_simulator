@@ -600,3 +600,77 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-Syngrg"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-Syngrg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-Syngrg'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_bcb61/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_bcb61.dir/build.make CMakeFiles/cmTC_bcb61.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-Syngrg'
+        Building CXX object CMakeFiles/cmTC_bcb61.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_bcb61.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_bcb61.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_bcb61.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-Syngrg/test_mpi.cpp
+        Linking CXX executable cmTC_bcb61
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcb61.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_bcb61.dir/test_mpi.cpp.o -o cmTC_bcb61
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-Syngrg'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
+      - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:96 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-7MpR1t"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-7MpR1t"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-7MpR1t'
+        
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_41b8d/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_41b8d.dir/build.make CMakeFiles/cmTC_41b8d.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-7MpR1t'
+        Building CXX object CMakeFiles/cmTC_41b8d.dir/test_mpi.cpp.o
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx   -std=gnu++17 -MD -MT CMakeFiles/cmTC_41b8d.dir/test_mpi.cpp.o -MF CMakeFiles/cmTC_41b8d.dir/test_mpi.cpp.o.d -o CMakeFiles/cmTC_41b8d.dir/test_mpi.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-7MpR1t/test_mpi.cpp
+        Linking CXX executable cmTC_41b8d
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41b8d.dir/link.txt --verbose=1
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/openmpi-5.0.5-rvuhwoudhxha6533gqk23txbn2vj3xg4/bin/mpicxx CMakeFiles/cmTC_41b8d.dir/test_mpi.cpp.o -o cmTC_41b8d
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_mpi/CMakeFiles/CMakeScratch/TryCompile-7MpR1t'
+        
+      exitCode: 0
+...

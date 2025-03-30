@@ -102,11 +102,8 @@ void simulation::SimulationMPI::distribute_particles(std::vector<ParticleData> &
     // serialize the particles
     if (rank == 0)
     {
-// all_particles = particles.size();
-//  set data for root process
-#ifdef USE_OPENMP
-#pragma omp parallel for
-#endif
+        // all_particles = particles.size();
+        //  set data for root process
         for (size_t idx = 0; idx < nb_particles; idx++)
         {
             local_particles.push_back(particles[idx]->serialize()); // Convert before sending
@@ -165,10 +162,7 @@ void simulation::SimulationMPI::gather_particles(std::vector<double> &local_acce
 
     if (rank == 0)
     {
-// Apply accumulated accelerations to particles
-#ifdef USE_OPENMP
-#pragma omp parallel for
-#endif
+        // Apply accumulated accelerations to particles
         for (size_t i = 0; i < particles.size(); i++)
         {
             particles[i]->acceleration.x = global_accelerations[2 * i];
@@ -211,9 +205,6 @@ void simulation::SimulationMPI::gather_chunk_particles(std::vector<ParticleData>
 
     if (rank == 0)
     {
-#ifdef USE_OPENMP
-#pragma omp parallel for
-#endif
         for (size_t i = 0; i < gathered_particles.size(); i++)
         {
             particles[gathered_particles[i].id]->update(gathered_particles[i]);
@@ -231,7 +222,7 @@ void simulation::SimulationMPI::compute_workload(std::vector<ParticleData> &loca
     std::unique_ptr<TREE_TYPE> quadtree = std::make_unique<TREE_TYPE>(bounding_box, getBoxFunc);
 
     // allocate the particles as dynamic memory
-    //std::vector<std::unique_ptr<Particle>> all_particles = std::vector<std::unique_ptr<Particle>>(nb_particles);
+    // std::vector<std::unique_ptr<Particle>> all_particles = std::vector<std::unique_ptr<Particle>>(nb_particles);
     std::vector<Particle> all_particles = std::vector<Particle>(nb_particles);
     for (size_t idx = 0; idx < nb_particles; idx++)
     {
@@ -240,14 +231,14 @@ void simulation::SimulationMPI::compute_workload(std::vector<ParticleData> &loca
         all_particles[idx].acceleration = {local_particles[idx].ax, local_particles[idx].ay};
         all_particles[idx].velocity = {local_particles[idx].vx, local_particles[idx].vy};
         all_particles[idx].mass = local_particles[idx].mass;
-        //all_particles[idx] = std::make_unique<Particle>();
-        //all_particles[idx]->deserialize(local_particles[idx]);
+        // all_particles[idx] = std::make_unique<Particle>();
+        // all_particles[idx]->deserialize(local_particles[idx]);
     }
 
     // add the subtree particles
     for (int i = startpos; i < endpos; i++)
     {
-        //quadtree->add(all_particles[i].get());
+        // quadtree->add(all_particles[i].get());
         quadtree->add(&all_particles[i]);
     }
 
@@ -259,17 +250,16 @@ void simulation::SimulationMPI::compute_workload(std::vector<ParticleData> &loca
 
 // compute the forces on the particles in the subtree
 #ifdef USE_OPENMP
-#pragma omp parallel for schedule(dynamic)
+#pragma omp parallel for schedule(dynamic, 8)
 #endif
     for (size_t idx = 0; idx < nb_particles; idx++)
     {
-        quadtree->update_individual_barnes_hut_forces(&all_particles[idx], dtime);
-        local_accelerations[idx * 2] = all_particles[idx].acceleration.x;
-        local_accelerations[idx * 2 + 1] = all_particles[idx].acceleration.y;
-        //quadtree->update_individual_barnes_hut_forces(all_particles[idx].get(), dtime);
-        //local_accelerations[idx * 2] = all_particles[idx]->acceleration.x;
-        //local_accelerations[idx * 2 + 1] = all_particles[idx]->acceleration.y;
-        // local_particles[idx] = all_particles[idx]->serialize();
+        Particle *p = &all_particles[idx];
+        quadtree->update_individual_barnes_hut_forces(p, dtime);
+
+        const size_t out_idx = idx * 2;
+        local_accelerations[out_idx] = p->acceleration.x;
+        local_accelerations[out_idx + 1] = p->acceleration.y;
     }
 }
 
@@ -283,7 +273,7 @@ void simulation::SimulationMPI::compute_entire_workload(std::vector<ParticleData
     std::unique_ptr<TREE_TYPE> quadtree = std::make_unique<TREE_TYPE>(bounding_box, getBoxFunc);
 
     // allocate the particles as dynamic memory
-    //std::vector<std::unique_ptr<Particle>> all_particles = std::vector<std::unique_ptr<Particle>>(nb_particles);
+    // std::vector<std::unique_ptr<Particle>> all_particles = std::vector<std::unique_ptr<Particle>>(nb_particles);
     std::vector<Particle> all_particles = std::vector<Particle>(nb_particles);
     for (size_t idx = 0; idx < nb_particles; idx++)
     {
@@ -292,14 +282,14 @@ void simulation::SimulationMPI::compute_entire_workload(std::vector<ParticleData
         all_particles[idx].acceleration = {local_particles[idx].ax, local_particles[idx].ay};
         all_particles[idx].velocity = {local_particles[idx].vx, local_particles[idx].vy};
         all_particles[idx].mass = local_particles[idx].mass;
-        //all_particles[idx] = std::make_unique<Particle>();
-        //all_particles[idx]->deserialize(local_particles[idx]);
+        // all_particles[idx] = std::make_unique<Particle>();
+        // all_particles[idx]->deserialize(local_particles[idx]);
     }
 
     // add the entire tree of particles
     for (size_t i = 0; i < nb_particles; i++)
     {
-        //quadtree->add(all_particles[i].get());
+        // quadtree->add(all_particles[i].get());
         quadtree->add(&all_particles[i]);
     }
 
@@ -311,16 +301,18 @@ void simulation::SimulationMPI::compute_entire_workload(std::vector<ParticleData
 
 // compute the forces on the particles in the entire tree for a portion of the particles
 #ifdef USE_OPENMP
-#pragma omp parallel for schedule(dynamic)
+#pragma omp parallel for schedule(dynamic, 8)
 #endif
     for (int idx = startpos; idx < endpos; idx++)
     {
-        quadtree->update_individual_barnes_hut_forces(&all_particles[idx], dtime);
-        //quadtree->update_individual_barnes_hut_forces(all_particles[idx].get(), dtime);
-        //all_particles[idx]->update_velocity(dtime);
-        all_particles[idx].update_velocity(dtime);
-        //ParticleData p_data = all_particles[idx]->updated_position(bounding_box, dtime);
-        ParticleData p_data = all_particles[idx].updated_position(bounding_box, dtime);
+        Particle *p = &all_particles[idx];
+        quadtree->update_individual_barnes_hut_forces(p, dtime);
+        // quadtree->update_individual_barnes_hut_forces(all_particles[idx].get(), dtime);
+        // all_particles[idx]->update_velocity(dtime);
+        p->update_velocity(dtime);
+        // ParticleData p_data = all_particles[idx]->updated_position(bounding_box, dtime);
+        ParticleData p_data = p->updated_position(bounding_box, dtime);
+        #pragma omp critical
         computed_chunk.push_back(p_data);
         // all_particles[idx]->update_position(bounding_box, dtime);
         // computed_chunk.push_back(all_particles[idx]->serialize());

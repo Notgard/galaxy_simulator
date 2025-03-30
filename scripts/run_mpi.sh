@@ -23,4 +23,4 @@ build_dir=$6
 exec=$build_dir/particleSimulationMPI
 
 # Execute the command
-mpiexec -n $number_of_process -x OMP_NUM_THREADS=$number_of_threads $exec $number_of_particles $number_of_iterations $mpi_version $use_sdl
+mpiexec -np $number_of_process -x OMP_NUM_THREADS=$number_of_threads $exec $number_of_particles $number_of_iterations $mpi_version $use_sdl
