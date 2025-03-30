@@ -29,7 +29,7 @@ for mpi_version in ${mpi_versions[@]}; do
         # Run the simulation for each number of processes
         for process in ${processes[@]}; do
             # Run the simulation 10 times
-            for i in {1..10}; do
+            for i in {1..2}; do
                 # Run the simulation with the current number of particles and processes
                 output=$(../scripts/run_mpi.sh $process $threads $particle $iterations $mpi_version $build_dir)
 

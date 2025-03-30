@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is Clang, found in:
-        /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/3.30.5/CompilerIdC/a.out
+        /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/3.30.5/CompilerIdC/a.out
       
   -
     kind: "message-v1"
@@ -50,7 +50,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is Clang, found in:
-        /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/3.30.5/CompilerIdCXX/a.out
+        /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/3.30.5/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S"
-      binary: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S"
+      source: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
       CMAKE_C_FLAGS: ""
@@ -72,13 +72,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S'
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta'
         
-        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_4c779/fast
-        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_4c779.dir/build.make CMakeFiles/cmTC_4c779.dir/build
-        gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S'
-        Building C object CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -v -MD -MT CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_68a71/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_68a71.dir/build.make CMakeFiles/cmTC_68a71.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta'
+        Building C object CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -v -MD -MT CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -89,10 +89,11 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
          (in-process)
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S -ferror-limit 19 -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -x c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta -ferror-limit 19 -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -x c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c
         clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"
         #include "..." search starts here:
         #include <...> search starts here:
          /opt/softwares/amd/aocc-compiler-5.0.0/include
@@ -100,9 +101,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking C executable cmTC_4c779
-        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c779.dir/link.txt --verbose=1
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -v -Wl,-v CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -o cmTC_4c779
+        Linking C executable cmTC_68a71
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68a71.dir/link.txt --verbose=1
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -v -Wl,-v CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -o cmTC_68a71
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -112,9 +113,9 @@ events:
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4c779 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_68a71 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
         LLD 17.0.6 (compatible with GNU linkers)
-        gmake[1]: Leaving directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S'
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta'
         
       exitCode: 0
   -
@@ -149,13 +150,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S']
+        ignore line: [Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta']
         ignore line: []
-        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_4c779/fast]
-        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_4c779.dir/build.make CMakeFiles/cmTC_4c779.dir/build]
-        ignore line: [gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S']
-        ignore line: [Building C object CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -v -MD -MT CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_68a71/fast]
+        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_68a71.dir/build.make CMakeFiles/cmTC_68a71.dir/build]
+        ignore line: [gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta']
+        ignore line: [Building C object CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -v -MD -MT CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -169,10 +170,11 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-BUdM9S -ferror-limit 19 -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -x c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-U9gMta -ferror-limit 19 -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -x c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
         ignore line: [clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
         ignore line: [ /opt/softwares/amd/aocc-compiler-5.0.0/include]
@@ -180,9 +182,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_4c779]
-        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c779.dir/link.txt --verbose=1]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -v -Wl -v CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -o cmTC_4c779]
+        ignore line: [Linking C executable cmTC_68a71]
+        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_68a71.dir/link.txt --verbose=1]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -v -Wl -v CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -o cmTC_68a71]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -195,7 +197,7 @@ events:
         ignore line: [@m32]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4c779 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_68a71 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
           arg [/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld] ==> ignore
           arg [-pie] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -205,7 +207,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_4c779] ==> ignore
+          arg [cmTC_68a71] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o]
@@ -220,8 +222,12 @@ events:
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_4c779.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_68a71.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--as-needed] ==> ignore
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -244,6 +250,10 @@ events:
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
         collapse library dir [/lib] ==> [/lib]
         collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
         collapse library dir [/usr/lib64] ==> [/usr/lib64]
         collapse library dir [/usr/lib] ==> [/usr/lib]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
@@ -273,8 +283,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez"
-      binary: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez"
+      source: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: ""
@@ -285,13 +295,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez'
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT'
         
-        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_f12bb/fast
-        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_f12bb.dir/build.make CMakeFiles/cmTC_f12bb.dir/build
-        gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez'
-        Building CXX object CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -v -MD -MT CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_09e41/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_09e41.dir/build.make CMakeFiles/cmTC_09e41.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT'
+        Building CXX object CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -v -MD -MT CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -302,10 +312,11 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
          (in-process)
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -x c++ /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -x c++ /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"
         #include "..." search starts here:
         #include <...> search starts here:
          /opt/softwares/amd/aocc-compiler-5.0.0/include
@@ -316,9 +327,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_f12bb
-        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f12bb.dir/link.txt --verbose=1
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f12bb
+        Linking CXX executable cmTC_09e41
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09e41.dir/link.txt --verbose=1
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_09e41
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -328,9 +339,9 @@ events:
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f12bb /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_09e41 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
         LLD 17.0.6 (compatible with GNU linkers)
-        gmake[1]: Leaving directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez'
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT'
         
       exitCode: 0
   -
@@ -371,13 +382,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez']
+        ignore line: [Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT']
         ignore line: []
-        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_f12bb/fast]
-        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_f12bb.dir/build.make CMakeFiles/cmTC_f12bb.dir/build]
-        ignore line: [gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez']
-        ignore line: [Building CXX object CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -v -MD -MT CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_09e41/fast]
+        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_09e41.dir/build.make CMakeFiles/cmTC_09e41.dir/build]
+        ignore line: [gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT']
+        ignore line: [Building CXX object CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -v -MD -MT CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -c /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -391,10 +402,11 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-aO1Dez -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -x c++ /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-fSxgAT -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -x c++ /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
         ignore line: [ /opt/softwares/amd/aocc-compiler-5.0.0/include]
@@ -405,9 +417,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_f12bb]
-        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f12bb.dir/link.txt --verbose=1]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -v -Wl -v CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f12bb]
+        ignore line: [Linking CXX executable cmTC_09e41]
+        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09e41.dir/link.txt --verbose=1]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -v -Wl -v CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_09e41]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -420,7 +432,7 @@ events:
         ignore line: [@m32]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f12bb /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_09e41 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -v CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
           arg [/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld] ==> ignore
           arg [-pie] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -430,7 +442,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_f12bb] ==> ignore
+          arg [cmTC_09e41] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o]
@@ -445,8 +457,12 @@ events:
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_f12bb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_09e41.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -467,6 +483,10 @@ events:
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
         collapse library dir [/lib] ==> [/lib]
         collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
         collapse library dir [/usr/lib64] ==> [/usr/lib64]
         collapse library dir [/usr/lib] ==> [/usr/lib]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
@@ -492,28 +512,28 @@ events:
     backtrace:
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:238 (try_compile)"
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:124 (find_package)"
+      - "CMakeLists.txt:125 (find_package)"
     description: "Detecting C OpenMP compiler info"
     directories:
-      source: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F"
-      binary: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F"
+      source: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zbouzekkar/CHPS901/galaxy_simulator/cmake"
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
     buildResult:
       variable: "OpenMP_COMPILE_RESULT_C_fopenmplibomp"
       cached: true
       stdout: |
-        Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F'
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO'
         
-        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_453d9/fast
-        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_453d9.dir/build.make CMakeFiles/cmTC_453d9.dir/build
-        gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F'
-        Building C object CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F/OpenMPTryFlag.c
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_7bcb8/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_7bcb8.dir/build.make CMakeFiles/cmTC_7bcb8.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO'
+        Building C object CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO/OpenMPTryFlag.c
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -524,10 +544,11 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
          (in-process)
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -x c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F/OpenMPTryFlag.c
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -x c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO/OpenMPTryFlag.c
         clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"
         #include "..." search starts here:
         #include <...> search starts here:
          /opt/softwares/amd/aocc-compiler-5.0.0/include
@@ -535,9 +556,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking C executable cmTC_453d9
-        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_453d9.dir/link.txt --verbose=1
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -fopenmp=libomp -v CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -o cmTC_453d9  -v
+        Linking C executable cmTC_7bcb8
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bcb8.dir/link.txt --verbose=1
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -fopenmp=libomp -v CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -o cmTC_7bcb8  -v
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -547,8 +568,8 @@ events:
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_453d9 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
-        gmake[1]: Leaving directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F'
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7bcb8 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO'
         
       exitCode: 0
   -
@@ -556,17 +577,17 @@ events:
     backtrace:
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:282 (message)"
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:124 (find_package)"
+      - "CMakeLists.txt:125 (find_package)"
     message: |
       Parsed C OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F']
+        ignore line: [Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO']
         ignore line: []
-        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_453d9/fast]
-        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_453d9.dir/build.make CMakeFiles/cmTC_453d9.dir/build]
-        ignore line: [gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F']
-        ignore line: [Building C object CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F/OpenMPTryFlag.c]
+        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_7bcb8/fast]
+        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_7bcb8.dir/build.make CMakeFiles/cmTC_7bcb8.dir/build]
+        ignore line: [gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO']
+        ignore line: [Building C object CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -fopenmp=libomp -v -MD -MT CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO/OpenMPTryFlag.c]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -580,10 +601,11 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -x c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-sMvL8F/OpenMPTryFlag.c]
+        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -x c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-A9xyIO/OpenMPTryFlag.c]
         ignore line: [clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
         ignore line: [ /opt/softwares/amd/aocc-compiler-5.0.0/include]
@@ -591,9 +613,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking C executable cmTC_453d9]
-        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_453d9.dir/link.txt --verbose=1]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -fopenmp=libomp -v CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -o cmTC_453d9  -v]
+        ignore line: [Linking C executable cmTC_7bcb8]
+        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bcb8.dir/link.txt --verbose=1]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -fopenmp=libomp -v CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -o cmTC_7bcb8  -v]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -606,7 +628,7 @@ events:
         ignore line: [@m32]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_453d9 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7bcb8 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
           arg [/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld] ==> ignore
           arg [-pie] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -616,7 +638,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_453d9] ==> ignore
+          arg [cmTC_7bcb8] ==> ignore
           arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
           arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
           arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
@@ -628,7 +650,11 @@ events:
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
-          arg [CMakeFiles/cmTC_453d9.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
+          arg [CMakeFiles/cmTC_7bcb8.dir/OpenMPTryFlag.c.o] ==> ignore
           arg [-lomp] ==> lib [omp]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
           arg [-lgcc] ==> lib [gcc]
@@ -652,6 +678,10 @@ events:
         collapse library dir [/usr/lib] ==> [/usr/lib]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
         implicit libs: [omp;gcc;gcc_s;pthread;c;gcc;gcc_s]
         implicit objs: []
@@ -664,28 +694,28 @@ events:
     backtrace:
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:238 (try_compile)"
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:124 (find_package)"
+      - "CMakeLists.txt:125 (find_package)"
     description: "Detecting CXX OpenMP compiler info"
     directories:
-      source: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs"
-      binary: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs"
+      source: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zbouzekkar/CHPS901/galaxy_simulator/cmake"
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
     buildResult:
       variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
       cached: true
       stdout: |
-        Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs'
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L'
         
-        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_8f3af/fast
-        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_8f3af.dir/build.make CMakeFiles/cmTC_8f3af.dir/build
-        gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs'
-        Building CXX object CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs/OpenMPTryFlag.cpp
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_0fae7/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_0fae7.dir/build.make CMakeFiles/cmTC_0fae7.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L'
+        Building CXX object CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L/OpenMPTryFlag.cpp
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -696,10 +726,11 @@ events:
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
          (in-process)
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++17 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -x c++ /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs/OpenMPTryFlag.cpp
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++17 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -x c++ /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L/OpenMPTryFlag.cpp
         clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"
         ignoring nonexistent directory "/include"
+        ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"
         #include "..." search starts here:
         #include <...> search starts here:
          /opt/softwares/amd/aocc-compiler-5.0.0/include
@@ -710,9 +741,9 @@ events:
          /usr/local/include
          /usr/include
         End of search list.
-        Linking CXX executable cmTC_8f3af
-        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f3af.dir/link.txt --verbose=1
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -fopenmp=libomp -v CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -o cmTC_8f3af  -v
+        Linking CXX executable cmTC_0fae7
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fae7.dir/link.txt --verbose=1
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -fopenmp=libomp -v CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -o cmTC_0fae7  -v
         AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)
         Target: x86_64-unknown-linux-gnu
         Thread model: posix
@@ -722,8 +753,8 @@ events:
         Candidate multilib: .;@m64
         Candidate multilib: 32;@m32
         Selected multilib: .;@m64
-         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f3af /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
-        gmake[1]: Leaving directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs'
+         "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0fae7 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L'
         
       exitCode: 0
   -
@@ -731,17 +762,17 @@ events:
     backtrace:
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:282 (message)"
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
-      - "CMakeLists.txt:124 (find_package)"
+      - "CMakeLists.txt:125 (find_package)"
     message: |
       Parsed CXX OpenMP implicit link information from above output:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs']
+        ignore line: [Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L']
         ignore line: []
-        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_8f3af/fast]
-        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_8f3af.dir/build.make CMakeFiles/cmTC_8f3af.dir/build]
-        ignore line: [gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs']
-        ignore line: [Building CXX object CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs/OpenMPTryFlag.cpp]
+        ignore line: [Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_0fae7/fast]
+        ignore line: [/apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_0fae7.dir/build.make CMakeFiles/cmTC_0fae7.dir/build]
+        ignore line: [gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L']
+        ignore line: [Building CXX object CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L/OpenMPTryFlag.cpp]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -755,10 +786,11 @@ events:
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++17 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -x c++ /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-OpRBXs/OpenMPTryFlag.cpp]
+        ignore line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-17" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -main-file-name OpenMPTryFlag.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L -resource-dir /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17 -dependency-file CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -sys-header-deps -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -c-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -cxx-isystem /opt/softwares/amd/aocc-compiler-5.0.0/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11 -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/x86_64-redhat-linux -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../include/c++/11/backward -internal-isystem /opt/softwares/amd/aocc-compiler-5.0.0/lib/clang/17/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -O2 -std=gnu++17 -fdeprecated-macro -fdebug-compilation-dir=/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L -ferror-limit 19 -fopenmp -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -itodcalls -itodcallsbyclone -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -x c++ /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-81xM3L/OpenMPTryFlag.cpp]
         ignore line: [clang -cc1 version 17.0.6 based upon LLVM Mirror.Version.17.0.6 default target x86_64-unknown-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/11/../../../../x86_64-redhat-linux/include"]
         ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [ignoring duplicate directory "/opt/softwares/amd/aocc-compiler-5.0.0/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
         ignore line: [ /opt/softwares/amd/aocc-compiler-5.0.0/include]
@@ -769,9 +801,9 @@ events:
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_8f3af]
-        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f3af.dir/link.txt --verbose=1]
-        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -fopenmp=libomp -v CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -o cmTC_8f3af  -v]
+        ignore line: [Linking CXX executable cmTC_0fae7]
+        ignore line: [/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fae7.dir/link.txt --verbose=1]
+        ignore line: [/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -fopenmp=libomp -v CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -o cmTC_0fae7  -v]
         ignore line: [AMD clang version 17.0.6 (CLANG: AOCC_5.0.0-Build#1377 2024_09_24)]
         ignore line: [Target: x86_64-unknown-linux-gnu]
         ignore line: [Thread model: posix]
@@ -784,7 +816,7 @@ events:
         ignore line: [@m32]
         ignore line: [Selected multilib: .]
         ignore line: [@m64]
-        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f3af /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
+        link line: [ "/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld" -pie --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0fae7 /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/Scrt1.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/11/crtbeginS.o -L/usr/lib/gcc/x86_64-redhat-linux/11 -L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/opt/softwares/amd/aocc-compiler-5.0.0/bin/../lib -L/lib -L/usr/lib -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 -L/usr/lib64 -L/usr/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -L/opt/softwares/amd/aocc-compiler-5.0.0/lib32 CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lomp -L/opt/softwares/amd/aocc-compiler-5.0.0/lib -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/11/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64/crtn.o]
           arg [/opt/softwares/amd/aocc-compiler-5.0.0/bin/ld.lld] ==> ignore
           arg [-pie] ==> ignore
           arg [--hash-style=gnu] ==> ignore
@@ -794,7 +826,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_8f3af] ==> ignore
+          arg [cmTC_0fae7] ==> ignore
           arg [-L/usr/lib/gcc/x86_64-redhat-linux/11] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11]
           arg [-L/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/11/../../../../lib64]
           arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
@@ -806,7 +838,11 @@ events:
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
           arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
-          arg [CMakeFiles/cmTC_8f3af.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+          arg [-L/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
+          arg [CMakeFiles/cmTC_0fae7.dir/OpenMPTryFlag.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lomp] ==> lib [omp]
@@ -828,6 +864,10 @@ events:
         collapse library dir [/usr/lib] ==> [/usr/lib]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
+        collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib32] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib32]
         collapse library dir [/opt/softwares/amd/aocc-compiler-5.0.0/lib] ==> [/opt/softwares/amd/aocc-compiler-5.0.0/lib]
         implicit libs: [stdc++;m;omp;gcc_s;gcc;pthread;c;gcc_s;gcc]
         implicit objs: []
@@ -840,32 +880,32 @@ events:
     backtrace:
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:440 (try_compile)"
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:580 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:124 (find_package)"
+      - "CMakeLists.txt:125 (find_package)"
     description: "Detecting C OpenMP version"
     directories:
-      source: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-doVEbv"
-      binary: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-doVEbv"
+      source: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WXpwOq"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WXpwOq"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zbouzekkar/CHPS901/galaxy_simulator/cmake"
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
     buildResult:
       variable: "OpenMP_SPECTEST_C_"
       cached: true
       stdout: |
-        Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-doVEbv'
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WXpwOq'
         
-        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_63fde/fast
-        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_63fde.dir/build.make CMakeFiles/cmTC_63fde.dir/build
-        gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-doVEbv'
-        Building C object CMakeFiles/cmTC_63fde.dir/OpenMPCheckVersion.c.o
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -fopenmp=libomp -MD -MT CMakeFiles/cmTC_63fde.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_63fde.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_63fde.dir/OpenMPCheckVersion.c.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-doVEbv/OpenMPCheckVersion.c
-        Linking C executable cmTC_63fde
-        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63fde.dir/link.txt --verbose=1
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -fopenmp=libomp CMakeFiles/cmTC_63fde.dir/OpenMPCheckVersion.c.o -o cmTC_63fde
-        gmake[1]: Leaving directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-doVEbv'
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_b69f1/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_b69f1.dir/build.make CMakeFiles/cmTC_b69f1.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WXpwOq'
+        Building C object CMakeFiles/cmTC_b69f1.dir/OpenMPCheckVersion.c.o
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang   -fopenmp=libomp -MD -MT CMakeFiles/cmTC_b69f1.dir/OpenMPCheckVersion.c.o -MF CMakeFiles/cmTC_b69f1.dir/OpenMPCheckVersion.c.o.d -o CMakeFiles/cmTC_b69f1.dir/OpenMPCheckVersion.c.o -c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WXpwOq/OpenMPCheckVersion.c
+        Linking C executable cmTC_b69f1
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b69f1.dir/link.txt --verbose=1
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang  -fopenmp=libomp CMakeFiles/cmTC_b69f1.dir/OpenMPCheckVersion.c.o -o cmTC_b69f1
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WXpwOq'
         
       exitCode: 0
   -
@@ -873,32 +913,32 @@ events:
     backtrace:
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:440 (try_compile)"
       - "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/FindOpenMP.cmake:580 (_OPENMP_GET_SPEC_DATE)"
-      - "CMakeLists.txt:124 (find_package)"
+      - "CMakeLists.txt:125 (find_package)"
     description: "Detecting CXX OpenMP version"
     directories:
-      source: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-vKK2b4"
-      binary: "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-vKK2b4"
+      source: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WqAMtb"
+      binary: "/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WqAMtb"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/softwares/amd/aocc-compiler-5.0.0/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
-      CMAKE_MODULE_PATH: "/home/zbouzekkar/CHPS901/galaxy_simulator/cmake"
+      CMAKE_MODULE_PATH: "/home/garouba/galaxy_simulator/cmake"
     buildResult:
       variable: "OpenMP_SPECTEST_CXX_"
       cached: true
       stdout: |
-        Change Dir: '/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-vKK2b4'
+        Change Dir: '/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WqAMtb'
         
-        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_98bd2/fast
-        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_98bd2.dir/build.make CMakeFiles/cmTC_98bd2.dir/build
-        gmake[1]: Entering directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-vKK2b4'
-        Building CXX object CMakeFiles/cmTC_98bd2.dir/OpenMPCheckVersion.cpp.o
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -fopenmp=libomp -std=gnu++17 -MD -MT CMakeFiles/cmTC_98bd2.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_98bd2.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_98bd2.dir/OpenMPCheckVersion.cpp.o -c /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-vKK2b4/OpenMPCheckVersion.cpp
-        Linking CXX executable cmTC_98bd2
-        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98bd2.dir/link.txt --verbose=1
-        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -fopenmp=libomp CMakeFiles/cmTC_98bd2.dir/OpenMPCheckVersion.cpp.o -o cmTC_98bd2
-        gmake[1]: Leaving directory '/gpfs/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-vKK2b4'
+        Run Build Command(s): /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E env VERBOSE=1 /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake -f Makefile cmTC_f1baa/fast
+        /apps/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/gmake-4.4.1-4ix6odq7l742hdw55h2ws53b2272m4wp/bin/gmake  -f CMakeFiles/cmTC_f1baa.dir/build.make CMakeFiles/cmTC_f1baa.dir/build
+        gmake[1]: Entering directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WqAMtb'
+        Building CXX object CMakeFiles/cmTC_f1baa.dir/OpenMPCheckVersion.cpp.o
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++   -fopenmp=libomp -std=gnu++17 -MD -MT CMakeFiles/cmTC_f1baa.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_f1baa.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_f1baa.dir/OpenMPCheckVersion.cpp.o -c /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WqAMtb/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_f1baa
+        /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1baa.dir/link.txt --verbose=1
+        /opt/softwares/amd/aocc-compiler-5.0.0/bin/clang++  -fopenmp=libomp CMakeFiles/cmTC_f1baa.dir/OpenMPCheckVersion.cpp.o -o cmTC_f1baa
+        gmake[1]: Leaving directory '/gpfs/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/CMakeScratch/TryCompile-WqAMtb'
         
       exitCode: 0
 ...

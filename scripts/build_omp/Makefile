@@ -57,10 +57,10 @@ RM = /gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/c
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zbouzekkar/CHPS901/galaxy_simulator
+CMAKE_SOURCE_DIR = /home/garouba/galaxy_simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp
+CMAKE_BINARY_DIR = /home/garouba/galaxy_simulator/scripts/build_omp
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles /home/garouba/galaxy_simulator/scripts/build_omp//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

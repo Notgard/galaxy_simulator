@@ -1,4 +1,4 @@
-# Install script for directory: /home/zbouzekkar/CHPS901/galaxy_simulator
+# Install script for directory: /home/garouba/galaxy_simulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/garouba/galaxy_simulator/scripts/build_omp/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -14,6 +14,10 @@ From rank 0: Starting simulation with the following config...
 ==============================================================
 Setting up simulation...
 Particle 0 is the SUN
+Particle 0 at 510, 510
+ with velocity 0, 0
+with mass 3e+07
+Solar system setup complete
 Created MPI particle data type
 Now calculating chunk size...
 Rank 2 processing 334 particles
@@ -29,10 +33,6 @@ Now calculating chunk size...
 Rank 3 processing 333 particles
 MPI initialized, sending particles...
 From rank 3: Starting MPI simulation...
-Particle 0 at 510, 510
- with velocity 0, 0
-with mass 3e+07
-Solar system setup complete
 Setting up particle simulation...
 Center of the world: 510, 510
 Particle simulation setup complete
@@ -42,9 +42,9 @@ MPI initialized, sending particles...
 Starting N-Body simulation
 From rank 0: Starting MPI simulation...
 From rank 2: Simulation complete
-From rank 1: Simulation complete
 From rank 3: Simulation complete
-Time: (seconds) 0s
-Time: (milliseconds) 107ms
-Time: (microseconds) 107798us
+Time: (seconds) 9s
+Time: (milliseconds) 9937ms
+Time: (microseconds) 9937052us
 From rank 0: Simulation complete
+From rank 1: Simulation complete

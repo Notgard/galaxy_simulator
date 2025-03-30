@@ -22,6 +22,6 @@ Center of the world: 510, 510
 Particle simulation setup complete
 Starting N-Body simulation
 Finished simulation
-Time: (seconds) 23s
-Time: (milliseconds) 23562ms
-Time: (microseconds) 23562268us
+Time: (seconds) 32s
+Time: (milliseconds) 32278ms
+Time: (microseconds) 32278136us

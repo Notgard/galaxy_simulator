@@ -1,3 +1,0 @@
-slurmstepd: error: *** JOB 9686 ON romeo-c009 CANCELLED AT 2025-03-28T17:13:37 DUE TO NODE FAILURE, SEE SLURMCTLD LOG FOR DETAILS ***
-slurmstepd: error: *** JOB 9686 STEPD TERMINATED ON romeo-c009 AT 2025-03-28T17:18:19 DUE TO JOB NOT ENDING WITH SIGNALS ***
-slurmstepd: error: Container 238214 in cgroup plugin has 2 processes, giving up after 63 sec

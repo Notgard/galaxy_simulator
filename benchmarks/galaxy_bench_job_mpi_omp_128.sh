@@ -13,4 +13,5 @@
 
 source ../load_env.sh
 
-./bench_mpi_omp.sh
+#./bench_mpi_omp.sh
+./bench_mpi_omp_128.sh

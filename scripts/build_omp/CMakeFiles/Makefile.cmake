@@ -109,7 +109,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake"
   "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/Platform/Linux.cmake"
   "/gpfs/app/2025/spack_install/linux-rhel9-zen4/linux-rhel9-zen4/aocc-5.0.0/cmake-3.30.5-py755ebrh2kf43z2wzqblkcztqcsiied/share/cmake-3.30/Modules/Platform/UnixPaths.cmake"
-  "/home/zbouzekkar/CHPS901/galaxy_simulator/CMakeLists.txt"
+  "/home/garouba/galaxy_simulator/CMakeLists.txt"
   "CMakeFiles/3.30.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.30.5/CMakeSystem.cmake"

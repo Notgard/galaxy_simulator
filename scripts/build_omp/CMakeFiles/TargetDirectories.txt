@@ -1,3 +1,3 @@
-/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/particleSimulation.dir
-/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/edit_cache.dir
-/home/zbouzekkar/CHPS901/galaxy_simulator/scripts/build_omp/CMakeFiles/rebuild_cache.dir
+/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/particleSimulation.dir
+/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/edit_cache.dir
+/home/garouba/galaxy_simulator/scripts/build_omp/CMakeFiles/rebuild_cache.dir

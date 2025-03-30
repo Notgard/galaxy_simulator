@@ -38,9 +38,9 @@ for mpi_version in ${mpi_versions[@]}; do
 
                 # Ensure output directory exists
                 if [ $mpi_version -eq 1 ]; then
-                    dir="out/out_mpi/threads_2/sub_tree"
+                    dir="out/out_mpi/threads_1/sub_tree"
                 else
-                    dir="out/out_mpi/threads_2/chunk"
+                    dir="out/out_mpi/threads_1/chunk"
                 fi
                 mkdir -p "$dir"
 

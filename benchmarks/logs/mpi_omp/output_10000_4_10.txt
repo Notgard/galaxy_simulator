@@ -41,10 +41,10 @@ Now calculating chunk size...
 MPI initialized, sending particles...
 Starting N-Body simulation
 From rank 0: Starting MPI simulation...
-From rank 2: Simulation complete
-Time: (seconds) 1s
-Time: (milliseconds) 1685ms
-Time: (microseconds) 1685145us
-From rank 0: Simulation complete
-From rank 1: Simulation complete
 From rank 3: Simulation complete
+From rank 1: Simulation complete
+From rank 2: Simulation complete
+Time: (seconds) 18s
+Time: (milliseconds) 18403ms
+Time: (microseconds) 18403636us
+From rank 0: Simulation complete
