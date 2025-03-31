@@ -14,4 +14,4 @@ build_dir=$4
 
 exec=$build_dir/particleSimulation
 
-OMP_NUM_THREADS=$number_of_threads $exec $number_of_particles $number_of_iterations
+OMP_PLACES=cores OMP_PROC_BIND=close OMP_NUM_THREADS=$number_of_threads $exec $number_of_particles $number_of_iterations
