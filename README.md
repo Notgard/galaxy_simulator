@@ -1,65 +1,65 @@
-# Barnes-Hut Particle Simulation
+# Simulation de Particules avec Barnes-Hut
 
-This project simulates the gravitational interactions of particles using the Barnes-Hut algorithm. Below are the instructions to compile and run the simulation.
+Ce projet simule les interactions gravitationnelles entre particules en utilisant l’algorithme de Barnes-Hut. Voici les instructions pour compiler et exécuter la simulation.
 
 ## Compilation
 
-1. Create the build directory:
-
-    ```sh
+1. Créer le répertoire de compilation :
+```bash
     mkdir build
-    ```
-
-2. Configure the project with CMake, enabling SDL and gprof profiling:
-
-    ```sh
-    cmake -DCMAKE_CXX_FLAGS=-pg -DCMAKE_EXE_LINKER_FLAGS=-pg -DCMAKE_SHARED_LINKER_FLAGS=-pg -S . -B build -DUSE_SDL=ON
-    ```
-
-3. (bis) Configure the projec with CMake, enabling SDL and gprof as well as MPI and OpenMP:
-
-    ```sh
-    cmake -DCMAKE_EXE_LINKER_FLAGS=-pg -DCMAKE_SHARED_LINKER_FLAGS=-pg -S . -B build -DUSE_SDL=ON -DUSE_MPI=ON -DUSE_OPENMP=ON
-    ```
-
-4. Build the project:
-
-    ```sh
-    cmake --build build
-    ```
-
-## Running the Simulation
-
-The binary for the simulation will be located in the `build` directory. You can run the simulation with the following command:
-
-```sh
-./build/particleSimulation <number_of_particles> <number_of_iterations> [sdl]
 ```
+2. Compilation avec scripts utilitaires
 
-### Running the MPI+OpenMPhybrid version
+Au lieu d'exécuter manuellement les commandes de compilation, nous fournissons quatre scripts utilitaires permettant de compiler facilement chaque version :
 
-The binaries created from the cmake compilation with the needed compilation flags need to be executed like the following:
+* MPI + OpenMP (scripts/compile_mpi_omp.sh)
 
-```sh   
-mpiexec -n <number_of_process> -x OMP_NUM_THREADS=<number_of_threads> ./build/particleSimulation <number_of_particles> <number_of_iterations>
+* MPI (scripts/compile_mpi.sh)
+
+* OpenMP (scripts/compile_omp.sh)
+
+* Séquentiel (scripts/compile_sequential.sh)
+
+Chaque script accepte un paramètre optionnel "sdl" pour activer la visualisation SDL (nécessite les paquets libsdl2-dev et libsdl2-ttf-dev sur les systèmes Debian).
+
+## Exécution de la simulation
+
+Le binaire de la simulation se trouve dans le répertoire build. Vous pouvez exécuter la version séquentielle de la simulation avec :
+```bash
+./build/particleSimulation <nombre_de_particules> <nombre_d_itérations> [sdl]
 ```
+De la même manière, nous fournissons des scripts d’exécution pour simplifier le lancement des versions OpenMP, MPI et MPI+OpenMP :
 
-You can also use the provided `start_mpi.sh` script that simplifies this command.
+* MPI + OpenMP
 
-### Example
+Utilisation : `./run_mpi_omp.sh <nombre_de_processus> <nombre_de_threads> <nombre_de_particules> <nombre_d_itérations> <version_mpi> <build_dir> [sdl]`
 
-To run the simulation with 100 particles (in addition to the 9 default celestial bodies), 100000 iterations, and SDL graphical output:
+* MPI
 
-```sh
-./build/particleSimulation 100 100000 sdl
-```
+Utilisation : `./run_mpi.sh <nombre_de_processus> <nombre_de_threads> <nombre_de_particules> <nombre_d_itérations> <version_mpi> <build_dir> [sdl]`
 
-## Profiling
+* OpenMP
 
-To generate a graphical gprof profiling output:
+Utilisation : `./run_omp.sh <nombre_de_threads> <nombre_de_particules> <nombre_d_itérations> <build_dir>`
 
-```sh
+## Profilage
+
+Pour générer un profil visuel avec gprof (nécessite la compilation avec -pg) :
+```bash
 gprof ./build/particleSimulation | gprof2dot | dot -Tpng -o output.png
 ```
+Cela créera un fichier output.png contenant les informations de profilage.
+### Utilisation de MAQAO
 
-This will create a `output.png` file with the profiling information.
+Pour le profilage MPI :
+```bash
+OMP_NUM_THREADS=<nombre_de_threads> maqao oneview -R1 --number-processes=<nombre_de_processus> --mpi-command="mpirun -n <nombre_de_processus>" --number-processes-per-node=<process_par_noeud> xp=ov_mpi --replace -- ./build/particleSimulationMPI <nombre_de_particules> <nombre_d_itérations>
+```
+Pour le profilage OpenMP :
+```bash
+OMP_NUM_THREADS=<nombre_de_threads> maqao oneview -R1 xp=ov_omp --replace -- ./build/particleSimulation <nombre_de_particules> <nombre_d_itérations>
+```
+Pour le profilage séquentiel :
+```bash
+maqao oneview -R1 xp=ov_orig --replace -- ./build/particleSimulation <nombre_de_particules> <nombre_d_itérations>
+```
